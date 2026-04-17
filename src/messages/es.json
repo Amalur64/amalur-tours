@@ -11,6 +11,7 @@
     "groups": "Grupos",
     "blog": "Blog",
     "reviews": "Opiniones",
+    "gift": "🎁 Bonos Regalo",
     "book": "Reservar"
   },
   "hero": {
@@ -414,5 +415,37 @@
     "loading": "Cargando...",
     "error": "Error",
     "backHome": "Volver al inicio"
+  },
+  "gift": {
+    "title": "Regala una experiencia única",
+    "subtitle": "Un regalo inolvidable para tus seres queridos en el País Vasco",
+    "validity": "Válido 1 año · Enviado por email · Pago seguro",
+    "step1": "1. Elige tu paquete",
+    "step1sub": "Todos nuestros tours duran 1h30 — Biarritz o Bayona a tu elección",
+    "step2": "2. Personaliza tu bono",
+    "recipientLabel": "Nombre del beneficiario *",
+    "recipientPlaceholder": "ej: Sophie",
+    "senderLabel": "Tu nombre (de parte de...) *",
+    "senderPlaceholder": "ej: Marie",
+    "messageLabel": "Mensaje personal (opcional)",
+    "messagePlaceholder": "ej: ¡Feliz cumpleaños! Espero que adores descubrir el País Vasco 🌊",
+    "step3": "3. Resumen",
+    "forfait": "Paquete",
+    "for": "Para",
+    "from": "De parte de",
+    "validityLabel": "Validez",
+    "validityValue": "1 año desde la compra",
+    "total": "Total",
+    "emailNote": "📧 Recibirás tu bono regalo en PDF por email inmediatamente después del pago",
+    "pay": "Pagar",
+    "receive": "y recibir mi bono",
+    "processing": "Redirigiendo...",
+    "badge": "❤️ Ideal de regalo",
+    "successTitle": "¡Gracias!",
+    "successText": "Tu bono regalo Amalur Tours ha sido creado. Recibirás tu PDF por email en unos minutos.",
+    "successEmail": "PDF enviado a tu dirección de email",
+    "successValidity": "Válido 1 año desde hoy",
+    "successTours": "Ver nuestros tours",
+    "successHome": "Volver al inicio"
   }
 }

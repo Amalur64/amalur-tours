@@ -19,6 +19,7 @@ export function Navbar() {
     { href: "/groups" as const, label: t("groups") },
     { href: "/blog" as const, label: t("blog") },
     { href: "/reviews" as const, label: t("reviews") },
+    { href: "/gift" as const, label: t("gift") },
     { href: "/contact" as const, label: t("contact") },
   ];
 

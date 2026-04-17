@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { stripe } from "@/lib/stripe";
 import { createCalendarEvent } from "@/lib/google-calendar";
-import { sendOwnerNotification, sendCustomerConfirmation } from "@/lib/email";
+import { sendOwnerNotification, sendCustomerConfirmation, sendGiftVoucherEmail } from "@/lib/email";
 import { getTourBySlug } from "@/lib/tours";
 import Stripe from "stripe";
 
@@ -34,59 +34,86 @@ export async function POST(request: NextRequest) {
     const metadata = session.metadata;
 
     if (metadata) {
-      const tour = getTourBySlug(metadata.tourSlug);
-      const customerEmail = session.customer_details?.email || "";
-      const customerName = session.customer_details?.name || "Client";
+      // ─── BON CADEAU ───────────────────────────────────────────────────────
+      if (metadata.type === "gift_voucher") {
+        const customerEmail = session.customer_details?.email || "";
+        const priceEur = (session.amount_total || 0) / 100;
 
-      console.log("Booking confirmed:", {
-        tourId: metadata.tourId,
-        date: metadata.date,
-        time: metadata.time,
-        adults: metadata.adults,
-        teens: metadata.teens,
-        children: metadata.children,
-        email: customerEmail,
-        amount: session.amount_total,
-      });
+        console.log("Gift voucher purchased:", {
+          voucherId: metadata.voucherId,
+          voucherLabel: metadata.voucherLabel,
+          recipientName: metadata.recipientName,
+          senderName: metadata.senderName,
+          email: customerEmail,
+          amount: priceEur,
+        });
 
-      // Create Google Calendar event
-      if (tour) {
-        const durationMinutes = tour.slug === "combo" ? 240 : 90;
-        await createCalendarEvent({
-          tourName: tour.id,
-          date: metadata.date,
-          time: metadata.time,
-          duration: durationMinutes,
-          customerName,
+        await sendGiftVoucherEmail({
+          recipientName: metadata.recipientName || "",
+          senderName: metadata.senderName || "",
+          message: metadata.message || "",
+          voucherLabel: metadata.voucherLabel || "",
+          voucherId: metadata.voucherId || "",
+          price: priceEur,
           customerEmail,
-          adults: parseInt(metadata.adults || "0"),
-          teens: parseInt(metadata.teens || "0"),
-          children: parseInt(metadata.children || "0"),
-          language: metadata.locale || "fr",
-          amount: session.amount_total || 0,
         });
       }
 
-      // Send email notifications
-      if (tour) {
-        const emailData = {
-          tourName: tour.id,
+      // ─── RÉSERVATION TOUR ─────────────────────────────────────────────────
+      else {
+        const tour = getTourBySlug(metadata.tourSlug);
+        const customerEmail = session.customer_details?.email || "";
+        const customerName = session.customer_details?.name || "Client";
+
+        console.log("Booking confirmed:", {
+          tourId: metadata.tourId,
           date: metadata.date,
           time: metadata.time,
-          customerName,
-          customerEmail,
-          adults: parseInt(metadata.adults || "0"),
-          teens: parseInt(metadata.teens || "0"),
-          children: parseInt(metadata.children || "0"),
-          language: metadata.locale || "fr",
-          amount: session.amount_total || 0,
-        };
+          adults: metadata.adults,
+          teens: metadata.teens,
+          children: metadata.children,
+          email: customerEmail,
+          amount: session.amount_total,
+        });
 
-        // Send both emails in parallel
-        await Promise.all([
-          sendOwnerNotification(emailData),
-          customerEmail ? sendCustomerConfirmation(emailData) : Promise.resolve(),
-        ]);
+        // Créer l'événement Google Calendar
+        if (tour) {
+          const durationMinutes = tour.slug === "combo" ? 240 : 90;
+          await createCalendarEvent({
+            tourName: tour.id,
+            date: metadata.date,
+            time: metadata.time,
+            duration: durationMinutes,
+            customerName,
+            customerEmail,
+            adults: parseInt(metadata.adults || "0"),
+            teens: parseInt(metadata.teens || "0"),
+            children: parseInt(metadata.children || "0"),
+            language: metadata.locale || "fr",
+            amount: session.amount_total || 0,
+          });
+        }
+
+        // Envoyer les emails de confirmation
+        if (tour) {
+          const emailData = {
+            tourName: tour.id,
+            date: metadata.date,
+            time: metadata.time,
+            customerName,
+            customerEmail,
+            adults: parseInt(metadata.adults || "0"),
+            teens: parseInt(metadata.teens || "0"),
+            children: parseInt(metadata.children || "0"),
+            language: metadata.locale || "fr",
+            amount: session.amount_total || 0,
+          };
+
+          await Promise.all([
+            sendOwnerNotification(emailData),
+            customerEmail ? sendCustomerConfirmation(emailData) : Promise.resolve(),
+          ]);
+        }
       }
     }
   }

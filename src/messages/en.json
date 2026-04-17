@@ -11,6 +11,7 @@
     "groups": "Groups",
     "blog": "Blog",
     "reviews": "Reviews",
+    "gift": "🎁 Gift Vouchers",
     "book": "Book Now"
   },
   "hero": {
@@ -414,5 +415,37 @@
     "loading": "Loading...",
     "error": "Error",
     "backHome": "Back to Home"
+  },
+  "gift": {
+    "title": "Give a unique experience",
+    "subtitle": "An unforgettable gift for your loved ones in the Basque Country",
+    "validity": "Valid 1 year · Sent by email · Secure payment",
+    "step1": "1. Choose your package",
+    "step1sub": "All our tours last about 1h30 — Biarritz or Bayonne of your choice",
+    "step2": "2. Personalise your voucher",
+    "recipientLabel": "Recipient's first name *",
+    "recipientPlaceholder": "e.g. Sophie",
+    "senderLabel": "Your first name (from...) *",
+    "senderPlaceholder": "e.g. Marie",
+    "messageLabel": "Personal message (optional)",
+    "messagePlaceholder": "e.g. Happy birthday! I hope you'll love discovering the Basque Country 🌊",
+    "step3": "3. Summary",
+    "forfait": "Package",
+    "for": "For",
+    "from": "From",
+    "validityLabel": "Validity",
+    "validityValue": "1 year from purchase",
+    "total": "Total",
+    "emailNote": "📧 You will receive your gift voucher PDF by email immediately after payment",
+    "pay": "Pay",
+    "receive": "and receive my voucher",
+    "processing": "Redirecting...",
+    "badge": "❤️ Perfect gift",
+    "successTitle": "Thank you!",
+    "successText": "Your Amalur Tours gift voucher has been created. You will receive your PDF by email in a few minutes.",
+    "successEmail": "PDF sent to your email address",
+    "successValidity": "Valid for 1 year from today",
+    "successTours": "See our tours",
+    "successHome": "Back to home"
   }
 }

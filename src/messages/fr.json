@@ -11,6 +11,7 @@
     "groups": "Groupes",
     "blog": "Blog",
     "reviews": "Avis",
+    "gift": "🎁 Bons Cadeaux",
     "book": "Réserver"
   },
   "hero": {
@@ -414,5 +415,37 @@
         }
       }
     }
+  },
+  "gift": {
+    "title": "Offrez une expérience unique",
+    "subtitle": "Un cadeau inoubliable pour vos proches au Pays Basque",
+    "validity": "Valable 1 an · Envoyé par email · Paiement sécurisé",
+    "step1": "1. Choisissez votre forfait",
+    "step1sub": "Tous nos tours durent environ 1h30 — Biarritz ou Bayonne au choix",
+    "step2": "2. Personnalisez votre bon",
+    "recipientLabel": "Prénom du bénéficiaire *",
+    "recipientPlaceholder": "ex: Sophie",
+    "senderLabel": "Votre prénom (de la part de...) *",
+    "senderPlaceholder": "ex: Marie",
+    "messageLabel": "Message personnel (optionnel)",
+    "messagePlaceholder": "ex: Joyeux anniversaire ! J'espère que tu adoreras cette découverte du Pays Basque 🌊",
+    "step3": "3. Récapitulatif",
+    "forfait": "Forfait",
+    "for": "Pour",
+    "from": "De la part de",
+    "validityLabel": "Validité",
+    "validityValue": "1 an à partir de l'achat",
+    "total": "Total",
+    "emailNote": "📧 Vous recevrez votre bon cadeau PDF par email immédiatement après le paiement",
+    "pay": "Payer",
+    "receive": "et recevoir mon bon",
+    "processing": "Redirection...",
+    "badge": "❤️ Idéal en cadeau",
+    "successTitle": "Merci !",
+    "successText": "Votre bon cadeau Amalur Tours a bien été créé. Vous allez recevoir votre PDF par email dans quelques minutes.",
+    "successEmail": "PDF envoyé à votre adresse email",
+    "successValidity": "Valable 1 an à partir d'aujourd'hui",
+    "successTours": "Voir nos tours",
+    "successHome": "Retour à l'accueil"
   }
 }
