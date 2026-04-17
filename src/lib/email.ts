@@ -276,6 +276,157 @@ export async function sendGiftVoucherEmail(data: {
 }
 
 /**
+ * Envoie un email de demande d'avis Google après le tour
+ */
+export async function sendReviewRequestEmail(data: {
+  customerName: string;
+  customerEmail: string;
+  tourName: string;
+  language: string;
+}) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey || apiKey === "re_REPLACE_ME") {
+    console.warn("Resend not configured — skipping review request email");
+    return null;
+  }
+
+  const googleReviewUrl = process.env.GOOGLE_REVIEW_URL || "https://g.page/r/amalurtours/review";
+
+  const subjects: Record<string, string> = {
+    fr: `Merci pour votre visite — votre avis compte beaucoup ! ⭐`,
+    en: `Thank you for your tour — your review means a lot! ⭐`,
+    es: `Gracias por su visita — ¡su opinión importa mucho! ⭐`,
+  };
+
+  const lang = data.language || "fr";
+
+  const htmlFr = `
+    <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+      <div style="background: linear-gradient(135deg, #C1272D, #8B0000); padding: 32px; text-align: center; border-radius: 12px 12px 0 0;">
+        <p style="font-size: 40px; margin: 0;">⭐⭐⭐⭐⭐</p>
+        <h1 style="color: white; margin: 12px 0 0; font-size: 22px;">Merci pour votre visite !</h1>
+      </div>
+      <div style="background: #ffffff; padding: 32px; border: 1px solid #eee;">
+        <p style="font-size: 16px; color: #333;">Bonjour <strong>${data.customerName}</strong>,</p>
+        <p style="color: #555; line-height: 1.7;">
+          J'espère que vous avez passé un moment inoubliable au Pays Basque !
+          Ce fut un plaisir de vous guider à travers <strong>${data.tourName}</strong>.
+        </p>
+        <p style="color: #555; line-height: 1.7;">
+          Si vous avez aimé votre expérience, un petit avis Google m'aiderait énormément à faire connaître Amalur Tours.
+          Cela ne prend que 2 minutes et c'est très précieux pour moi ! 🙏
+        </p>
+        <div style="text-align: center; margin: 32px 0;">
+          <a href="${googleReviewUrl}"
+             style="background: #C1272D; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block;">
+            ⭐ Laisser un avis Google
+          </a>
+        </div>
+        <p style="color: #888; font-size: 13px; line-height: 1.6;">
+          Merci du fond du cœur, et j'espère vous retrouver bientôt pour une nouvelle aventure basque !
+        </p>
+        <p style="color: #555; font-size: 14px;">À bientôt,<br><strong>Maider</strong><br><em>Amalur Tours</em></p>
+      </div>
+      <div style="background: #2C3E50; padding: 20px; text-align: center; border-radius: 0 0 12px 12px;">
+        <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 12px;">amalur.tours@gmail.com — www.amalurtours.com</p>
+      </div>
+    </div>
+  `;
+
+  const htmlEn = `
+    <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+      <div style="background: linear-gradient(135deg, #C1272D, #8B0000); padding: 32px; text-align: center; border-radius: 12px 12px 0 0;">
+        <p style="font-size: 40px; margin: 0;">⭐⭐⭐⭐⭐</p>
+        <h1 style="color: white; margin: 12px 0 0; font-size: 22px;">Thank you for your tour!</h1>
+      </div>
+      <div style="background: #ffffff; padding: 32px; border: 1px solid #eee;">
+        <p style="font-size: 16px; color: #333;">Hello <strong>${data.customerName}</strong>,</p>
+        <p style="color: #555; line-height: 1.7;">
+          I hope you had an unforgettable time in the Basque Country!
+          It was a real pleasure guiding you through <strong>${data.tourName}</strong>.
+        </p>
+        <p style="color: #555; line-height: 1.7;">
+          If you enjoyed your experience, a quick Google review would help me enormously to spread the word about Amalur Tours.
+          It only takes 2 minutes and means the world to me! 🙏
+        </p>
+        <div style="text-align: center; margin: 32px 0;">
+          <a href="${googleReviewUrl}"
+             style="background: #C1272D; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block;">
+            ⭐ Leave a Google review
+          </a>
+        </div>
+        <p style="color: #555; font-size: 14px;">See you soon,<br><strong>Maider</strong><br><em>Amalur Tours</em></p>
+      </div>
+      <div style="background: #2C3E50; padding: 20px; text-align: center; border-radius: 0 0 12px 12px;">
+        <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 12px;">amalur.tours@gmail.com — www.amalurtours.com</p>
+      </div>
+    </div>
+  `;
+
+  const htmlEs = `
+    <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+      <div style="background: linear-gradient(135deg, #C1272D, #8B0000); padding: 32px; text-align: center; border-radius: 12px 12px 0 0;">
+        <p style="font-size: 40px; margin: 0;">⭐⭐⭐⭐⭐</p>
+        <h1 style="color: white; margin: 12px 0 0; font-size: 22px;">¡Gracias por su visita!</h1>
+      </div>
+      <div style="background: #ffffff; padding: 32px; border: 1px solid #eee;">
+        <p style="font-size: 16px; color: #333;">Hola <strong>${data.customerName}</strong>,</p>
+        <p style="color: #555; line-height: 1.7;">
+          ¡Espero que hayan pasado un momento inolvidable en el País Vasco!
+          Fue un placer guiarles por <strong>${data.tourName}</strong>.
+        </p>
+        <p style="color: #555; line-height: 1.7;">
+          Si disfrutaron de la experiencia, una reseña en Google me ayudaría enormemente.
+          ¡Solo toma 2 minutos y es muy valioso para mí! 🙏
+        </p>
+        <div style="text-align: center; margin: 32px 0;">
+          <a href="${googleReviewUrl}"
+             style="background: #C1272D; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block;">
+            ⭐ Dejar una reseña en Google
+          </a>
+        </div>
+        <p style="color: #555; font-size: 14px;">¡Hasta pronto!<br><strong>Maider</strong><br><em>Amalur Tours</em></p>
+      </div>
+      <div style="background: #2C3E50; padding: 20px; text-align: center; border-radius: 0 0 12px 12px;">
+        <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 12px;">amalur.tours@gmail.com — www.amalurtours.com</p>
+      </div>
+    </div>
+  `;
+
+  const htmlMap: Record<string, string> = { fr: htmlFr, en: htmlEn, es: htmlEs };
+  const html = htmlMap[lang] || htmlFr;
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: FROM_EMAIL,
+        to: [data.customerEmail],
+        subject: subjects[lang] || subjects.fr,
+        html,
+      }),
+    });
+
+    if (!res.ok) {
+      const error = await res.text();
+      console.error("Resend error (review request):", error);
+      return null;
+    }
+
+    const result = await res.json();
+    console.log("Review request email sent to:", data.customerEmail, result.id);
+    return result;
+  } catch (error) {
+    console.error("Failed to send review request email:", error);
+    return null;
+  }
+}
+
+/**
  * Envoie un email de confirmation au client
  */
 export async function sendCustomerConfirmation(data: BookingEmailData) {
