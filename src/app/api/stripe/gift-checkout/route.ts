@@ -30,6 +30,7 @@ export async function POST(request: NextRequest) {
       ],
       mode: "payment",
       success_url: `${siteUrl}/${locale}/gift/success?session_id={CHECKOUT_SESSION_ID}`,
+      allow_promotion_codes: true,
       cancel_url: `${siteUrl}/${locale}/gift`,
       metadata: {
         type: "gift_voucher",

@@ -62,6 +62,7 @@ export async function POST(request: NextRequest) {
         children: String(children),
         locale,
       },
+      allow_promotion_codes: true,
       success_url: `${siteUrl}/${locale}/tours/${tour.slug}?booking=success&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/${locale}/tours/${tour.slug}?booking=cancelled`,
     });
