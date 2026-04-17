@@ -50,6 +50,18 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`h-full ${dmSerif.variable} ${dmSans.variable} ${righteous.variable}`}>
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DE66DXBEP" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1DE66DXBEP');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
