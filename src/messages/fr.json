@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "title": "Amalur Tours — Visites Guidées au Pays Basque",
+    "description": "Découvrez Bayonne et Biarritz avec une guide locale passionnée. Walking tours en français, anglais et espagnol. Réservez votre visite guidée au Pays Basque."
+  },
+  "nav": {
+    "home": "Accueil",
+    "tours": "Nos Tours",
+    "about": "À Propos",
+    "contact": "Contact",
+    "groups": "Groupes",
+    "blog": "Blog",
+    "book": "Réserver"
+  },
+  "hero": {
+    "title": "Vivez le Pays Basque autrement",
+    "subtitle": "Visites guidées authentiques à Bayonne et Biarritz avec une guide locale passionnée",
+    "cta": "Réserver un tour",
+    "discover": "Découvrir nos tours"
+  },
+  "tours": {
+    "title": "Nos Tours",
+    "subtitle": "Choisissez votre aventure au cœur du Pays Basque",
+    "bayonne": {
+      "title": "Bayonne Walking Tour",
+      "description": "Plongez dans l'histoire millénaire de Bayonne : cathédrale gothique, remparts de Vauban, ruelles du Petit Bayonne et chocolat basque. Tour en français à 16h30.",
+      "duration": "~1h30",
+      "meeting": "Point de rencontre communiqué après réservation",
+      "schedule_info": "16h30 — Tour en français"
+    },
+    "biarritz": {
+      "title": "Biarritz Walking Tour",
+      "description": "Des plages mythiques au Rocher de la Vierge, découvrez comment un petit village de pêcheurs est devenu la station balnéaire préférée des têtes couronnées. Tour en français à 14h00.",
+      "duration": "~1h30",
+      "meeting": "Point de rencontre communiqué après réservation",
+      "schedule_info": "14h00 — Tour en français"
+    },
+    "combo": {
+      "title": "Bayonne + Biarritz Combo",
+      "description": "La journée complète pour découvrir les deux joyaux du Pays Basque. Biarritz à 14h00, puis Bayonne, avec transport inclus.",
+      "duration": "~4h",
+      "meeting": "Point de rencontre communiqué après réservation",
+      "schedule_info": "14h00 — Biarritz puis Bayonne"
+    },
+    "from": "À partir de",
+    "perPerson": "/ personne",
+    "bookNow": "Réserver maintenant",
+    "details": "En savoir plus",
+    "included": "Ce qui est inclus",
+    "notIncluded": "Non inclus",
+    "meetingPoint": "Point de rencontre",
+    "schedule": "Horaires",
+    "languages": "Langues disponibles",
+    "groupSize": "Taille du groupe",
+    "maxPersons": "12 personnes max.",
+    "allLanguages": "Français, Anglais, Espagnol",
+    "freeChildren": "Gratuit pour les enfants (-12 ans)",
+    "halfTeen": "5€ pour les adolescents (12-17 ans)",
+    "pricing": "Tarifs",
+    "adults": "Adultes"
+  },
+  "booking": {
+    "title": "Réserver ce tour",
+    "selectDate": "Choisir une date",
+    "selectTime": "Choisir un horaire",
+    "adults": "Adultes",
+    "teens": "Adolescents (12-17 ans)",
+    "children": "Enfants (-12 ans)",
+    "total": "Total",
+    "free": "Gratuit",
+    "pay": "Payer",
+    "processing": "Traitement en cours...",
+    "noSlots": "Aucun créneau disponible pour cette date",
+    "spotsLeft": "places restantes",
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "perPerson": "/ personne"
+  },
+  "about": {
+    "title": "À Propos d'Amalur Tours",
+    "subtitle": "Amalur signifie « Terre Mère » en basque",
+    "story": "Née et élevée au Pays Basque, j'ai toujours été passionnée par la richesse de cette terre unique. Après des années à partager ses secrets avec mes proches, j'ai décidé d'en faire mon métier : faire découvrir le Pays Basque authentique à ceux qui veulent aller au-delà des sentiers battus.",
+    "philosophy": "Ma philosophie est simple : des petits groupes, des histoires vraies, et une connexion sincère avec la culture basque. Chaque tour est une invitation à voir le Pays Basque à travers les yeux d'une locale.",
+    "values": {
+      "title": "Nos Valeurs",
+      "authentic": {
+        "title": "Authenticité",
+        "description": "Des récits vrais, des lieux méconnus, une perspective locale"
+      },
+      "sustainable": {
+        "title": "Tourisme Responsable",
+        "description": "Petits groupes, économie locale, respect du patrimoine"
+      },
+      "passionate": {
+        "title": "Passion",
+        "description": "Chaque tour est animé par l'amour sincère de cette terre"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Pourquoi Amalur Tours ?",
+    "local": {
+      "title": "Guide Locale",
+      "description": "Née au Pays Basque, je connais chaque recoin et chaque histoire"
+    },
+    "languages": {
+      "title": "3 Langues",
+      "description": "Tours disponibles en français, anglais et espagnol"
+    },
+    "small": {
+      "title": "Petits Groupes",
+      "description": "12 personnes maximum pour une expérience personnalisée"
+    },
+    "authentic": {
+      "title": "100% Authentique",
+      "description": "Pas de tourisme de masse, que des expériences vraies"
+    }
+  },
+  "testimonials": {
+    "title": "Ce que disent nos visiteurs"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question ? N'hésitez pas à nous écrire",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "language": "Langue préférée",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons rapidement.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "whatsapp": "Ou contactez-nous sur WhatsApp",
+    "placeholder": {
+      "name": "Votre nom",
+      "email": "votre@email.com",
+      "message": "Votre message..."
+    }
+  },
+  "groups": {
+    "title": "Tours pour Groupes & Agences",
+    "subtitle": "Des expériences sur mesure pour vos groupes",
+    "description": "Que vous soyez une agence de voyage, un comité d'entreprise ou un groupe d'amis, nous créons des tours privatisés adaptés à vos besoins.",
+    "features": {
+      "private": "Tours 100% privatisés",
+      "custom": "Programme sur mesure",
+      "billing": "Facturation professionnelle",
+      "multilingual": "Guide trilingue FR/EN/ES"
+    },
+    "form": {
+      "company": "Nom de l'agence / société",
+      "groupType": "Type de groupe",
+      "groupSize": "Nombre de personnes estimé",
+      "dates": "Dates souhaitées",
+      "needs": "Besoins spécifiques",
+      "submit": "Demander un devis"
+    }
+  },
+  "footer": {
+    "description": "Visites guidées authentiques au cœur du Pays Basque",
+    "quickLinks": "Liens Rapides",
+    "followUs": "Suivez-nous",
+    "legal": "Mentions Légales",
+    "privacy": "Politique de Confidentialité",
+    "rights": "Tous droits réservés"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "backHome": "Retour à l'accueil"
+  },
+  "blog": {
+    "subtitle": "Découvrez le Pays Basque à travers nos articles : culture, gastronomie, histoire et nature",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour au blog",
+    "ctaTitle": "Envie de découvrir tout cela en personne ?",
+    "ctaText": "Rejoignez-nous pour une visite guidée authentique au cœur du Pays Basque",
+    "ctaButton": "Voir nos tours",
+    "categories": {
+      "culture": "Culture",
+      "gastronomie": "Gastronomie",
+      "nature": "Nature",
+      "histoire": "Histoire",
+      "pratique": "Pratique"
+    },
+    "articles": {
+      "chocolat": {
+        "title": "Les Secrets du Chocolat de Bayonne : Une Histoire Qui Remonte au XVIe Siècle",
+        "excerpt": "Comment Bayonne est devenue la capitale française du chocolat, bien avant Paris. Une histoire de réfugiés, de cacao et de savoir-faire ancestral.",
+        "content": {
+          "h1": "Quand les Séfarades apportèrent le cacao à Bayonne",
+          "p1": "En 1492, l'Espagne expulse ses communautés juives. Parmi les réfugiés qui fuient l'Inquisition, des familles séfarades traversent les Pyrénées et s'installent à Bayonne, plus précisément dans le quartier Saint-Esprit, sur la rive droite de l'Adour. Dans leurs bagages, ces exilés emportent un savoir-faire extraordinaire : la transformation des fèves de cacao en chocolat. Ce savoir, ils l'ont acquis au contact des explorateurs espagnols revenant du Nouveau Monde, et Bayonne devient ainsi, dès le début du XVIIe siècle, la première ville de France à travailler le chocolat.",
+          "p2": "Le quartier Saint-Esprit se transforme rapidement en un véritable laboratoire du cacao. Les artisans séfarades y installent leurs ateliers, perfectionnant leurs recettes au fil des décennies. À une époque où Paris ne connaît pas encore cette gourmandise, les Bayonnais dégustent déjà un chocolat chaud épais et parfumé. Les corporations de chocolatiers locaux, jalouses de ce succès, tenteront d'ailleurs à plusieurs reprises de faire interdire le commerce du chocolat aux familles juives, sans jamais y parvenir durablement.",
+          "h2": "Le quartier Saint-Esprit, berceau oublié du chocolat français",
+          "p3": "Aujourd'hui encore, le quartier Saint-Esprit conserve les traces de cette histoire singulière. Si vous empruntez la rue Pannecau ou flânez autour de la synagogue, vous marchez littéralement sur les pas des premiers chocolatiers de France. Les bâtiments ont changé, mais l'esprit demeure. Chaque année, la ville célèbre cette mémoire lors des Journées du Chocolat, un événement qui attire des milliers de visiteurs et rappelle à tous que Bayonne fut pionnière dans l'art du chocolat.",
+          "p4": "Ce qui distingue le chocolat de Bayonne, c'est avant tout sa méthode de fabrication artisanale. Contrairement à l'industrie chocolatière moderne qui privilégie la rapidité et la standardisation, les maîtres chocolatiers bayonnais ont longtemps travaillé le cacao à la pierre, sur des meules en granit chauffées au feu de bois. Cette technique ancestrale, héritée des Séfarades, permettait de conserver tous les arômes subtils de la fève de cacao, produisant un chocolat à la texture légèrement granuleuse et au goût incomparablement riche.",
+          "h3": "Les spécialités uniques que vous ne trouverez nulle part ailleurs",
+          "p5": "Le chocolat de Bayonne possède ses propres spécialités, introuvables ailleurs en France. Le mouchou, par exemple, est un petit carré de chocolat noir parfumé au piment d'Espelette — un mariage audacieux entre deux trésors du Pays Basque qui surprend et séduit les palais les plus exigeants. Il y a aussi les kanougas, ces caramels mous enrobés de chocolat qui fondent en bouche et dont la recette est jalousement gardée par les maisons bayonnaises depuis des générations.",
+          "p6": "Parmi les spécialités incontournables, on trouve également la tablette de chocolat noir aux éclats de noix du Béarn, les truffes au chocolat et au sel de Salies-de-Béarn, et les bouchées au chocolat fourrées à la confiture de cerises noires d'Itxassou. Chaque création raconte une histoire, chaque saveur est un pont entre les traditions du Pays Basque et l'héritage des maîtres chocolatiers séfarades. C'est cette identité forte qui fait du chocolat bayonnais bien plus qu'une simple confiserie : c'est un patrimoine vivant.",
+          "h4": "Les ateliers artisanaux à visiter absolument",
+          "p7": "Bayonne compte encore aujourd'hui une dizaine d'ateliers artisanaux qui perpétuent la tradition chocolatière. La maison Cazenave, fondée en 1854, est sans doute la plus emblématique. Son salon de thé aux boiseries anciennes propose un chocolat chaud mousseux servi à l'ancienne qui vaut à lui seul le détour. L'Atelier du Chocolat, installé dans une ancienne usine du quartier Saint-Esprit, offre quant à lui des visites guidées où l'on peut observer toutes les étapes de fabrication, de la fève à la tablette.",
+          "p8": "Pour les amateurs de découvertes plus confidentielles, la chocolaterie Puyodebat perpétue un savoir-faire familial depuis 1907, travaillant exclusivement des fèves de cacao issues de plantations sélectionnées d'Amérique du Sud. Et ne manquez pas le chocolatier Daranatz, dont les bonbons au chocolat et les pralinés sont considérés par les connaisseurs comme parmi les meilleurs de France. Chaque atelier possède sa propre personnalité, ses recettes secrètes et son histoire, formant ensemble un patrimoine chocolatier unique en France.",
+          "h5": "Pourquoi Bayonne mérite le titre de capitale du chocolat",
+          "p9": "Avec plus de quatre siècles de tradition chocolatière ininterrompue, Bayonne possède une légitimité historique que peu de villes peuvent revendiquer. Si aujourd'hui Paris et Bruxelles sont plus célèbres pour leur chocolat, c'est en grande partie parce que Bayonne a longtemps gardé son savoir-faire comme un secret bien gardé. La ville a obtenu la reconnaissance officielle de son patrimoine chocolatier et travaille activement à sa valorisation touristique.",
+          "p10": "Lors de nos visites guidées de Bayonne, nous vous emmenons sur les traces de cette histoire fascinante. Du quartier Saint-Esprit aux boutiques de la rue Port-Neuf, en passant par les ateliers encore en activité, le parcours du chocolat est une immersion dans quatre siècles de savoir-faire. Vous dégusterez des chocolats artisanaux, découvrirez des anecdotes inédites et comprendrez pourquoi le chocolat de Bayonne est bien plus qu'une simple gourmandise — c'est l'âme sucrée du Pays Basque."
+        }
+      },
+      "architecture": {
+        "title": "Décoder l'Architecture Labourdine : Ce Que les Maisons Basques Racontent",
+        "excerpt": "Chaque maison basque porte un nom, pas un numéro. Les colombages ont une signification. Apprenez à lire les façades comme un livre d'histoire.",
+        "content": {
+          "h1": "L'etxe : bien plus qu'une maison, une identité",
+          "p1": "Au Pays Basque, la maison n'est pas un simple bâtiment. Elle porte un nom — l'etxe — et ce nom définit la famille qui l'habite, pas l'inverse. Traditionnellement, c'est la maison qui donne son nom à ses occupants, et non la famille qui baptise la maison. Un Basque est d'abord identifié par sa maison d'origine. Cette conception, profondément ancrée dans la culture euskarienne, fait de chaque bâtisse un monument vivant, un lien tangible entre les générations passées et futures.",
+          "p2": "Cette tradition remonte au Moyen Âge, lorsque le droit basque, le for, établissait l'indivisibilité de la maison familiale. L'etxe ne pouvait être ni divisée ni vendue en parcelles. Elle se transmettait intégralement à un seul héritier — l'aîné, qu'il soit homme ou femme, car le droit basque ignorait la primogéniture masculine. Cette particularité juridique unique en Europe a façonné non seulement l'architecture, mais toute l'organisation sociale du Pays Basque pendant des siècles.",
+          "h2": "Le secret des colombages : rouge, vert ou bleu ?",
+          "p3": "Les colombages des maisons labourdines ne sont pas peints au hasard. Traditionnellement, la couleur rouge sang de bœuf — ce rouge basque si caractéristique — était la plus répandue. On utilisait du sang de bœuf mélangé à de la chaux pour protéger le bois des intempéries et des insectes. Le vert, que l'on trouve surtout en Basse-Navarre et en Soule, indiquait historiquement l'appartenance à une autre province. Le bleu, plus rare, était souvent associé aux maisons de pêcheurs de la côte.",
+          "p4": "Au-delà des couleurs, la disposition même des colombages raconte l'histoire du bâtiment. Les pans de bois en croix de Saint-André renforcent la structure et témoignent du savoir-faire des charpentiers locaux. Les maisons les plus anciennes présentent un encorbellement au premier étage — une avancée de la façade sur la rue — qui permettait de gagner de la surface habitable tout en protégeant le rez-de-chaussée de la pluie. Observer ces détails, c'est lire l'histoire de la construction à travers les siècles.",
+          "h3": "L'orientation face à l'est : une règle ancestrale",
+          "p5": "Presque toutes les maisons basques traditionnelles sont orientées face à l'est. Ce n'est pas un hasard, mais une règle architecturale transmise de génération en génération. L'orientation est permettait de bénéficier du soleil matinal tout en protégeant la façade principale des pluies dominantes qui viennent de l'ouest et du nord-ouest. Le mur ouest, le plus exposé aux intempéries atlantiques, était traditionnellement aveugle ou percé de très petites ouvertures.",
+          "p6": "Cette orientation répondait aussi à des considérations agricoles. La grande porte du rez-de-chaussée, qui servait d'entrée pour le bétail et les récoltes, donnait sur la cour intérieure exposée au soleil. Le grenier, situé sous le toit à deux pentes, servait de séchoir pour le maïs et le piment. L'ensemble formait un système bioclimatique remarquablement efficace, bien avant que ce terme n'existe, démontrant l'intelligence empirique des bâtisseurs basques.",
+          "h4": "Le lauburu et les symboles sculptés sur les linteaux",
+          "p7": "Levez les yeux au-dessus des portes des vieilles maisons basques et vous découvrirez un monde de symboles. Le plus célèbre est le lauburu, cette croix à quatre branches courbes qui est devenu l'emblème du Pays Basque. Gravé dans la pierre des linteaux, il symbolise les quatre éléments ou les quatre saisons. Mais on trouve aussi des soleils, des étoiles, des rosaces et des inscriptions en euskara qui indiquent le nom de la maison, la date de construction et parfois le nom du bâtisseur.",
+          "p8": "Ces linteaux sculptés sont de véritables archives de pierre. On peut y lire des dates qui remontent au XVIe siècle, des devises familiales en basque, et parfois des symboles de métiers — une enclume pour un forgeron, une barque pour un pêcheur. Dans certains villages comme Ainhoa ou Sare, la promenade le long de la rue principale est une véritable leçon d'histoire à ciel ouvert. Chaque façade est un chapitre, chaque inscription un témoignage du passé.",
+          "h5": "Comment lire une façade basque comme un guide local",
+          "p9": "Lors de nos visites guidées, nous apprenons à nos visiteurs à décrypter les façades basques comme de véritables pages d'histoire. Le nombre d'étages, la taille des ouvertures, la qualité de la pierre d'angle, la présence d'un balcon en bois ou en fer forgé — chaque détail raconte le statut social de la famille, l'époque de construction et les transformations successives du bâtiment. Une maison avec un large porche en plein cintre était souvent la demeure d'un notable ou d'un marchand prospère.",
+          "p10": "Les toits aussi parlent à qui sait les observer. La pente, très prononcée dans les anciennes maisons, était calculée pour évacuer rapidement les eaux de pluie. Les tuiles canal, rondes et rouges, ont été progressivement remplacées par l'ardoise dans certaines zones, témoignant de l'évolution des techniques et des modes. Et si vous remarquez des pierres saillantes sur la façade, ce ne sont pas des défauts de construction mais des attentes — des pierres laissées en saillie pour permettre un éventuel agrandissement futur de la maison."
+        }
+      },
+      "pelote": {
+        "title": "La Pelote Basque : Bien Plus Qu'un Sport, une Philosophie de Vie",
+        "excerpt": "Avec 22 spécialités différentes et des frontons dans chaque village, la pelote basque est le sport le plus méconnu et le plus fascinant d'Europe.",
+        "content": {
+          "h1": "22 spécialités, un seul sport : la diversité de la pelote",
+          "p1": "Quand on évoque la pelote basque, la plupart des gens imaginent un joueur lançant une balle avec un grand panier en osier. Cette image, bien que réelle, ne représente qu'une infime partie de ce sport extraordinaire. La pelote basque compte en réalité 22 spécialités officielles, jouées avec la main nue, le gant de cuir, la pala (raquette en bois), le xare (petit filet), le joko garbi ou le célèbre chistera. Chaque spécialité a ses règles, ses techniques et ses champions, formant un univers sportif d'une richesse incomparable.",
+          "p2": "La main nue est considérée comme la discipline reine, la plus pure et la plus ancienne. Les joueurs frappent une pelote en cuir de chèvre à mains nues contre le fronton, avec une puissance et une précision qui impressionnent toujours les spectateurs néophytes. La balle peut atteindre des vitesses de plus de 100 km/h, et les mains des joueurs, endurcies par des années de pratique, portent les stigmates de ce sport exigeant. À l'autre extrémité du spectre, la cesta punta, jouée avec le grand chistera, propulse la pelote à plus de 300 km/h, ce qui en fait le sport de balle le plus rapide du monde.",
+          "h2": "Le fronton : cœur battant du village basque",
+          "p3": "Dans chaque village du Pays Basque, vous trouverez trois bâtiments incontournables : l'église, la mairie et le fronton. Ce mur de jeu, simple et imposant, est bien plus qu'une installation sportive — c'est le cœur social de la communauté. C'est au pied du fronton que les anciens discutent, que les jeunes apprennent à jouer, que les fêtes se préparent et que les nouvelles du village circulent. Le fronton est l'agora basque, le lieu où se tisse le lien social.",
+          "p4": "Il existe plusieurs types de frontons. Le fronton place libre est le plus ancien et le plus couvert : un simple mur contre lequel on joue en plein air, sans mur latéral. Le trinquet est un terrain couvert, fermé par quatre murs, où se pratiquent les jeux les plus techniques. Le jaï alaï, enfin, est un fronton couvert avec un mur latéral, importé au XIXe siècle dans les Amériques où il est devenu un sport spectacle à part entière, notamment à Miami, La Havane et Manille.",
+          "h3": "Le chistera : un panier en osier fabriqué à la main",
+          "p5": "Le chistera, cet instrument incurvé en osier qui permet de propulser la pelote à des vitesses vertigineuses, est fabriqué à la main par quelques artisans qui perpétuent un savoir-faire menacé. Historiquement, c'est la ville d'Hasparren, dans l'intérieur du Pays Basque, qui était le centre de fabrication des chisteras. L'osier utilisé provient des bords de rivières locales, et chaque panier nécessite plusieurs jours de travail minutieux pour être tressé, courbé et ajusté à la main du joueur.",
+          "p6": "La légende raconte que le chistera fut inventé par hasard au XIXe siècle, quand un jeune joueur s'empara d'un panier de sa mère pour renvoyer la balle plus loin. Qu'elle soit vraie ou romancée, cette anecdote illustre le génie d'improvisation basque. Aujourd'hui, un bon chistera coûte plusieurs centaines d'euros et dure à peine une saison. Les joueurs professionnels en utilisent plusieurs par match, chaque panier s'adaptant à un type de jeu différent.",
+          "h4": "Les parties de nuit : une ambiance électrique",
+          "p7": "L'été au Pays Basque, les parties de pelote prennent une dimension particulière. Sous les projecteurs du fronton, dans la chaleur des soirs d'été, les meilleurs joueurs s'affrontent devant des centaines de spectateurs passionnés. L'ambiance est électrique : les paris vont bon train, les cris d'encouragement fusent, et le claquement de la pelote contre le mur résonne dans la nuit. Ces soirées sont l'un des spectacles les plus authentiques que le Pays Basque puisse offrir.",
+          "p8": "Pour les visiteurs, assister à une partie de pelote est une expérience inoubliable. Pas besoin de connaître les règles dans le détail — l'énergie du public, la virtuosité des joueurs et l'atmosphère festive suffisent à captiver même les non-initiés. Les frontons de Bayonne, Saint-Jean-de-Luz et Biarritz proposent régulièrement des parties en soirée pendant la saison estivale. C'est l'occasion de découvrir un sport ancestral dans toute son authenticité, loin des stades modernes et standardisés.",
+          "h5": "Où voir de la pelote basque lors de votre visite",
+          "p9": "Si vous visitez le Pays Basque, ne manquez pas l'occasion d'assister à une partie de pelote. À Bayonne, le trinquet Saint-André, situé en plein centre-ville, accueille des compétitions tout au long de l'année. Le grand fronton de Biarritz, face à la mer, propose des parties en été. Et pour une expérience plus authentique encore, rendez-vous dans les villages de l'intérieur — Hasparren, Cambo-les-Bains ou Mauléon — où la pelote se joue comme elle se jouait il y a cent ans.",
+          "p10": "Lors de nos visites guidées, nous passons devant les frontons historiques de Bayonne et nous vous racontons l'histoire de ce sport unique. Nous vous expliquons les différentes spécialités, la fabrication du chistera et les anecdotes des grands champions. C'est l'une des facettes les plus authentiques de la culture basque, et la comprendre, c'est comprendre l'âme de ce peuple qui a toujours su allier tradition et passion."
+        }
+      },
+      "villages": {
+        "title": "Les Villages Secrets de l'Intérieur du Pays Basque : Loin des Foules, Près de l'Âme",
+        "excerpt": "Au-delà de la côte, l'arrière-pays basque cache des trésors insoupçonnés. Ainhoa, Sare, Espelette et d'autres villages où le temps semble suspendu.",
+        "content": {
+          "h1": "Au-delà de la côte : le Pays Basque que peu de touristes connaissent",
+          "p1": "La plupart des visiteurs du Pays Basque concentrent leur séjour sur la bande côtière : Biarritz, Saint-Jean-de-Luz, Hendaye. Ils ne se doutent pas qu'à seulement vingt minutes en voiture vers l'intérieur des terres, un autre Pays Basque les attend. Un Pays Basque de montagnes douces et de vallées profondes, de villages préservés où les maisons à colombages rouge sang se détachent sur le vert intense des collines. C'est ici, dans cet arrière-pays secret, que bat le cœur véritable de la culture basque.",
+          "p2": "Ces villages de l'intérieur n'ont pas la notoriété des stations balnéaires, et c'est tant mieux. Ils ont ainsi préservé leur authenticité, leur rythme de vie et leurs traditions. Ici, on parle encore l'euskara au quotidien, les bergers montent encore leurs troupeaux en estive, et les frontons de pelote résonnent encore chaque dimanche. C'est un voyage dans le temps autant que dans l'espace, une immersion dans un monde où la modernité n'a pas effacé l'identité.",
+          "h2": "Ainhoa : la plus belle rue du Pays Basque",
+          "p3": "Ainhoa est un village-rue classé parmi les Plus Beaux Villages de France. Sa rue unique, bordée de maisons labourdines des XVIIe et XVIIIe siècles aux façades blanches et aux colombages rouges ou verts, est une pure merveille architecturale. Chaque maison porte un nom gravé sur son linteau, et les pierres sculptées au-dessus des portes racontent des siècles d'histoire. Le village fut fondé au XIIIe siècle comme bastide pour les pèlerins de Saint-Jacques-de-Compostelle, et son église fortifiée témoigne d'un passé parfois tumultueux.",
+          "p4": "Ce qui rend Ainhoa particulièrement attachant, c'est son atmosphère de village vivant. Contrairement à certains villages touristiques, Ainhoa n'est pas un musée à ciel ouvert. Les habitants y vivent, y travaillent, y élèvent leurs enfants. Le fronton résonne des parties de pelote, le café du village est un lieu de rencontre authentique, et les artisans locaux continuent de perpétuer les traditions. Flâner dans la rue d'Ainhoa un matin de printemps, quand la lumière joue sur les façades, est l'une des plus belles expériences que le Pays Basque puisse offrir.",
+          "h3": "Sare, Espelette et les trésors cachés",
+          "p5": "Sare, au pied de la Rhune, est un village de caractère entouré de montagnes. Ses grottes préhistoriques, les grottes de Sare, témoignent d'une présence humaine vieille de plus de 40 000 ans. Le village possède également un magnifique fronton et une église avec des galeries en bois typiques des églises basques. Mais c'est surtout son cadre naturel exceptionnel qui enchante : la montée à la Rhune en petit train à crémaillère offre un panorama vertigineux sur la côte basque et les Pyrénées.",
+          "p6": "Espelette est célèbre dans le monde entier pour son piment, mais le village mérite bien plus qu'un arrêt photo devant les guirlandes de piments séchant sur les façades. Son château des barons d'Espelette, son église avec son cimetière traditionnel aux stèles discoïdales, et ses ateliers d'artisans offrent une plongée dans la culture basque. Visitez Espelette hors saison si possible : en automne, les façades disparaissent sous les piments rouges en train de sécher, offrant un spectacle chromatique unique.",
+          "h4": "La Basse-Navarre et la Soule : les provinces oubliées",
+          "p7": "Le Pays Basque français ne se résume pas au Labourd. La Basse-Navarre et la Soule, les deux autres provinces, sont des territoires profonds et méconnus qui méritent amplement le détour. Saint-Jean-Pied-de-Port, capitale de la Basse-Navarre et étape mythique du chemin de Saint-Jacques-de-Compostelle, est une cité médiévale fortifiée dont les ruelles pavées et les maisons en grès rose sont d'une beauté saisissante. La citadelle offre une vue plongeante sur la Nive et les toits du village.",
+          "p8": "La Soule, la plus petite et la plus orientale des provinces basques, est aussi la plus secrète. Mauléon, sa capitale, est connue pour ses espadrilles fabriquées à la main, un artisanat qui remonte au XVIIIe siècle. Les forêts d'Iraty, immense hêtraie que l'on dit être la plus grande d'Europe occidentale, et les gorges de Kakuetta, un canyon vertigineux surnommé le petit Amazone, sont des merveilles naturelles que peu de touristes connaissent.",
+          "h5": "Itxassou et la cerise noire : un village, un fruit, une histoire",
+          "p9": "Itxassou est un petit village niché dans les collines, connu pour ses cerises noires. La variété locale, la xapata, est utilisée pour fabriquer la confiture de cerises noires qui accompagne traditionnellement le fromage de brebis Ossau-Iraty. Chaque printemps, les cerisiers en fleurs transforment le paysage en une aquarelle rose et blanche. La fête de la cerise, en juin, est l'occasion de déguster ce fruit rare et de découvrir les traditions locales dans une ambiance chaleureuse et conviviale.",
+          "p10": "Ces villages de l'intérieur représentent l'essence même de ce que nous voulons partager chez Amalur Tours. Si nos visites guidées se concentrent sur Bayonne et Biarritz, nous sommes toujours heureux de conseiller nos visiteurs pour l'exploration de l'arrière-pays. Car c'est là, dans ces vallées secrètes et ces villages préservés, que le Pays Basque révèle sa vraie nature : une terre d'une beauté discrète mais profonde, habitée par un peuple fier de ses racines."
+        }
+      },
+      "corsaires": {
+        "title": "Les Corsaires de Bayonne : Quand le Pays Basque Régnait sur les Mers",
+        "excerpt": "Bien avant d'être une ville de chocolat et de rugby, Bayonne était un redoutable port de corsaires. L'histoire fascinante des marins basques qui terrorisaient les mers.",
+        "content": {
+          "h1": "Corsaire n'est pas pirate : une nuance essentielle",
+          "p1": "Contrairement aux pirates, qui agissaient hors la loi pour leur propre compte, les corsaires opéraient avec l'autorisation officielle du roi de France. Munis de lettres de marque, ces documents royaux qui les autorisaient à attaquer les navires ennemis en temps de guerre, les corsaires bayonnais étaient des entrepreneurs de la mer, menant une guerre économique au nom de la couronne. En échange de cette licence, ils reversaient une partie de leurs prises au roi. C'était une activité parfaitement légale, voire prestigieuse, qui a enrichi considérablement la ville de Bayonne pendant des siècles.",
+          "p2": "Les Basques étaient des marins exceptionnels. Leur connaissance du golfe de Gascogne, l'un des espaces maritimes les plus dangereux d'Europe, en faisait des navigateurs redoutables. Bien avant les corsaires, les pêcheurs basques étaient déjà les premiers Européens à chasser la baleine dans l'Atlantique Nord, atteignant probablement les côtes de Terre-Neuve avant Christophe Colomb. Cette expertise maritime ancestrale a naturellement donné naissance à une tradition corsaire qui a fait de Bayonne l'un des ports les plus craints de la côte atlantique.",
+          "h2": "Les grandes figures corsaires de Bayonne",
+          "p3": "Parmi les corsaires bayonnais les plus célèbres, Johannis de Suhigaraychipi, surnommé Croisic, se distingue par ses exploits au XVIIe siècle. Capitaine intrépide, il captura des dizaines de navires espagnols et anglais, accumulant une fortune considérable et une réputation qui dépassait les frontières du Pays Basque. Sa maison, dans le quartier du Petit Bayonne, était l'une des plus somptueuses de la ville, témoignage de la prospérité que la course pouvait apporter.",
+          "p4": "Un autre corsaire légendaire, Étienne Pellot, surnommé Donoghue pour avoir vécu en Irlande, terrorisa les navires anglais pendant la Guerre de Sept Ans. Avec son navire l'Incomparable, il captura plus de cinquante prises en quelques années, devenant l'un des plus riches armateurs de Bayonne. Ces hommes n'étaient pas des aventuriers isolés : ils appartenaient à de véritables dynasties maritimes, des familles dont le métier de corsaire se transmettait de père en fils comme un patrimoine.",
+          "h3": "La construction navale à Bayonne : un savoir-faire d'exception",
+          "p5": "Le succès des corsaires bayonnais reposait en partie sur la qualité de leurs navires. Les chantiers navals de l'Adour produisaient des bâtiments rapides et maniables, spécialement conçus pour la course. Les charpentiers de marine bayonnais étaient réputés dans toute l'Europe pour leur maîtrise technique. Ils utilisaient le chêne des forêts pyrénéennes et le pin des Landes pour construire des coques à la fois solides et légères, capables de résister aux tempêtes du golfe de Gascogne.",
+          "p6": "Bayonne a aussi donné son nom à une invention militaire célèbre : la baïonnette. Selon la tradition, c'est dans les ateliers d'armuriers de la ville qu'on aurait eu l'idée de fixer une lame au bout d'un fusil au XVIIe siècle. Que cette attribution soit historiquement exacte ou partiellement légendaire, elle témoigne du rôle de Bayonne comme ville d'innovation militaire et maritime, un carrefour où le génie technique basque s'appliquait aussi bien à la mer qu'à la guerre.",
+          "h4": "L'héritage maritime visible aujourd'hui dans la ville",
+          "p7": "Bayonne conserve de nombreuses traces de son passé corsaire. En vous promenant dans le Petit Bayonne, vous passerez devant d'anciennes demeures d'armateurs dont les façades ornées de sculptures marines rappellent la richesse passée. Les quais de la Nive, où s'amarraient jadis les navires corsaires chargés de butin, sont aujourd'hui bordés de restaurants et de bars colorés. Le musée Basque consacre plusieurs salles à l'histoire maritime, avec des maquettes de navires, des cartes anciennes et des objets récupérés lors de fouilles sous-marines.",
+          "p8": "Lors de nos visites guidées de Bayonne, nous vous emmenons sur les traces de ces corsaires légendaires. Du port de plaisance aux ruelles du Petit Bayonne, en passant par les remparts de Vauban qui protégeaient la ville des attaques ennemies, le parcours est une plongée dans l'histoire maritime d'une ville qui fut, pendant des siècles, l'un des ports les plus importants et les plus redoutés de la côte atlantique française."
+        }
+      },
+      "euskara": {
+        "title": "L'Euskara : La Langue la Plus Mystérieuse d'Europe et Son Combat pour Survivre",
+        "excerpt": "Seule langue pré-indo-européenne encore parlée en Europe, l'euskara défie les linguistes depuis des siècles. Plongée dans l'un des plus grands mystères du continent.",
+        "content": {
+          "h1": "Une langue sans famille : le mystère des origines",
+          "p1": "L'euskara, la langue basque, est un cas unique dans le paysage linguistique mondial. Contrairement au français, à l'espagnol ou à l'anglais, qui appartiennent tous à la grande famille indo-européenne, le basque n'est apparenté à aucune autre langue connue. Les linguistes ont tenté pendant des siècles de lui trouver des cousins — en le comparant au géorgien, au berbère, aux langues sibériennes — mais toutes ces hypothèses se sont révélées infondées. L'euskara est ce qu'on appelle un isolat linguistique, une langue seule au monde.",
+          "p2": "Cette solitude linguistique a engendré les théories les plus fascinantes. Certains chercheurs estiment que le basque serait le dernier vestige des langues parlées en Europe avant l'arrivée des peuples indo-européens, il y a environ 5 000 ans. L'euskara serait ainsi une fenêtre ouverte sur la préhistoire linguistique de notre continent, un fossile vivant qui nous connecte aux populations du Néolithique, voire du Paléolithique. Cette hypothèse, bien que difficile à prouver, confère au basque une aura de mystère qui fascine les linguistes du monde entier.",
+          "h2": "Des mots basques cachés dans le français",
+          "p3": "Sans le savoir, vous utilisez probablement des mots d'origine basque au quotidien. Le mot bizarre, par exemple, viendrait du basque bizar, qui signifie barbe — les soldats espagnols du XVIe siècle trouvant étranges ces Basques barbus. Le mot anchois dériverait du basque antxoa. Silhouette, bien qu'attribué au ministre Étienne de Silhouette, porte un patronyme d'origine basque, zilueta. Le mot chamarre viendrait de zamarra, et gauche de esker.",
+          "p4": "Ces emprunts linguistiques témoignent de l'influence historique des Basques sur les cultures voisines. Les marins basques, présents sur tous les océans depuis le Moyen Âge, ont également enrichi le vocabulaire maritime de nombreuses langues. Le mot bâbord viendrait du basque ba borda (le côté de l'eau), et le mot calfater aurait des racines euskariennes. Même si certaines de ces étymologies sont débattues par les spécialistes, elles illustrent la richesse d'une langue qui a irrigué souterrainement les langues européennes pendant des millénaires.",
+          "h3": "Les ikastola : l'école au service de la survie linguistique",
+          "p5": "Au XXe siècle, l'euskara a failli disparaître. Interdit sous le régime de Franco en Espagne, marginalisé en France par la politique d'unification linguistique, le basque a vu le nombre de ses locuteurs chuter dramatiquement. C'est dans ce contexte que sont nées les ikastola, des écoles où l'enseignement se fait entièrement en basque. La première ikastola du Pays Basque nord a ouvert ses portes en 1969 à Arcangues, dans une ferme, avec une poignée d'élèves. Aujourd'hui, le réseau Seaska compte des milliers d'élèves.",
+          "p6": "Les ikastola ne sont pas de simples écoles de langue : elles sont le fer de lance d'un mouvement de renaissance culturelle. En immersion totale, les enfants apprennent les mathématiques, les sciences et l'histoire en euskara. Les résultats sont remarquables : les élèves issus des ikastola sont parfaitement bilingues et obtiennent d'excellents résultats scolaires. Ce modèle éducatif, né de la résistance culturelle, est aujourd'hui reconnu par l'Éducation nationale et sert de référence pour d'autres langues régionales en France.",
+          "h4": "Les panneaux bilingues : quand la signalétique raconte l'histoire",
+          "p7": "Si vous roulez au Pays Basque, vous remarquerez que les panneaux routiers sont bilingues. Bayonne est aussi Baiona, Biarritz est Miarritze, Saint-Jean-de-Luz est Donibane Lohizune. Ces noms basques ne sont pas de simples traductions : ils sont les noms originels, souvent bien plus anciens que leurs équivalents français. Baiona, par exemple, viendrait de bai ona, la bonne rivière. Miarritze ferait référence aux myrtilles (mirtze) qui poussaient sur les collines de la ville.",
+          "p8": "La signalétique bilingue est un acquis relativement récent, obtenu après des décennies de militantisme linguistique. Elle représente bien plus qu'un outil pratique : c'est une reconnaissance officielle de l'identité basque dans l'espace public. Pour les locuteurs de l'euskara, voir leur langue sur les panneaux, les devantures de magasins et les documents officiels est une source de fierté et de motivation pour continuer à la transmettre aux générations futures."
+        }
+      },
+      "surf": {
+        "title": "Biarritz, Berceau du Surf en Europe : L'Histoire d'une Révolution Culturelle",
+        "excerpt": "En 1957, un scénariste américain apporte la première planche de surf à Biarritz. Ce geste va transformer un village de pêcheurs en capitale européenne de la glisse.",
+        "content": {
+          "h1": "1957 : l'année où tout a commencé",
+          "p1": "L'histoire du surf en Europe commence par une anecdote de cinéma. En 1957, le scénariste américain Peter Viertel est à Biarritz pour le tournage du film Le Soleil se lève aussi, adaptation d'Hemingway. En regardant les vagues de la Côte des Basques depuis sa chambre d'hôtel, il fait venir une planche de surf de Californie. Le jour où il se met à l'eau, les Biarrots le regardent avec un mélange de stupéfaction et de fascination. Sans le savoir, Viertel vient d'écrire le premier chapitre de l'histoire du surf européen.",
+          "p2": "La graine est semée. Quelques locaux enthousiastes se procurent des planches et commencent à explorer les vagues de la côte basque. Parmi les pionniers, Joël et Arnaud de Rosnay, Georges Hennebutte et Jacky Rott fondent le Waikiki Surf Club en 1959, rebaptisé peu après Surf Club de France. C'est le premier club de surf d'Europe. Les premières compétitions sont organisées, les premiers surfeurs français se forment, et Biarritz devient le point de référence pour tous les amateurs de glisse du Vieux Continent.",
+          "h2": "La Côte des Basques : la vague qui a tout changé",
+          "p3": "La plage de la Côte des Basques n'est pas n'importe quelle plage. Protégée par les falaises, orientée plein ouest face à l'Atlantique, elle reçoit une houle longue et régulière qui produit des vagues idéales pour l'apprentissage et la progression. C'est sur cette plage que les premiers surfeurs européens ont fait leurs armes, et c'est ici que des générations de surfeurs ont découvert la glisse. La Côte des Basques est au surf européen ce que Malibu est au surf américain : un lieu fondateur, presque sacré.",
+          "p4": "Aujourd'hui encore, la Côte des Basques reste l'un des spots les plus fréquentés de la côte. Mais la côte basque offre une diversité de vagues remarquable. La Grande Plage de Biarritz, plus exposée, offre des vagues puissantes les jours de grosse houle. Les Cavaliers à Anglet proposent des tubes spectaculaires. Guéthary, plus au sud, accueille le big wave riding avec la célèbre vague de Parlementia. Et Mundaka, de l'autre côté de la frontière espagnole, est considérée comme l'une des meilleures gauches du monde.",
+          "h3": "Le surf comme identité de Biarritz",
+          "p5": "En moins de soixante-dix ans, le surf a profondément transformé l'identité de Biarritz. La ville qui était connue comme la station balnéaire des têtes couronnées — Napoléon III et l'impératrice Eugénie y avaient leur résidence d'été — s'est réinventée comme la capitale européenne du surf. Les deux identités coexistent aujourd'hui dans un mélange unique : on peut surfertôt le matin puis prendre un thé à l'Hôtel du Palais, passer d'une boutique de surf à une galerie d'art contemporain.",
+          "p6": "Cette culture surf a aussi généré toute une économie. Les shapers locaux — artisans qui fabriquent les planches à la main — sont reconnus dans le monde entier. Des marques de surf comme Rip Curl et Quiksilver ont installé leur siège européen dans la région. Les écoles de surf pullulent, et chaque été, des dizaines de milliers de touristes viennent spécifiquement pour apprendre à surfer. Le surf a transformé la démographie de Biarritz, attirant une population jeune, internationale et créative.",
+          "h4": "Les spots secrets que seuls les locaux connaissent",
+          "p7": "Si les plages principales sont connues de tous les surfeurs, la côte basque recèle aussi des spots secrets, accessibles uniquement à pied ou par des chemins escarpés. Ces criques cachées, dont les locaux gardent jalousement l'emplacement, offrent des vagues de qualité exceptionnelle dans un cadre sauvage et préservé. Les surfer locaux entretiennent un rapport quasi-mystique avec ces lieux, et il est de bon ton de ne pas les divulguer trop facilement aux visiteurs de passage.",
+          "p8": "Lors de nos visites guidées de Biarritz, nous vous racontons cette épopée du surf qui a transformé la ville. De la Grande Plage à la Côte des Basques, en passant par le Rocher de la Vierge d'où l'on peut observer les surfeurs en contrebas, le parcours retrace l'histoire d'une révolution culturelle qui a fait de Biarritz l'une des villes les plus cool et les plus dynamiques de la côte atlantique."
+        }
+      },
+      "gastronomie": {
+        "title": "La Gastronomie Basque Décryptée : Ce Que les Guides Touristiques Ne Vous Disent Pas",
+        "excerpt": "Au-delà des pintxos et du jambon de Bayonne, la cuisine basque recèle des trésors méconnus. Voyage au cœur d'une gastronomie qui rivalise avec les plus grandes.",
+        "content": {
+          "h1": "Pourquoi le Pays Basque est un paradis gastronomique",
+          "p1": "Le Pays Basque possède la plus forte concentration d'étoiles Michelin au monde rapportée au nombre d'habitants. Ce n'est pas un hasard. La gastronomie basque bénéficie d'un terroir exceptionnel : l'océan Atlantique pour les poissons et fruits de mer, les montagnes pyrénéennes pour les fromages et l'agneau, les vallées fertiles pour les légumes et les fruits, et un climat doux qui permet une agriculture diversifiée. À cela s'ajoute une culture culinaire profondément ancrée où cuisiner n'est pas une corvée mais un art de vivre.",
+          "p2": "Les txoko, ces sociétés gastronomiques traditionnellement masculines où l'on se retrouve pour cuisiner entre amis, sont l'illustration parfaite de cette passion culinaire. Il en existe des centaines au Pays Basque, et chacune possède sa cuisine équipée, ses recettes secrètes et ses rituels. Les membres cuisinent eux-mêmes, dans un esprit de partage et de convivialité. C'est dans ces txoko que se transmettent les recettes les plus authentiques de la cuisine basque, de génération en génération.",
+          "h2": "L'axoa, le ttoro et les plats que vous devez goûter",
+          "p3": "L'axoa d'Espelette est l'un des plats les plus typiques et les plus méconnus de la cuisine basque. Ce ragoût de veau haché (ou d'épaule de veau émincée) cuisiné avec des oignons, des poivrons et du piment d'Espelette est un concentré de saveurs du terroir. Servi avec du riz ou des pommes de terre, c'est le plat du dimanche par excellence dans les familles basques. Chaque cuisinière a sa recette, chaque version est unique, et c'est dans les auberges de village qu'on le déguste dans sa forme la plus authentique.",
+          "p4": "Le ttoro, la soupe de poisson de Saint-Jean-de-Luz, est un autre trésor de la cuisine basque. Contrairement à la bouillabaisse marseillaise, le ttoro utilise les poissons de l'Atlantique — merlu, lotte, congre, langoustines — cuits dans un bouillon relevé au piment d'Espelette. C'était à l'origine le plat des pêcheurs, préparé à bord des bateaux avec les prises du jour. Aujourd'hui, les meilleurs restaurants de la côte en proposent des versions raffinées qui subliment cette recette populaire.",
+          "h3": "Le vrai gâteau basque : crème ou cerise noire ?",
+          "p5": "Le gâteau basque est probablement le dessert le plus emblématique de la région, mais peu de gens connaissent son histoire et sa véritable recette. Né à Cambo-les-Bains au XVIIIe siècle, le gâteau basque original était fourré à la confiture de cerises noires d'Itxassou. La version à la crème pâtissière est apparue plus tard. Aujourd'hui, le débat fait rage : crème ou cerise ? Les puristes défendent la cerise noire comme la seule garniture authentique, tandis que la majorité des Basques préfèrent la crème.",
+          "p6": "Un bon gâteau basque se reconnaît à sa croûte dorée et croustillante, à la richesse de sa pâte sablée parfumée au rhum et à la vanille, et à la générosité de sa garniture. Il doit être moelleux à l'intérieur et croquant à l'extérieur. Méfiez-vous des versions industrielles vendues en supermarché : le vrai gâteau basque se trouve dans les pâtisseries artisanales des villages, où il est encore préparé chaque matin selon des recettes transmises de mère en fille.",
+          "h4": "L'Ossau-Iraty et la transhumance",
+          "p7": "L'Ossau-Iraty est le seul fromage de brebis français à bénéficier d'une Appellation d'Origine Protégée. Fabriqué dans les montagnes du Pays Basque et du Béarn, il est issu du lait de brebis de races locales — Manech tête rousse et Manech tête noire — élevées en plein air. Au printemps, les bergers pratiquent encore la transhumance, emmenant leurs troupeaux dans les estives d'altitude, ces pâturages de montagne où l'herbe parfumée donne au fromage ses arômes incomparables.",
+          "p8": "La dégustation traditionnelle de l'Ossau-Iraty est un rituel à part entière. On le sert avec de la confiture de cerises noires d'Itxassou — ce mariage sucré-salé est une expérience gustative unique qui surprend et enchante. Accompagné d'un verre d'Irouléguy, le vin rouge des vignobles basques, ou d'un cidre de pommes locales, l'Ossau-Iraty résume à lui seul la richesse du terroir basque. C'est un fromage qui raconte l'histoire des bergers, des montagnes et d'un savoir-faire millénaire."
+        }
+      },
+      "fetes": {
+        "title": "Les Fêtes de Bayonne : Anatomie de la Plus Grande Fête Populaire de France",
+        "excerpt": "Chaque été, Bayonne se transforme pendant cinq jours en une gigantesque fête populaire. Histoire, traditions et secrets d'un événement unique au monde.",
+        "content": {
+          "h1": "1932 : la naissance d'une tradition inspirée de Pampelune",
+          "p1": "Les Fêtes de Bayonne sont nées en 1932, inspirées par les célèbres Sanfermines de Pampelune. Un groupe de Bayonnais, après avoir assisté aux fêtes navarraises de l'autre côté de la frontière, décide de créer un événement similaire dans leur ville. Le premier mot d'ordre est simple : blanc et rouge, comme à Pampelune, mais avec une identité bayonnaise. La première édition attire quelques milliers de participants. Aujourd'hui, les Fêtes de Bayonne rassemblent plus d'un million de visiteurs sur cinq jours, ce qui en fait la plus grande fête populaire de France.",
+          "p2": "Ce qui distingue les Fêtes de Bayonne des Sanfermines, c'est l'absence de corrida avec mise à mort. Si des spectacles taurins existent, ce sont essentiellement des courses de vaches — des vachettes lâchées dans les arènes ou dans les rues — où l'animal n'est jamais blessé. Cette particularité reflète la sensibilité basque et a permis aux fêtes de se moderniser tout en conservant leur esprit populaire et festif.",
+          "h2": "Le Roi Léon et l'ouverture des festivités",
+          "p3": "Le coup d'envoi des fêtes est donné par le Roi Léon, un personnage emblématique dont la figure géante domine la place de la Liberté. Le premier jeudi d'août, à 22 heures, le Roi Léon lance les clés de la ville depuis le balcon de la mairie, déclarant officiellement l'ouverture des festivités. À ce signal, la foule en blanc et rouge explose de joie, les bandas entament leurs premières notes, et Bayonne bascule dans cinq jours de fête ininterrompue.",
+          "p4": "L'origine du Roi Léon est elle-même une histoire savoureuse. Le personnage est né d'une chanson populaire bayonnaise dont le refrain entraînant est devenu l'hymne officieux des fêtes. Au fil des décennies, le Roi Léon est devenu un véritable symbole, une figure tutélaire bienveillante qui préside à la liesse populaire. Son effigie en papier mâché, renouvelée chaque année, est brûlée le dernier soir lors de la clôture, dans un rituel qui symbolise la fin de la fête et l'attente de l'année suivante.",
+          "h3": "Les bandas : l'âme musicale des fêtes",
+          "p5": "Les fêtes de Bayonne sans musique seraient comme la pelote sans fronton. Les bandas, ces orchestres de rue composés de cuivres, de percussions et parfois de chanteurs, sont l'âme sonore de l'événement. Il en existe des dizaines, venues de tout le Sud-Ouest, et elles défilent dans les rues du matin au soir, entraînant les festayres dans des farandoles joyeuses. Chaque banda a son répertoire, son style et ses fans, et les plus célèbres sont de véritables stars locales.",
+          "p6": "La musique des bandas est un mélange étonnant de paso doble espagnol, de musique traditionnelle basque et de variétés populaires. Les musiciens jouent souvent par cœur, dans un joyeux désordre organisé qui est la marque de fabrique de ces orchestres ambulants. L'atmosphère qu'ils créent est unique : imaginez des centaines de personnes dansant dans les ruelles étroites du Petit Bayonne, au son des trompettes et des tubas, sous les guirlandes colorées tendues entre les maisons à colombages.",
+          "h4": "Le blanc et rouge : un code vestimentaire sacré",
+          "p7": "Porter du blanc et du rouge pendant les Fêtes de Bayonne n'est pas une option, c'est un impératif. Le pantalon blanc, la chemise blanche, le foulard rouge noué autour du cou et la ceinture rouge à la taille composent la tenue officielle du festayre. Ce code vestimentaire, directement hérité des Sanfermines, crée une uniformité visuelle saisissante : vue d'en haut, la foule des fêtes est une mer blanche ponctuée de touches rouges, un spectacle à couper le souffle.",
+          "p8": "Il est fortement déconseillé de se rendre aux fêtes sans respecter ce code vestimentaire. Non seulement vous vous distingueriez immédiatement de la foule, mais vous manqueriez aussi l'expérience de cette communion collective que le blanc et rouge rendent possible. Le foulard rouge, en particulier, est bien plus qu'un accessoire : c'est un symbole d'appartenance, un signe que vous participez pleinement à l'esprit des fêtes."
+        }
+      },
+      "sentiers": {
+        "title": "Sentiers Côtiers du Pays Basque : Les Plus Belles Randonnées Face à l'Océan",
+        "excerpt": "De Bidart à Hendaye, le sentier du littoral basque offre certaines des plus belles randonnées de France. Falaises vertigineuses, criques secrètes et panoramas à couper le souffle.",
+        "content": {
+          "h1": "Le sentier du littoral : un trésor de la côte basque",
+          "p1": "Le sentier du littoral basque, qui serpente le long des falaises entre Bidart et Hendaye, est l'une des plus belles randonnées côtières de France. Sur environ 25 kilomètres, le chemin offre des vues à couper le souffle sur l'océan Atlantique, les Pyrénées espagnoles et la côte sauvage. Contrairement aux sentiers côtiers bretons ou normands, le littoral basque se distingue par la verticalité de ses falaises, la puissance de ses vagues et la douceur de son climat qui permet de randonner presque toute l'année.",
+          "p2": "Le parcours peut se faire en une journée pour les marcheurs expérimentés, ou en plusieurs étapes pour profiter pleinement de chaque tronçon. Chaque section possède son caractère : les falaises herbeuses de Bidart, les plages de Guéthary, la corniche spectaculaire entre Saint-Jean-de-Luz et Hendaye. Le sentier est balisé et entretenu, mais certains passages exigent une bonne condition physique et des chaussures adaptées. Les récompenses sont à la hauteur de l'effort : des panoramas grandioses à chaque détour du chemin.",
+          "h2": "La corniche basque : le tronçon le plus spectaculaire",
+          "p3": "Entre Ciboure et Hendaye, la corniche basque est le joyau du sentier littoral. Les falaises plongent à la verticale dans l'océan, sculptées par des millions d'années d'érosion qui ont créé des formations géologiques extraordinaires. Les flysch, ces strates de roche sédimentaire inclinées qui émergent de la mer comme les touches d'un piano géant, sont un spectacle géologique unique en Europe. Ce paysage lunaire, battu par les vagues, fascine autant les géologues que les photographes.",
+          "p4": "La corniche abrite aussi le domaine d'Abbadia, un espace naturel protégé de 65 hectares qui surplombe l'océan. Le château d'Abbadia, construit au XIXe siècle par Viollet-le-Duc pour le scientifique Antoine d'Abbadie, domine les falaises de sa silhouette néo-gothique. La randonnée autour du domaine est un must : les prairies fleuries au printemps, les vaches Highland au pelage roux et les panoramas sur la baie de Txingudi composent un tableau d'une beauté saisissante.",
+          "h3": "La Rhune : le sommet mythique du Pays Basque",
+          "p5": "Si la randonnée côtière ne vous suffit pas, la montée à la Rhune (905 m) offre une expérience de marche tout à fait différente. Ce sommet emblématique, visible depuis presque toute la côte basque, peut être gravi à pied en environ deux heures depuis le col de Saint-Ignace. Le sentier traverse des landes de bruyère et d'ajoncs, des pâturages où paissent les pottoks — ces petits chevaux sauvages basques — et des forêts de chênes rabougris par le vent.",
+          "p6": "Le sommet de la Rhune offre un panorama circulaire exceptionnel : d'un côté, la côte basque et l'océan Atlantique jusqu'à l'horizon ; de l'autre, la chaîne des Pyrénées et les montagnes de Navarre. Par temps clair, on peut voir Bayonne, Biarritz, San Sebastián et même les sommets du Béarn. Pour ceux qui préfèrent ménager leurs jambes, le petit train à crémaillère de la Rhune, en service depuis 1924, effectue la montée en 35 minutes dans de vieux wagons en bois qui ajoutent au charme de l'excursion.",
+          "h4": "Criques secrètes et faune sauvage",
+          "p7": "Le long du sentier côtier, quelques criques secrètes sont accessibles uniquement à pied par des sentiers escarpés. Ces petites plages sauvages, coincées entre les falaises, offrent une intimité rare et une eau cristalline. L'une des plus belles est la plage de Senix, entre Guéthary et Saint-Jean-de-Luz, accessible par un escalier taillé dans la roche. En été, c'est un havre de paix loin des plages bondées, un endroit où l'on peut nager dans une eau turquoise en quasi-solitude.",
+          "p8": "La côte basque est aussi un refuge pour la faune sauvage. Les falaises abritent des colonies de goélands et de cormorans, et en automne, le col de migration de la Rhune et d'Organbidexka sont parmi les meilleurs spots d'Europe pour observer le passage des oiseaux migrateurs. En mer, les dauphins sont fréquents, et des campagnes d'observation permettent parfois d'apercevoir des baleines. Un rappel que ce littoral préservé est un écosystème vivant d'une richesse remarquable."
+        }
+      },
+      "cathedrale": {
+        "title": "La Cathédrale de Bayonne : Trésor Gothique Méconnu et Ses Secrets Bien Gardés",
+        "excerpt": "Patrimoine UNESCO souvent éclipsé par Notre-Dame de Paris, la cathédrale Sainte-Marie de Bayonne cache des trésors architecturaux et des secrets séculaires.",
+        "content": {
+          "h1": "Trois siècles de construction pour un chef-d'œuvre",
+          "p1": "La cathédrale Sainte-Marie de Bayonne est un joyau de l'architecture gothique dont la construction s'est étalée sur trois siècles, du XIIIe au XVIe siècle. Inscrite au patrimoine mondial de l'UNESCO au titre des chemins de Saint-Jacques-de-Compostelle, elle est l'un des plus beaux édifices religieux du Sud-Ouest de la France. Pourtant, elle reste étonnamment méconnue, éclipsée par les grandes cathédrales du Nord. C'est justement ce qui fait son charme : vous pouvez y admirer des merveilles architecturales dans un calme que Notre-Dame de Paris ne connaît plus depuis longtemps.",
+          "p2": "La construction débute vers 1213, après un incendie qui détruit l'ancien édifice roman. Les architectes s'inspirent des cathédrales champenoises et bourguignonnes pour élever un vaisseau de pierre lumineux et élancé. Les travaux se poursuivent pendant des générations, chaque siècle apportant son style : le chœur est du gothique rayonnant pur, la nef est du gothique flamboyant, et les flèches, reconstruites au XIXe siècle par l'architecte Boeswillwald, s'élèvent à 85 mètres au-dessus de la ville.",
+          "h2": "Le cloître : l'un des plus remarquables de France",
+          "p3": "Le cloître de la cathédrale de Bayonne est l'un des plus grands et des mieux conservés de France. Ses galeries gothiques, construites aux XIIIe et XIVe siècles, entourent un jardin paisible où le temps semble suspendu. Les voûtes d'ogives, les colonnes sculptées et les ouvertures en arc brisé composent un ensemble architectural d'une élégance rare. Le cloître a longtemps servi de cimetière aux chanoines et aux notables de la ville, et des pierres tombales anciennes sont encore visibles dans le sol.",
+          "p4": "Ce qui rend le cloître de Bayonne particulièrement fascinant, ce sont ses détails sculptés. Les clés de voûte représentent des scènes bibliques, des animaux fantastiques et des visages expressifs qui témoignent de l'imagination et du talent des sculpteurs médiévaux. Les chapiteaux des colonnes sont ornés de feuillages, de figures humaines et de créatures mythologiques. Prendre le temps de lever les yeux et d'observer ces détails, c'est voyager dans l'imaginaire du Moyen Âge.",
+          "h3": "Les vitraux Renaissance et la porte du heurtoir",
+          "p5": "Les vitraux de la cathédrale sont un trésor souvent ignoré des visiteurs pressés. Les plus anciens datent du XVIe siècle et représentent des scènes de la vie de la Vierge et des saints dans des couleurs d'une vivacité étonnante malgré les siècles. La lumière qui filtre à travers ces verrières colore la pierre blonde de la nef de reflets bleus, rouges et dorés, créant une atmosphère de recueillement et de beauté qui justifie à elle seule la visite.",
+          "p6": "La porte du heurtoir, sur le flanc sud de la cathédrale, est liée à une tradition médiévale fascinante : le droit d'asile. Au Moyen Âge, tout fugitif qui réussissait à saisir le heurtoir de cette porte bénéficiait de la protection de l'Église et ne pouvait être arrêté. Ce droit d'asile, pris très au sérieux dans le Bayonne médiéval, témoigne du pouvoir considérable de l'Église et du rôle de la cathédrale comme lieu de refuge et de justice dans la société de l'époque.",
+          "h4": "Sur le chemin de Saint-Jacques-de-Compostelle",
+          "p7": "La cathédrale de Bayonne est une étape majeure sur le chemin de Saint-Jacques-de-Compostelle. Depuis le Moyen Âge, des milliers de pèlerins y font halte avant de franchir les Pyrénées par le col de Roncevaux pour rejoindre l'Espagne. Cette tradition se poursuit aujourd'hui, et vous croiserez souvent dans la cathédrale des marcheurs en tenue de randonnée, le bâton de pèlerin à la main, faisant tamponner leur credencial. La cathédrale conserve d'ailleurs plusieurs objets liés au pèlerinage, dont une statue de Saint Jacques en tenue de pèlerin.",
+          "p8": "Lors de nos visites guidées de Bayonne, la cathédrale est bien entendu un point d'arrêt incontournable. Nous vous faisons découvrir les détails que la plupart des visiteurs manquent : les clés de voûte sculptées, les inscriptions médiévales, les traces laissées par les siècles dans la pierre. C'est l'un des moments forts de la visite, un instant de calme et de beauté au cœur de la ville, où l'on mesure la profondeur historique de Bayonne."
+        }
+      },
+      "piment": {
+        "title": "Le Piment d'Espelette : Comment un Village Basque a Créé un Trésor Gastronomique",
+        "excerpt": "Arrivé du Mexique au XVIe siècle, le piment d'Espelette est devenu le premier piment à obtenir l'AOP en Europe. L'histoire d'un ingrédient devenu symbole du Pays Basque.",
+        "content": {
+          "h1": "Du Mexique au Pays Basque : le voyage du piment Gorria",
+          "p1": "Le piment d'Espelette n'est pas originaire du Pays Basque. Il est arrivé au XVIe siècle depuis le Mexique, rapporté par les navigateurs basques qui sillonnaient l'Atlantique. Ces marins intrépides, qui pêchaient la morue à Terre-Neuve et chassaient la baleine au large du Canada, avaient découvert le piment au contact des peuples amérindiens. Ils en rapportèrent des graines qui s'adaptèrent remarquablement au climat doux et humide du piémont pyrénéen, donnant naissance à une variété unique : le Gorria.",
+          "p2": "Le Gorria est un piment doux, parfumé et légèrement piquant, très différent des variétés mexicaines dont il descend. Le terroir basque — sol argilo-calcaire, climat atlantique, ensoleillement modéré — a transformé le piment au fil des siècles, lui conférant des arômes fruités et une chaleur mesurée qui en font un condiment d'exception. À l'origine, les Basques utilisaient le piment comme substitut au poivre noir, alors hors de prix. Il est rapidement devenu un ingrédient incontournable de la cuisine locale.",
+          "h2": "L'AOP : la reconnaissance d'un savoir-faire unique",
+          "p3": "En 2000, le piment d'Espelette est devenu le premier piment d'Europe à obtenir l'Appellation d'Origine Protégée. Cette reconnaissance officielle protège le nom, la méthode de production et la zone géographique de culture. Seuls les piments cultivés dans les dix communes de l'appellation — Espelette, Ainhoa, Cambo-les-Bains, Halsou, Itxassou, Jatxou, Larressore, Saint-Pée-sur-Nivelle, Souraïde et Ustaritz — peuvent porter le nom de piment d'Espelette.",
+          "p4": "L'obtention de l'AOP a été le fruit d'un long combat mené par les producteurs locaux pour protéger leur savoir-faire contre les imitations. Car le succès commercial du piment d'Espelette a suscité de nombreuses contrefaçons : des piments cultivés en Espagne, en Chine ou au Maroc étaient vendus sous le nom d'Espelette. L'AOP garantit au consommateur l'authenticité du produit et aux producteurs une juste rémunération de leur travail. C'est un modèle de protection du patrimoine gastronomique que d'autres régions envient.",
+          "h3": "Le séchage traditionnel : quand les façades deviennent rouges",
+          "p5": "Le spectacle le plus photogénique d'Espelette a lieu chaque automne, quand les guirlandes de piments rouges sont suspendues aux façades des maisons pour sécher. Cette tradition remonte à des siècles et reste la méthode de séchage la plus répandue. Les piments, récoltés à la main entre août et novembre, sont enfilés sur des cordes et accrochés sous les avancées de toit, exposés au soleil et au vent. Le séchage dure plusieurs semaines, pendant lesquelles les piments perdent leur humidité tout en concentrant leurs arômes.",
+          "p6": "Le passage du séchage au broyage est une étape cruciale. Les piments secs sont broyés en poudre dans des moulins spéciaux qui préservent leurs qualités aromatiques. La poudre d'Espelette, d'un rouge profond tirant sur l'orangé, possède un parfum fruité et légèrement fumé qui est sa signature. Contrairement au piment de Cayenne ou au paprika, le piment d'Espelette n'agresse pas le palais : sa chaleur est progressive, enveloppante, et laisse en bouche des arômes complexes de poivron grillé et de fruit sec.",
+          "h4": "La fête du piment et l'impact économique sur le village",
+          "p7": "Chaque dernier week-end d'octobre, Espelette célèbre la fête du piment. Pendant deux jours, le village se transforme en un grand marché à ciel ouvert où producteurs, artisans et chefs cuisiniers célèbrent le piment sous toutes ses formes. Des confréries en costume traditionnel défilent dans les rues, des concours de cuisine sont organisés, et l'on peut déguster des dizaines de produits à base de piment : chocolat au piment, confiture, gelée, huile, moutarde et même bière au piment d'Espelette.",
+          "p8": "Le piment a transformé l'économie d'Espelette et de sa région. Ce qui n'était qu'un modeste village agricole est devenu une destination touristique majeure du Pays Basque, attirant des centaines de milliers de visiteurs chaque année. Les producteurs de piment, qui étaient une poignée il y a trente ans, sont aujourd'hui plus de 200, et la filière génère des millions d'euros de chiffre d'affaires. Le piment d'Espelette est la preuve qu'un produit artisanal, protégé par une AOP et valorisé par le tourisme, peut devenir un moteur de développement rural durable."
+        }
+      }
+    }
+  }
+}

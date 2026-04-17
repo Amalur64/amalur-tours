@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "title": "Amalur Tours — Guided Tours in the Basque Country",
+    "description": "Discover Bayonne and Biarritz with a passionate local guide. Walking tours in English, French and Spanish. Book your guided tour in the Basque Country."
+  },
+  "nav": {
+    "home": "Home",
+    "tours": "Our Tours",
+    "about": "About",
+    "contact": "Contact",
+    "groups": "Groups",
+    "blog": "Blog",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Experience the Basque Country like never before",
+    "subtitle": "Authentic guided tours in Bayonne and Biarritz with a passionate local guide",
+    "cta": "Book a Tour",
+    "discover": "Discover our tours"
+  },
+  "tours": {
+    "title": "Our Tours",
+    "subtitle": "Choose your adventure in the heart of the Basque Country",
+    "bayonne": {
+      "title": "Bayonne Walking Tour",
+      "description": "Dive into Bayonne's thousand-year history: Gothic cathedral, Vauban ramparts, Petit Bayonne alleys, and Basque chocolate. English tour at 9:30 AM.",
+      "duration": "~1h30",
+      "meeting": "Meeting point shared after booking",
+      "schedule_info": "9:30 AM — English tour"
+    },
+    "biarritz": {
+      "title": "Biarritz Walking Tour",
+      "description": "From legendary beaches to the Rock of the Virgin, discover how a small fishing village became royalty's favorite seaside resort. English tour at 11:45 AM.",
+      "duration": "~1h30",
+      "meeting": "Meeting point shared after booking",
+      "schedule_info": "11:45 AM — English tour"
+    },
+    "combo": {
+      "title": "Bayonne + Biarritz Combo",
+      "description": "The full day experience to discover both gems of the Basque Country. Bayonne at 9:30 AM, then Biarritz, with transport included.",
+      "duration": "~4h",
+      "meeting": "Meeting point shared after booking",
+      "schedule_info": "9:30 AM — Bayonne then Biarritz"
+    },
+    "from": "From",
+    "perPerson": "/ person",
+    "bookNow": "Book Now",
+    "details": "Learn More",
+    "included": "What's included",
+    "notIncluded": "Not included",
+    "meetingPoint": "Meeting point",
+    "schedule": "Schedule",
+    "languages": "Available languages",
+    "groupSize": "Group size",
+    "maxPersons": "12 people max.",
+    "allLanguages": "French, English, Spanish",
+    "freeChildren": "Free for children (under 12)",
+    "halfTeen": "5€ for teenagers (12-17)",
+    "pricing": "Pricing",
+    "adults": "Adults"
+  },
+  "booking": {
+    "title": "Book this tour",
+    "selectDate": "Select a date",
+    "selectTime": "Select a time",
+    "adults": "Adults",
+    "teens": "Teenagers (12-17)",
+    "children": "Children (under 12)",
+    "total": "Total",
+    "free": "Free",
+    "pay": "Pay",
+    "processing": "Processing...",
+    "noSlots": "No slots available for this date",
+    "spotsLeft": "spots left",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "perPerson": "/ person"
+  },
+  "about": {
+    "title": "About Amalur Tours",
+    "subtitle": "Amalur means \"Mother Earth\" in Basque",
+    "story": "Born and raised in the Basque Country, I've always been passionate about the richness of this unique land. After years of sharing its secrets with loved ones, I decided to make it my calling: showing the authentic Basque Country to those who want to go beyond the beaten path.",
+    "philosophy": "My philosophy is simple: small groups, true stories, and a genuine connection with Basque culture. Every tour is an invitation to see the Basque Country through a local's eyes.",
+    "values": {
+      "title": "Our Values",
+      "authentic": {
+        "title": "Authenticity",
+        "description": "True stories, hidden gems, a local perspective"
+      },
+      "sustainable": {
+        "title": "Responsible Tourism",
+        "description": "Small groups, local economy, heritage respect"
+      },
+      "passionate": {
+        "title": "Passion",
+        "description": "Every tour is driven by a genuine love for this land"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Why Amalur Tours?",
+    "local": {
+      "title": "Local Guide",
+      "description": "Born in the Basque Country, I know every corner and every story"
+    },
+    "languages": {
+      "title": "3 Languages",
+      "description": "Tours available in French, English and Spanish"
+    },
+    "small": {
+      "title": "Small Groups",
+      "description": "12 people maximum for a personalized experience"
+    },
+    "authentic": {
+      "title": "100% Authentic",
+      "description": "No mass tourism, only genuine experiences"
+    }
+  },
+  "testimonials": {
+    "title": "What our visitors say"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question? Don't hesitate to reach out",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "language": "Preferred language",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you shortly.",
+    "error": "An error occurred. Please try again.",
+    "whatsapp": "Or contact us on WhatsApp",
+    "placeholder": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "message": "Your message..."
+    }
+  },
+  "groups": {
+    "title": "Tours for Groups & Agencies",
+    "subtitle": "Tailor-made experiences for your groups",
+    "description": "Whether you're a travel agency, a corporate team, or a group of friends, we create private tours tailored to your needs.",
+    "features": {
+      "private": "100% private tours",
+      "custom": "Custom itineraries",
+      "billing": "Professional invoicing",
+      "multilingual": "Trilingual guide FR/EN/ES"
+    },
+    "form": {
+      "company": "Agency / Company name",
+      "groupType": "Group type",
+      "groupSize": "Estimated number of people",
+      "dates": "Preferred dates",
+      "needs": "Special requirements",
+      "submit": "Request a Quote"
+    }
+  },
+  "blog": {
+    "subtitle": "Explore the Basque Country through our articles: culture, food, history and nature",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "ctaTitle": "Want to experience all of this in person?",
+    "ctaText": "Join us for an authentic guided tour in the heart of the Basque Country",
+    "ctaButton": "View our tours",
+    "categories": {
+      "culture": "Culture",
+      "gastronomie": "Food & Drink",
+      "nature": "Nature",
+      "histoire": "History",
+      "pratique": "Practical"
+    },
+    "articles": {
+      "chocolat": {
+        "title": "The Secrets of Bayonne Chocolate: A Story That Goes Back to the 16th Century",
+        "excerpt": "How Bayonne became the chocolate capital of France, long before Paris. A tale of refugees, cacao, and centuries-old craftsmanship.",
+        "content": {
+          "h1": "When the Sephardic Jews Brought Cacao to Bayonne",
+          "p1": "In 1492, Spain expelled its Jewish communities. Among the refugees fleeing the Inquisition, Sephardic families crossed the Pyrenees and settled in Bayonne, specifically in the Saint-Esprit quarter on the right bank of the Adour River. These exiles carried with them an extraordinary skill: the art of transforming cacao beans into chocolate. They had learned this craft through contact with Spanish explorers returning from the New World, and by the early 17th century, Bayonne had become the very first city in France to work with chocolate.",
+          "p2": "The Saint-Esprit quarter quickly transformed into a veritable cacao laboratory. Sephardic artisans set up their workshops there, perfecting their recipes over the decades. At a time when Paris had yet to discover this delicacy, the people of Bayonne were already savoring thick, aromatic hot chocolate. Local chocolate guilds, jealous of this success, repeatedly tried to ban Jewish families from the chocolate trade, but they never managed to do so permanently.",
+          "h2": "The Saint-Esprit Quarter: The Forgotten Birthplace of French Chocolate",
+          "p3": "To this day, the Saint-Esprit quarter still bears traces of this remarkable history. If you stroll down Rue Pannecau or wander near the synagogue, you are literally walking in the footsteps of France's first chocolatiers. The buildings may have changed, but the spirit remains. Each year, the city celebrates this heritage during the Chocolate Festival, an event that draws thousands of visitors and reminds everyone that Bayonne was a true pioneer in the art of chocolate.",
+          "p4": "What sets Bayonne chocolate apart is above all its artisanal production method. Unlike the modern chocolate industry, which prioritizes speed and standardization, Bayonne's master chocolatiers long worked the cacao by hand on granite millstones heated over wood fires. This ancient technique, inherited from the Sephardic community, preserved all the subtle aromas of the cacao bean, producing a chocolate with a slightly grainy texture and an incomparably rich flavor.",
+          "h3": "Unique Specialties You Won't Find Anywhere Else",
+          "p5": "Bayonne chocolate has its own exclusive specialties, found nowhere else in France. The mouchou, for instance, is a small square of dark chocolate infused with Espelette pepper — a bold pairing of two Basque Country treasures that surprises and delights even the most discerning palates. Then there are the kanougas, soft caramels coated in chocolate that melt in your mouth, their recipe jealously guarded by Bayonne's chocolate houses for generations.",
+          "p6": "Among other must-try specialties, you will find dark chocolate bars with Bearnese walnut pieces, truffles made with Salies-de-Bearn sea salt, and chocolate bites filled with Itxassou black cherry jam. Each creation tells a story, each flavor is a bridge between Basque traditions and the heritage of the Sephardic master chocolatiers. It is this strong identity that makes Bayonne chocolate far more than just a sweet treat — it is a living heritage.",
+          "h4": "Artisan Workshops You Simply Must Visit",
+          "p7": "Bayonne is still home to around a dozen artisan workshops that carry on the chocolate-making tradition. Maison Cazenave, founded in 1854, is perhaps the most iconic. Its tearoom, with its antique wood paneling, serves a frothy hot chocolate made the old-fashioned way that alone is worth the visit. L'Atelier du Chocolat, housed in a former factory in the Saint-Esprit quarter, offers guided tours where you can watch every step of production, from bean to bar.",
+          "p8": "For those who prefer more off-the-beaten-path discoveries, Chocolaterie Puyodebat has been carrying on a family tradition since 1907, working exclusively with cacao beans from select South American plantations. And do not miss Chocolatier Daranatz, whose chocolate bonbons and pralines are considered by connoisseurs to be among the finest in France. Each workshop has its own personality, its secret recipes, and its history, together forming a chocolate heritage that is unique in France.",
+          "h5": "Why Bayonne Deserves the Title of Chocolate Capital",
+          "p9": "With more than four centuries of unbroken chocolate-making tradition, Bayonne has a historical claim that few cities can match. While Paris and Brussels may be more famous for their chocolate today, this is largely because Bayonne long kept its expertise as a closely guarded secret. The city has received official recognition for its chocolate heritage and is actively working to promote it as a tourist attraction.",
+          "p10": "On our guided tours of Bayonne with Amalur Tours, we take you on a journey through this fascinating history. From the Saint-Esprit quarter to the shops along Rue Port-Neuf, passing by workshops still in operation, the chocolate trail is an immersion into four centuries of craftsmanship. You will taste artisan chocolates, discover little-known stories, and understand why Bayonne chocolate is so much more than a simple indulgence — it is the sweet soul of the Basque Country."
+        }
+      },
+      "architecture": {
+        "title": "Decoding Labourdine Architecture: What Basque Houses Tell Us",
+        "excerpt": "Every Basque house has a name, not a number. The half-timbered beams carry meaning. Learn to read these facades like pages from a history book.",
+        "content": {
+          "h1": "The Etxe: Far More Than a House — An Identity",
+          "p1": "In the Basque Country, a house is not simply a building. It carries a name — the etxe — and this name defines the family who lives there, not the other way around. Traditionally, the house gives its name to its occupants, rather than the family naming the house. A Basque person is first identified by their house of origin. This concept, deeply rooted in Basque culture, makes each dwelling a living monument, a tangible link between past and future generations.",
+          "p2": "This tradition dates back to the Middle Ages, when Basque customary law, known as the for, established the indivisibility of the family home. The etxe could neither be divided nor sold in parcels. It was passed down in its entirety to a single heir — the eldest child, whether male or female, as Basque law did not recognize male primogeniture. This legal principle, unique in Europe, shaped not only the architecture but the entire social organization of the Basque Country for centuries.",
+          "h2": "The Secret of the Half-Timbering: Red, Green, or Blue?",
+          "p3": "The half-timbered beams of Labourdine houses are not painted at random. Traditionally, the ox-blood red — that distinctive Basque red — was the most common color. A mixture of actual ox blood and lime was used to protect the wood from the elements and insects. Green, found mainly in Lower Navarre and Soule, historically indicated belonging to a different province. Blue, which is rarer, was often associated with fishermen's houses along the coast.",
+          "p4": "Beyond the colors, the arrangement of the timber framing itself tells the building's story. The cross-braced timbers in a Saint Andrew's cross pattern reinforce the structure and speak to the skill of local carpenters. The oldest houses feature a jetty on the first floor — where the upper story projects over the street — allowing for more living space while sheltering the ground floor from rain. Observing these details is like reading the history of construction through the centuries.",
+          "h3": "Facing East: An Ancestral Rule",
+          "p5": "Nearly all traditional Basque houses face east. This is no coincidence, but an architectural rule passed down through generations. The eastern orientation allowed residents to catch the morning sun while protecting the main facade from the prevailing rains that come from the west and northwest. The west-facing wall, most exposed to Atlantic storms, was traditionally left blank or fitted with only very small openings.",
+          "p6": "This orientation also served agricultural purposes. The large ground-floor doorway, used as an entrance for livestock and harvests, opened onto an inner courtyard bathed in sunlight. The attic, tucked beneath the two-sided roof, served as a drying room for corn and peppers. The whole system formed a remarkably efficient bioclimatic design, long before that term existed, demonstrating the empirical ingenuity of Basque builders.",
+          "h4": "The Lauburu and Symbols Carved on the Lintels",
+          "p7": "Look above the doorways of old Basque houses and you will discover a world of symbols. The most famous is the lauburu, the curved four-armed cross that has become the emblem of the Basque Country. Carved into the stone lintels, it symbolizes the four elements or the four seasons. But you will also find suns, stars, rosettes, and inscriptions in Euskara indicating the house name, the year of construction, and sometimes the name of the builder.",
+          "p8": "These carved lintels are genuine archives in stone. You can read dates going back to the 16th century, family mottos in Basque, and sometimes symbols of trades — an anvil for a blacksmith, a boat for a fisherman. In villages like Ainhoa or Sare, a walk along the main street is a true open-air history lesson. Each facade is a chapter, each inscription a window into the past.",
+          "h5": "How to Read a Basque Facade Like a Local Guide",
+          "p9": "On our guided tours with Amalur Tours, we teach visitors to read Basque facades as if they were pages of history. The number of stories, the size of the openings, the quality of the corner stones, the presence of a wooden or wrought-iron balcony — every detail reveals the social status of the family, the era of construction, and the building's successive transformations. A house with a wide, arched porch was often the home of a notable or a prosperous merchant.",
+          "p10": "The rooftops speak too, if you know how to look. The steep pitch of older houses was calculated to shed rainwater quickly. The rounded red canal tiles were gradually replaced by slate in certain areas, reflecting changes in techniques and fashion. And if you notice protruding stones on the facade, these are not construction defects but attentes — stones left jutting out intentionally to allow for possible future expansion of the house."
+        }
+      },
+      "pelote": {
+        "title": "Basque Pelota: Far More Than a Sport — A Way of Life",
+        "excerpt": "With 22 different specialties and a fronton in every village, Basque pelota is the most fascinating and least-known sport in Europe.",
+        "content": {
+          "h1": "22 Specialties, One Sport: The Incredible Diversity of Pelota",
+          "p1": "When people think of Basque pelota, most picture a player hurling a ball with a large wicker basket. While this image is real, it represents only a tiny fraction of this extraordinary sport. Basque pelota actually encompasses 22 official specialties, played with the bare hand, a leather glove, the pala (wooden racket), the xare (small net), the joko garbi, or the famous chistera. Each specialty has its own rules, techniques, and champions, forming a sporting universe of unmatched richness.",
+          "p2": "Bare-hand pelota is considered the premier discipline — the purest and the oldest. Players strike a goatskin pelota against the fronton wall with their bare hands, with a power and precision that always astounds first-time spectators. The ball can reach speeds of over 100 km/h, and players' hands, toughened by years of practice, bear the marks of this demanding sport. At the other end of the spectrum, cesta punta, played with the large chistera, launches the ball at over 300 km/h, making it the fastest ball sport in the world.",
+          "h2": "The Fronton: The Beating Heart of Every Basque Village",
+          "p3": "In every Basque village, you will find three essential structures: the church, the town hall, and the fronton. This playing wall, simple yet imposing, is far more than a sports facility — it is the social heart of the community. It is at the foot of the fronton that elders gather to chat, children learn to play, festivals are planned, and village news circulates. The fronton is the Basque agora, the place where social bonds are forged.",
+          "p4": "There are several types of frontons. The place libre (open-air court) is the oldest and most widespread: a simple wall against which you play outdoors, with no side wall. The trinquet is an enclosed indoor court with four walls, where the most technical games are played. The jai alai, finally, is a covered fronton with a lateral wall, exported to the Americas in the 19th century where it became a spectator sport in its own right, particularly in Miami, Havana, and Manila.",
+          "h3": "The Chistera: A Handwoven Wicker Basket",
+          "p5": "The chistera, that curved wicker instrument that propels the pelota at dizzying speeds, is crafted by hand by a dwindling number of artisans keeping this endangered skill alive. Historically, the town of Hasparren, in the Basque interior, was the center of chistera production. The wicker is sourced from local riverbanks, and each basket requires several days of meticulous work to be woven, curved, and fitted to the player's hand.",
+          "p6": "Legend has it that the chistera was invented by accident in the 19th century, when a young player grabbed his mother's basket to send the ball further. Whether true or embellished, this anecdote captures the Basque spirit of improvisation. Today, a quality chistera costs several hundred euros and barely lasts a single season. Professional players use several per match, with each basket suited to a different style of play.",
+          "h4": "Night Matches: An Electric Atmosphere",
+          "p7": "In the Basque Country summer, pelota matches take on a special dimension. Under the floodlights of the fronton, in the warmth of summer evenings, the best players face off before hundreds of passionate spectators. The atmosphere is electric: betting is lively, shouts of encouragement ring out, and the crack of the pelota against the wall echoes through the night. These evenings are one of the most authentic spectacles the Basque Country has to offer.",
+          "p8": "For visitors, watching a pelota match is an unforgettable experience. You do not need to know all the rules — the energy of the crowd, the virtuosity of the players, and the festive atmosphere are enough to captivate even the uninitiated. The frontons of Bayonne, Saint-Jean-de-Luz, and Biarritz regularly host evening matches during the summer season. It is an opportunity to discover an ancient sport in all its authenticity, far from modern, standardized stadiums.",
+          "h5": "Where to Watch Basque Pelota During Your Visit",
+          "p9": "If you are visiting the Basque Country, do not miss the chance to attend a pelota match. In Bayonne, the Trinquet Saint-Andre, located right in the city center, hosts competitions year-round. The grand fronton in Biarritz, facing the sea, offers matches in summer. And for an even more authentic experience, head to the inland villages — Hasparren, Cambo-les-Bains, or Mauleon — where pelota is played just as it was a hundred years ago.",
+          "p10": "On our guided tours with Amalur Tours, we pass by Bayonne's historic frontons and share the story of this unique sport. We explain the different specialties, the making of the chistera, and the tales of legendary champions. It is one of the most authentic facets of Basque culture, and to understand pelota is to understand the soul of a people who have always known how to blend tradition with passion."
+        }
+      },
+      "villages": {
+        "title": "The Secret Villages of the Basque Interior: Far from the Crowds, Close to the Soul",
+        "excerpt": "Beyond the coast, the Basque hinterland hides unsuspected treasures. Ainhoa, Sare, Espelette and other villages where time seems to stand still.",
+        "content": {
+          "h1": "Beyond the Coast: The Basque Country Few Tourists Ever See",
+          "p1": "Most visitors to the Basque Country spend their time along the coastal strip: Biarritz, Saint-Jean-de-Luz, Hendaye. What they do not realize is that just twenty minutes inland by car, another Basque Country awaits. A land of gentle mountains and deep valleys, of unspoiled villages where blood-red half-timbered houses stand out against the intense green of the hillsides. It is here, in this hidden hinterland, that the true heart of Basque culture beats.",
+          "p2": "These inland villages do not have the fame of the seaside resorts, and that is all the better. They have preserved their authenticity, their pace of life, and their traditions. Here, Euskara is still spoken daily, shepherds still drive their flocks to the high summer pastures, and the pelota frontons still ring with play every Sunday. It is a journey through time as much as through space, an immersion in a world where modernity has not erased identity.",
+          "h2": "Ainhoa: The Most Beautiful Street in the Basque Country",
+          "p3": "Ainhoa is a single-street village classified among the Most Beautiful Villages of France. Its one street, lined with 17th- and 18th-century Labourdine houses with white facades and red or green half-timbering, is a pure architectural marvel. Each house bears a name carved into its lintel, and the sculpted stones above the doorways tell centuries of history. The village was founded in the 13th century as a bastide for pilgrims on the Way of Saint James, and its fortified church speaks to a sometimes turbulent past.",
+          "p4": "What makes Ainhoa particularly endearing is that it is a living village. Unlike some tourist villages, Ainhoa is not an open-air museum. People live here, work here, raise their children here. The fronton echoes with pelota matches, the village cafe is a genuine meeting place, and local artisans continue to keep traditions alive. Strolling through Ainhoa on a spring morning, when the light plays across the facades, is one of the most beautiful experiences the Basque Country can offer.",
+          "h3": "Sare, Espelette, and Other Hidden Gems",
+          "p5": "Sare, nestled at the foot of La Rhune mountain, is a village of character surrounded by mountains. Its prehistoric caves, the Grottes de Sare, bear witness to human presence going back more than 40,000 years. The village also boasts a magnificent fronton and a church with the wooden galleries typical of Basque churches. But it is above all its exceptional natural setting that enchants visitors: the ride up La Rhune on a little rack railway offers breathtaking views of the Basque coast and the Pyrenees.",
+          "p6": "Espelette is famous worldwide for its pepper, but the village deserves far more than a quick photo stop in front of the strings of peppers drying on the facades. Its castle, the Chateau des Barons d'Espelette, its church with a traditional cemetery of disc-shaped steles, and its artisan workshops offer a deep dive into Basque culture. Visit Espelette off-season if you can: in autumn, the facades disappear under drying red peppers, creating a one-of-a-kind chromatic spectacle.",
+          "h4": "Lower Navarre and Soule: The Forgotten Provinces",
+          "p7": "The French Basque Country is not limited to Labourd. Lower Navarre and Soule, the other two provinces, are deep and little-known territories that are well worth a detour. Saint-Jean-Pied-de-Port, the capital of Lower Navarre and a legendary stop on the Way of Saint James, is a fortified medieval town whose cobbled lanes and pink sandstone houses are strikingly beautiful. The citadel offers a sweeping view over the Nive River and the village rooftops below.",
+          "p8": "Soule, the smallest and most easterly of the Basque provinces, is also the most secretive. Mauleon, its capital, is known for its handmade espadrilles, a craft dating back to the 18th century. The Iraty forest, an immense beech wood said to be the largest in Western Europe, and the Gorges de Kakuetta, a vertiginous canyon nicknamed the Little Amazon, are natural wonders that few tourists ever discover.",
+          "h5": "Itxassou and the Black Cherry: A Village, a Fruit, a Story",
+          "p9": "Itxassou is a small village tucked into the hills, known for its black cherries. The local variety, the xapata, is used to make the black cherry jam that traditionally accompanies Ossau-Iraty sheep's cheese. Every spring, the cherry trees in bloom transform the landscape into a watercolor of pink and white. The Cherry Festival in June is an opportunity to taste this rare fruit and discover local traditions in a warm and convivial setting.",
+          "p10": "These inland villages represent the very essence of what we want to share at Amalur Tours. While our guided tours focus on Bayonne and Biarritz, we are always happy to advise our visitors on exploring the hinterland. For it is here, in these secret valleys and preserved villages, that the Basque Country reveals its true nature: a land of quiet but profound beauty, inhabited by a people proud of their roots."
+        }
+      },
+      "corsaires": {
+        "title": "The Corsairs of Bayonne: When the Basque Country Ruled the Seas",
+        "excerpt": "Long before it was known for chocolate and rugby, Bayonne was a formidable corsair port. The fascinating story of the Basque sailors who terrorized the seas.",
+        "content": {
+          "h1": "A Corsair Is Not a Pirate: An Essential Distinction",
+          "p1": "Unlike pirates, who operated outside the law for their own gain, corsairs held official authorization from the King of France. Armed with letters of marque — royal documents permitting them to attack enemy ships in wartime — Bayonne's corsairs were entrepreneurs of the sea, waging economic warfare on behalf of the crown. In return for this license, they surrendered a share of their prizes to the king. It was a perfectly legal, even prestigious activity that considerably enriched the city of Bayonne for centuries.",
+          "p2": "The Basques were exceptional sailors. Their intimate knowledge of the Bay of Biscay, one of the most dangerous maritime zones in Europe, made them formidable navigators. Long before the corsairs, Basque fishermen were already the first Europeans to hunt whales in the North Atlantic, likely reaching the coasts of Newfoundland before Christopher Columbus. This ancestral maritime expertise naturally gave rise to a corsair tradition that made Bayonne one of the most feared ports on the Atlantic coast.",
+          "h2": "The Great Corsair Figures of Bayonne",
+          "p3": "Among the most famous Bayonne corsairs, Johannis de Suhigaraychipi, nicknamed Croisic, stands out for his exploits in the 17th century. A fearless captain, he captured dozens of Spanish and English ships, amassing a considerable fortune and a reputation that extended far beyond the Basque Country. His house in the Petit Bayonne quarter was one of the most sumptuous in the city, a testament to the prosperity that privateering could bring.",
+          "p4": "Another legendary corsair, Etienne Pellot, nicknamed Donoghue for having lived in Ireland, terrorized English ships during the Seven Years' War. With his vessel L'Incomparable, he captured more than fifty prizes in just a few years, becoming one of the wealthiest shipowners in Bayonne. These men were not lone adventurers: they belonged to true maritime dynasties, families in which the corsair trade was passed down from father to son like a patrimony.",
+          "h3": "Shipbuilding in Bayonne: Exceptional Craftsmanship",
+          "p5": "The success of Bayonne's corsairs rested partly on the quality of their ships. The shipyards along the Adour produced fast, maneuverable vessels specifically designed for privateering. Bayonne's naval carpenters were renowned throughout Europe for their technical mastery. They used oak from the Pyrenean forests and pine from the Landes to build hulls that were both strong and lightweight, capable of withstanding the storms of the Bay of Biscay.",
+          "p6": "Bayonne also lent its name to a famous military invention: the bayonet. According to tradition, it was in the city's weapon workshops that the idea of fixing a blade to the end of a musket first took hold in the 17th century. Whether this attribution is historically precise or partly legendary, it speaks to Bayonne's role as a hub of military and maritime innovation, a crossroads where Basque technical ingenuity was applied to both the sea and warfare.",
+          "h4": "The Maritime Heritage Still Visible in the City Today",
+          "p7": "Bayonne preserves many traces of its corsair past. Strolling through Petit Bayonne, you will pass former shipowner mansions whose facades, adorned with maritime sculptures, recall the wealth of bygone times. The quays along the Nive, where corsair ships once moored laden with plunder, are now lined with colorful restaurants and bars. The Basque Museum dedicates several rooms to maritime history, with ship models, antique maps, and objects recovered from underwater excavations.",
+          "p8": "On our guided tours of Bayonne with Amalur Tours, we take you on the trail of these legendary corsairs. From the marina to the narrow streets of Petit Bayonne, past the Vauban ramparts that once defended the city from enemy attacks, the tour is a plunge into the maritime history of a city that was, for centuries, one of the most important and most feared ports on the French Atlantic coast."
+        }
+      },
+      "euskara": {
+        "title": "Euskara: Europe's Most Mysterious Language and Its Fight for Survival",
+        "excerpt": "The only pre-Indo-European language still spoken in Europe, Euskara has puzzled linguists for centuries. A deep dive into one of the continent's greatest mysteries.",
+        "content": {
+          "h1": "A Language Without a Family: The Mystery of Its Origins",
+          "p1": "Euskara, the Basque language, is a unique case in the world's linguistic landscape. Unlike French, Spanish, or English, which all belong to the vast Indo-European family, Basque is not related to any other known language. For centuries, linguists have tried to find its relatives — comparing it to Georgian, Berber, and Siberian languages — but all these hypotheses have proved unfounded. Euskara is what linguists call a language isolate: a language entirely on its own in the world.",
+          "p2": "This linguistic solitude has given rise to the most fascinating theories. Some researchers believe that Basque may be the last surviving remnant of the languages spoken in Europe before the arrival of Indo-European peoples around 5,000 years ago. Euskara would thus be a window into our continent's linguistic prehistory, a living fossil connecting us to the populations of the Neolithic, or even the Paleolithic era. While difficult to prove, this hypothesis lends the Basque language an aura of mystery that captivates linguists worldwide.",
+          "h2": "Basque Words Hiding in Everyday English and French",
+          "p3": "Without knowing it, you probably use words of Basque origin on a regular basis. The word bizarre, for example, may come from the Basque bizar, meaning beard — 16th-century Spanish soldiers finding these bearded Basques strange. The word anchovy may derive from the Basque antxoa. Silhouette, while attributed to the minister Etienne de Silhouette, bears a surname of Basque origin, zilueta. The word chamarrer may come from zamarra, and the French word gauche from esker.",
+          "p4": "These linguistic borrowings testify to the historical influence of the Basques on neighboring cultures. Basque sailors, present on every ocean since the Middle Ages, also enriched the maritime vocabulary of many languages. The French word babord (port side) may come from the Basque ba borda (the water side), and the word calfater (to caulk) may have Basque roots. While some of these etymologies are debated by specialists, they illustrate the richness of a language that has quietly irrigated European languages for millennia.",
+          "h3": "The Ikastola Schools: Education in the Service of Linguistic Survival",
+          "p5": "In the 20th century, Euskara nearly disappeared. Banned under the Franco regime in Spain and marginalized in France by its policy of linguistic unification, the Basque language saw its number of speakers decline dramatically. It was in this context that the ikastola schools were born — schools where all instruction is delivered entirely in Basque. The first ikastola in the northern Basque Country opened its doors in 1969 in Arcangues, in a farmhouse, with just a handful of students. Today, the Seaska network enrolls thousands of pupils.",
+          "p6": "The ikastola schools are not merely language schools: they are the spearhead of a cultural renaissance. Through full immersion, children learn mathematics, science, and history in Euskara. The results are remarkable: ikastola graduates are perfectly bilingual and achieve excellent academic outcomes. This educational model, born from cultural resistance, is now recognized by the French national education system and serves as a reference for other regional languages in France.",
+          "h4": "Bilingual Signs: When Street Names Tell a Story",
+          "p7": "If you drive through the Basque Country, you will notice that the road signs are bilingual. Bayonne is also Baiona, Biarritz is Miarritze, and Saint-Jean-de-Luz is Donibane Lohizune. These Basque names are not mere translations: they are the original names, often far older than their French equivalents. Baiona, for example, may come from bai ona, meaning the good river. Miarritze may refer to the bilberries (mirtze) that once grew on the hills of the town.",
+          "p8": "Bilingual signage is a relatively recent achievement, won after decades of language activism. It represents far more than a practical tool: it is an official recognition of Basque identity in the public space. For Euskara speakers, seeing their language on road signs, shop fronts, and official documents is a source of pride and motivation to continue passing it on to future generations."
+        }
+      },
+      "surf": {
+        "title": "Biarritz, the Birthplace of Surfing in Europe: The Story of a Cultural Revolution",
+        "excerpt": "In 1957, an American screenwriter brought the first surfboard to Biarritz. That single act would transform a fishing village into the surfing capital of Europe.",
+        "content": {
+          "h1": "1957: The Year It All Began",
+          "p1": "The history of surfing in Europe begins with a movie anecdote. In 1957, the American screenwriter Peter Viertel was in Biarritz for the filming of The Sun Also Rises, an adaptation of Hemingway's novel. Watching the waves at the Cote des Basques from his hotel window, he had a surfboard shipped over from California. The day he paddled out, the locals watched with a mixture of astonishment and fascination. Without knowing it, Viertel had just written the first chapter in the history of European surfing.",
+          "p2": "The seed was planted. A handful of enthusiastic locals got hold of surfboards and began exploring the waves along the Basque coast. Among the pioneers, Joel and Arnaud de Rosnay, Georges Hennebutte, and Jacky Rott founded the Waikiki Surf Club in 1959, soon renamed the Surf Club de France. It was the first surf club in Europe. The first competitions were organized, the first French surfers honed their skills, and Biarritz became the reference point for every wave rider on the continent.",
+          "h2": "The Cote des Basques: The Wave That Changed Everything",
+          "p3": "The Cote des Basques is no ordinary beach. Sheltered by cliffs and facing due west into the Atlantic, it receives a long, consistent swell that produces waves ideal for learning and progressing. It was on this beach that the first European surfers cut their teeth, and it is here that generations of surfers have discovered the thrill of riding waves. The Cote des Basques is to European surfing what Malibu is to American surfing: a founding place, almost sacred.",
+          "p4": "To this day, the Cote des Basques remains one of the most popular spots on the coast. But the Basque coastline offers a remarkable diversity of waves. The Grande Plage in Biarritz, more exposed, delivers powerful surf on big swell days. Les Cavaliers in Anglet serves up spectacular barrels. Guethary, further south, is home to big wave riding at the famous Parlementia break. And Mundaka, just across the Spanish border, is considered one of the best left-handers in the world.",
+          "h3": "Surfing as Biarritz's Identity",
+          "p5": "In less than seventy years, surfing has profoundly reshaped the identity of Biarritz. The town that was known as the seaside resort of crowned heads — Napoleon III and Empress Eugenie had their summer residence here — has reinvented itself as the surfing capital of Europe. The two identities coexist today in a unique blend: you can surf at dawn and then take afternoon tea at the Hotel du Palais, walk from a surf shop into a contemporary art gallery.",
+          "p6": "This surf culture has also spawned an entire economy. Local shapers — artisans who build surfboards by hand — are recognized worldwide. Major surf brands like Rip Curl and Quiksilver have set up their European headquarters in the region. Surf schools are everywhere, and every summer, tens of thousands of tourists come specifically to learn to surf. The sport has transformed Biarritz's demographics, attracting a young, international, and creative population.",
+          "h4": "Secret Spots That Only the Locals Know",
+          "p7": "While the main beaches are known to every surfer, the Basque coast also hides secret spots accessible only on foot or by steep trails. These hidden coves, whose locations the locals guard jealously, offer exceptional quality waves in a wild and unspoiled setting. Local surfers maintain an almost mystical relationship with these places, and it is considered poor form to share them too freely with passing visitors.",
+          "p8": "On our guided tours of Biarritz with Amalur Tours, we tell you the story of the surf revolution that transformed the city. From the Grande Plage to the Cote des Basques, passing by the Rocher de la Vierge where you can watch surfers riding waves below, the tour traces the story of a cultural revolution that turned Biarritz into one of the coolest and most dynamic cities on the Atlantic coast."
+        }
+      },
+      "gastronomie": {
+        "title": "Basque Gastronomy Decoded: What the Tourist Guides Don't Tell You",
+        "excerpt": "Beyond the pintxos and Bayonne ham, Basque cuisine holds little-known treasures. A journey into a gastronomy that rivals the greatest in the world.",
+        "content": {
+          "h1": "Why the Basque Country Is a Gastronomic Paradise",
+          "p1": "The Basque Country has the highest concentration of Michelin stars in the world per capita. This is no accident. Basque gastronomy benefits from an exceptional terroir: the Atlantic Ocean for fish and seafood, the Pyrenean mountains for cheese and lamb, fertile valleys for vegetables and fruit, and a mild climate that supports diverse agriculture. Add to that a deeply rooted culinary culture where cooking is not a chore but an art of living.",
+          "p2": "The txoko, traditional gastronomic societies — historically all-male — where friends gather to cook together, perfectly illustrate this culinary passion. Hundreds of them exist across the Basque Country, each with its own equipped kitchen, secret recipes, and rituals. Members do their own cooking, in a spirit of sharing and conviviality. It is in these txoko that the most authentic recipes of Basque cuisine are passed down, from generation to generation.",
+          "h2": "Axoa, Ttoro, and the Dishes You Absolutely Must Try",
+          "p3": "The axoa from Espelette is one of the most typical yet least-known dishes in Basque cuisine. This stew of minced or thinly sliced veal, cooked with onions, peppers, and Espelette pepper, is a concentrated burst of local flavors. Served with rice or potatoes, it is the quintessential Sunday meal in Basque families. Every cook has their own version, each one unique, and it is in the village inns that you will taste it in its most authentic form.",
+          "p4": "Ttoro, the fish soup from Saint-Jean-de-Luz, is another treasure of Basque cuisine. Unlike the Marseille bouillabaisse, ttoro uses Atlantic fish — hake, monkfish, conger eel, langoustines — simmered in a broth seasoned with Espelette pepper. Originally a fishermen's dish, prepared aboard boats with the day's catch, the best restaurants along the coast now offer refined versions that elevate this humble recipe to an art form.",
+          "h3": "The Real Gateau Basque: Cream or Black Cherry?",
+          "p5": "The gateau basque is arguably the most iconic dessert of the region, but few people know its history or its true recipe. Born in Cambo-les-Bains in the 18th century, the original gateau basque was filled with Itxassou black cherry jam. The pastry cream version came later. Today, the debate rages on: cream or cherry? Purists defend the black cherry as the only authentic filling, while the majority of Basques actually prefer the cream.",
+          "p6": "A good gateau basque is recognized by its golden, crispy crust, the richness of its shortbread pastry flavored with rum and vanilla, and the generosity of its filling. It should be soft inside and crunchy outside. Beware of the industrial versions sold in supermarkets: the real gateau basque is found in the artisan bakeries of the villages, where it is still made fresh every morning according to recipes handed down from mother to daughter.",
+          "h4": "Ossau-Iraty Cheese and the Tradition of Transhumance",
+          "p7": "Ossau-Iraty is the only French sheep's cheese to hold a Protected Designation of Origin (AOP). Made in the mountains of the Basque Country and Bearn, it is produced from the milk of local breeds — the red-faced Manech and the black-faced Manech — raised outdoors. In spring, shepherds still practice transhumance, leading their flocks to the high mountain pastures where the fragrant grass gives the cheese its incomparable flavors.",
+          "p8": "The traditional tasting of Ossau-Iraty is a ritual in itself. It is served with Itxassou black cherry jam — this sweet-and-savory pairing is a unique taste experience that surprises and delights. Accompanied by a glass of Irouleguy, the red wine from the Basque vineyards, or a local apple cider, Ossau-Iraty encapsulates the richness of the Basque terroir in a single cheese. It tells the story of the shepherds, the mountains, and a thousand-year-old savoir-faire."
+        }
+      },
+      "fetes": {
+        "title": "The Fetes de Bayonne: Inside France's Biggest Street Festival",
+        "excerpt": "Every summer, Bayonne transforms for five days into an enormous street festival. The history, traditions, and secrets of an event unlike any other in the world.",
+        "content": {
+          "h1": "1932: The Birth of a Tradition Inspired by Pamplona",
+          "p1": "The Fetes de Bayonne were born in 1932, inspired by the famous Sanfermines of Pamplona. A group of locals from Bayonne, after attending the Navarrese festival across the border, decided to create a similar event in their own city. The first rule was simple: white and red, as in Pamplona, but with a Bayonne identity. The inaugural edition attracted a few thousand participants. Today, the Fetes de Bayonne draw over one million visitors across five days, making it the largest street festival in France.",
+          "p2": "What sets the Fetes de Bayonne apart from the Sanfermines is the absence of bullfighting with a kill. While there are bull-related events, they consist mainly of course de vaches — young cows released into the arena or the streets — where the animal is never harmed. This distinction reflects Basque sensibility and has allowed the festival to modernize while preserving its popular, festive spirit.",
+          "h2": "King Leon and the Opening of the Festivities",
+          "p3": "The starting signal for the festival is given by Roi Leon (King Leon), an iconic character whose giant effigy towers over the Place de la Liberte. On the first Thursday of August at 10 PM, King Leon throws the keys of the city from the town hall balcony, officially declaring the festivities open. At this signal, the crowd dressed in white and red erupts in joy, the bandas strike up their first tunes, and Bayonne tips into five days of non-stop celebration.",
+          "p4": "The origin of King Leon is itself a delightful story. The character was born from a popular Bayonne song whose catchy refrain became the unofficial anthem of the festival. Over the decades, King Leon has become a true symbol, a benevolent patron figure who presides over the collective revelry. His papier-mache effigy, renewed each year, is burned on the final evening during the closing ceremony, in a ritual that marks the end of the festival and the anticipation of the next.",
+          "h3": "The Bandas: The Musical Soul of the Festival",
+          "p5": "The Fetes de Bayonne without music would be like pelota without a fronton. The bandas, those street orchestras made up of brass instruments, drums, and sometimes singers, are the sonic soul of the event. There are dozens of them, coming from across the southwest of France, and they parade through the streets from morning to night, sweeping the festayres along in joyful dances. Each banda has its own repertoire, its own style, and its own fans, and the most famous are genuine local celebrities.",
+          "p6": "The bandas' music is a surprising blend of Spanish paso doble, traditional Basque music, and popular hits. The musicians often play from memory, in a cheerful organized chaos that is the trademark of these marching orchestras. The atmosphere they create is unique: imagine hundreds of people dancing through the narrow lanes of Petit Bayonne to the sound of trumpets and tubas, beneath colorful streamers strung between the half-timbered houses.",
+          "h4": "White and Red: A Sacred Dress Code",
+          "p7": "Wearing white and red during the Fetes de Bayonne is not optional — it is an imperative. White trousers, a white shirt, a red scarf tied around the neck, and a red sash at the waist make up the official outfit of the festayre. This dress code, directly inherited from the Sanfermines, creates a striking visual uniformity: seen from above, the festival crowd is a sea of white dotted with touches of red, a truly breathtaking sight.",
+          "p8": "It is strongly advised against attending the festival without following this dress code. Not only would you stand out immediately from the crowd, but you would also miss the experience of collective communion that the white and red make possible. The red scarf, in particular, is much more than an accessory: it is a symbol of belonging, a sign that you are fully embracing the spirit of the festival."
+        }
+      },
+      "sentiers": {
+        "title": "Basque Country Coastal Trails: The Most Beautiful Ocean-View Hikes",
+        "excerpt": "From Bidart to Hendaye, the Basque coastal path offers some of the finest hiking in France. Dramatic cliffs, secret coves, and breathtaking panoramas.",
+        "content": {
+          "h1": "The Coastal Path: A Hidden Treasure of the Basque Coast",
+          "p1": "The Basque coastal path, winding along the cliffs between Bidart and Hendaye, is one of the most beautiful seaside hikes in France. Over roughly 25 kilometers, the trail offers jaw-dropping views of the Atlantic Ocean, the Spanish Pyrenees, and the wild coastline. Unlike the coastal paths of Brittany or Normandy, the Basque coastline stands out for the sheer verticality of its cliffs, the power of its waves, and the mildness of its climate, which makes hiking possible almost year-round.",
+          "p2": "The route can be completed in a single day by experienced walkers, or broken into stages to fully enjoy each section. Every stretch has its own character: the grassy cliffs of Bidart, the beaches of Guethary, the spectacular corniche between Saint-Jean-de-Luz and Hendaye. The path is marked and maintained, though some sections demand good fitness and proper footwear. The rewards match the effort: grand panoramas await around every bend.",
+          "h2": "The Corniche Basque: The Most Spectacular Section",
+          "p3": "Between Ciboure and Hendaye, the Corniche Basque is the jewel of the coastal path. The cliffs plunge vertically into the ocean, sculpted by millions of years of erosion into extraordinary geological formations. The flysch — tilted layers of sedimentary rock that rise from the sea like the keys of a giant piano — are a geological spectacle unique in Europe. This lunar landscape, battered by waves, fascinates geologists and photographers alike.",
+          "p4": "The corniche is also home to the Domaine d'Abbadia, a protected natural area of 65 hectares perched above the ocean. The Chateau d'Abbadia, built in the 19th century by Viollet-le-Duc for the scientist Antoine d'Abbadie, dominates the cliffs with its neo-Gothic silhouette. The walk around the estate is a must: wildflower meadows in spring, russet-coated Highland cattle, and sweeping views over the Bay of Txingudi compose a scene of striking beauty.",
+          "h3": "La Rhune: The Iconic Summit of the Basque Country",
+          "p5": "If coastal hiking is not enough for you, climbing La Rhune (905 m) offers an entirely different walking experience. This iconic summit, visible from almost the entire Basque coast, can be reached on foot in about two hours from the Col de Saint-Ignace. The trail passes through heather and gorse moorland, pastures where pottoks — the small wild Basque horses — graze, and forests of wind-stunted oaks.",
+          "p6": "The summit of La Rhune offers a sweeping circular panorama: on one side, the Basque coast and the Atlantic stretching to the horizon; on the other, the Pyrenean chain and the mountains of Navarre. On a clear day, you can see Bayonne, Biarritz, San Sebastian, and even the peaks of Bearn. For those who prefer to save their legs, the little rack railway up La Rhune, running since 1924, makes the ascent in 35 minutes in vintage wooden carriages that add to the charm of the excursion.",
+          "h4": "Secret Coves and Wildlife",
+          "p7": "Along the coastal path, a few secret coves are accessible only on foot via steep trails. These small wild beaches, wedged between cliffs, offer rare privacy and crystal-clear water. One of the most beautiful is Senix beach, between Guethary and Saint-Jean-de-Luz, reached by a stairway carved into the rock. In summer, it is a haven of peace away from the packed beaches, a place where you can swim in turquoise water in near-solitude.",
+          "p8": "The Basque coast is also a refuge for wildlife. The cliffs are home to colonies of gulls and cormorants, and in autumn, the mountain passes of La Rhune and Organbidexka are among the best spots in Europe for watching migratory birds. At sea, dolphins are a frequent sight, and whale-watching expeditions sometimes spot these majestic creatures as well. It is a reminder that this preserved coastline is a living ecosystem of remarkable richness."
+        }
+      },
+      "cathedrale": {
+        "title": "Bayonne Cathedral: An Overlooked Gothic Masterpiece and Its Well-Kept Secrets",
+        "excerpt": "A UNESCO World Heritage Site often overshadowed by Notre-Dame de Paris, the Cathedrale Sainte-Marie of Bayonne hides architectural treasures and centuries-old secrets.",
+        "content": {
+          "h1": "Three Centuries of Construction for a Masterpiece",
+          "p1": "The Cathedrale Sainte-Marie of Bayonne is a jewel of Gothic architecture whose construction spanned three centuries, from the 13th to the 16th. Listed as a UNESCO World Heritage Site as part of the Routes of Santiago de Compostela, it is one of the most beautiful religious buildings in southwestern France. Yet it remains surprisingly little-known, eclipsed by the great cathedrals of the north. That is precisely part of its charm: you can admire architectural wonders here in a tranquility that Notre-Dame de Paris has not enjoyed for a long time.",
+          "p2": "Construction began around 1213, after a fire destroyed the earlier Romanesque building. The architects drew inspiration from the cathedrals of Champagne and Burgundy to raise a luminous, soaring vessel of stone. The work continued for generations, each century adding its own style: the choir is in the purest Rayonnant Gothic, the nave is Flamboyant Gothic, and the spires, rebuilt in the 19th century by the architect Boeswillwald, rise 85 meters above the city.",
+          "h2": "The Cloister: One of the Finest in France",
+          "p3": "The cloister of Bayonne Cathedral is one of the largest and best-preserved in France. Its Gothic galleries, built in the 13th and 14th centuries, surround a peaceful garden where time seems to stand still. The ribbed vaults, sculpted columns, and pointed arch openings form an ensemble of rare elegance. The cloister long served as a burial ground for the canons and notables of the city, and ancient tombstones are still visible in the floor.",
+          "p4": "What makes the Bayonne cloister particularly fascinating are its sculpted details. The vault keystones depict biblical scenes, fantastical animals, and expressive faces that testify to the imagination and skill of medieval sculptors. The column capitals are adorned with foliage, human figures, and mythological creatures. Taking the time to look up and observe these details is like traveling into the imagination of the Middle Ages.",
+          "h3": "Renaissance Stained Glass and the Sanctuary Knocker",
+          "p5": "The cathedral's stained-glass windows are a treasure often overlooked by hurried visitors. The oldest date from the 16th century and depict scenes from the life of the Virgin and the saints in colors of astonishing vibrancy despite the centuries. The light filtering through these windows colors the blonde stone of the nave with reflections of blue, red, and gold, creating an atmosphere of beauty and contemplation that alone justifies the visit.",
+          "p6": "The sanctuary knocker, on the south flank of the cathedral, is linked to a fascinating medieval tradition: the right of asylum. In the Middle Ages, any fugitive who managed to grasp this knocker benefited from the protection of the Church and could not be arrested. This right of asylum, taken very seriously in medieval Bayonne, speaks to the considerable power of the Church and the role of the cathedral as a place of refuge and justice in the society of the time.",
+          "h4": "On the Way of Saint James",
+          "p7": "Bayonne Cathedral is a major stopping point on the Way of Saint James. Since the Middle Ages, thousands of pilgrims have paused here before crossing the Pyrenees via the Roncevaux Pass into Spain. This tradition continues today, and you will often encounter hikers in the cathedral, walking stick in hand, having their credencial stamped. The cathedral still holds several objects connected to the pilgrimage, including a statue of Saint James dressed in pilgrim's garb.",
+          "p8": "On our guided tours of Bayonne with Amalur Tours, the cathedral is naturally an essential stop. We help you discover details that most visitors miss: the sculpted vault keystones, medieval inscriptions, and the traces left by the centuries in the stone. It is one of the highlights of the tour, a moment of calm and beauty in the heart of the city, where you truly grasp the historical depth of Bayonne."
+        }
+      },
+      "piment": {
+        "title": "Espelette Pepper: How a Basque Village Created a Gastronomic Treasure",
+        "excerpt": "Arriving from Mexico in the 16th century, the Espelette pepper became the first pepper in Europe to earn AOP status. The story of an ingredient that became a symbol of the Basque Country.",
+        "content": {
+          "h1": "From Mexico to the Basque Country: The Journey of the Gorria Pepper",
+          "p1": "The Espelette pepper is not native to the Basque Country. It arrived in the 16th century from Mexico, brought back by Basque navigators who crisscrossed the Atlantic. These intrepid sailors, who fished for cod off Newfoundland and hunted whales off the Canadian coast, had discovered the pepper through contact with Indigenous peoples of the Americas. They brought back seeds that adapted remarkably well to the mild, humid climate of the Pyrenean foothills, giving rise to a unique variety: the Gorria.",
+          "p2": "The Gorria is a mild, aromatic, and slightly spicy pepper, quite different from the Mexican varieties from which it descends. The Basque terroir — clay-limestone soil, Atlantic climate, moderate sunshine — has transformed the pepper over the centuries, giving it fruity aromas and a measured warmth that make it an exceptional condiment. Originally, the Basques used the pepper as a substitute for black pepper, which was prohibitively expensive at the time. It quickly became an indispensable ingredient in local cooking.",
+          "h2": "The AOP: Recognition of a Unique Savoir-Faire",
+          "p3": "In 2000, the Espelette pepper became the first pepper in Europe to receive a Protected Designation of Origin (AOP). This official recognition protects the name, the production method, and the geographical growing area. Only peppers cultivated in the ten communes covered by the designation — Espelette, Ainhoa, Cambo-les-Bains, Halsou, Itxassou, Jatxou, Larressore, Saint-Pee-sur-Nivelle, Souraide, and Ustaritz — may bear the name Espelette pepper.",
+          "p4": "Obtaining the AOP was the result of a long battle waged by local producers to protect their expertise from imitation. The commercial success of the Espelette pepper had attracted numerous counterfeits: peppers grown in Spain, China, or Morocco were being sold under the Espelette name. The AOP guarantees consumers an authentic product and gives producers fair compensation for their work. It is a model of gastronomic heritage protection that other regions envy.",
+          "h3": "Traditional Drying: When the Facades Turn Red",
+          "p5": "The most photogenic sight in Espelette occurs each autumn, when garlands of red peppers are hung on the house facades to dry. This tradition goes back centuries and remains the most widespread drying method. The peppers, harvested by hand between August and November, are strung onto cords and hung beneath the roof overhangs, exposed to the sun and wind. Drying takes several weeks, during which the peppers lose their moisture while concentrating their flavors.",
+          "p6": "The transition from drying to grinding is a crucial step. The dried peppers are ground into powder in special mills that preserve their aromatic qualities. Espelette pepper powder, a deep red tending toward orange, has a fruity, slightly smoky fragrance that is its signature. Unlike cayenne pepper or paprika, Espelette pepper does not assault the palate: its warmth is gradual, enveloping, and leaves complex flavors of roasted bell pepper and dried fruit on the tongue.",
+          "h4": "The Pepper Festival and Its Impact on the Village",
+          "p7": "Every last weekend of October, Espelette celebrates the Pepper Festival. For two days, the village transforms into a great open-air market where producers, artisans, and chefs celebrate the pepper in all its forms. Brotherhoods in traditional costume parade through the streets, cooking competitions are held, and visitors can sample dozens of pepper-based products: chocolate with pepper, jam, jelly, oil, mustard, and even beer made with Espelette pepper.",
+          "p8": "The pepper has transformed the economy of Espelette and its surrounding area. What was once a modest farming village has become a major tourist destination in the Basque Country, attracting hundreds of thousands of visitors each year. The number of pepper producers, just a handful thirty years ago, has grown to more than 200, and the industry generates millions of euros in revenue. The Espelette pepper is proof that an artisan product, protected by an AOP and promoted through tourism, can become a driver of sustainable rural development."
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Authentic guided tours in the heart of the Basque Country",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "backHome": "Back to Home"
+  }
+}

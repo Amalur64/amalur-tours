@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Palette Pays Basque */
+  --color-basque-red: #C8102E;
+  --color-basque-red-dark: #A00D24;
+  --color-basque-green: #2D5016;
+  --color-basque-green-light: #3A6B1E;
+  --color-basque-cream: #FAF8F5;
+  --color-basque-ocean: #1B4F72;
+  --color-basque-ocean-light: #2471A3;
+  --color-basque-gold: #C9A96E;
+  --color-basque-gold-light: #D4BC8E;
+  --color-basque-dark: #1A1A1A;
+  --color-basque-gray: #6B7280;
+  --color-basque-gray-light: #F3F4F6;
+
+  /* Fonts */
+  --font-display: var(--font-dm-serif);
+  --font-body: var(--font-dm-sans);
+  --font-logo: var(--font-righteous);
+}
+
+/* Base */
+body {
+  background: var(--color-basque-cream);
+  color: var(--color-basque-dark);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* Selection color */
+::selection {
+  background: var(--color-basque-red);
+  color: white;
+}
