@@ -114,12 +114,12 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Amalur Tours. {t("rights")}.
           </p>
           <div className="flex gap-6">
-            <span className="text-xs text-white/30 cursor-default">
-              {t("legal")}
-            </span>
-            <span className="text-xs text-white/30 cursor-default">
-              {t("privacy")}
-            </span>
+            <Link
+              href="/cgv"
+              className="text-xs text-white/40 hover:text-white transition-colors"
+            >
+              CGV & Mentions légales
+            </Link>
           </div>
         </div>
       </div>
