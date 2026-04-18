@@ -15,22 +15,59 @@ export function TourCard({ tour }: TourCardProps) {
     <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
       {/* Image cliquable */}
       <Link href={`/tours/${tour.slug}`}>
-        <div className="relative h-56 sm:h-64 overflow-hidden bg-basque-ocean/10 cursor-pointer">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10" />
-          <Image
-            src={tour.image}
-            alt={t(`${tour.translationKey}.title`)}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute bottom-4 left-4 z-20">
-            <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-basque-dark text-xs font-semibold px-3 py-1.5 rounded-full">
-              <MapPin size={14} />
-              {tour.city}
-            </span>
+        {tour.slug === "combo" ? (
+          <div className="relative h-56 sm:h-64 overflow-hidden bg-basque-ocean/10 cursor-pointer flex">
+            {/* Photo Bayonne gauche */}
+            <div className="relative w-1/2 overflow-hidden">
+              <Image
+                src="/images/tours/combo-bayonne.jpg"
+                alt="Bayonne"
+                fill
+                sizes="25vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <span className="absolute bottom-3 left-3 text-white text-xs font-semibold bg-black/30 backdrop-blur-sm px-2 py-1 rounded-full">Bayonne</span>
+            </div>
+            {/* Séparateur */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/60 z-10" />
+            {/* Photo Biarritz droite */}
+            <div className="relative w-1/2 overflow-hidden">
+              <Image
+                src="/images/tours/combo-biarritz.jpg"
+                alt="Biarritz"
+                fill
+                sizes="25vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <span className="absolute bottom-3 right-3 text-white text-xs font-semibold bg-black/30 backdrop-blur-sm px-2 py-1 rounded-full">Biarritz</span>
+            </div>
+            <div className="absolute bottom-4 left-4 z-20">
+              <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-basque-dark text-xs font-semibold px-3 py-1.5 rounded-full">
+                <MapPin size={14} />
+                {tour.city}
+              </span>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="relative h-56 sm:h-64 overflow-hidden bg-basque-ocean/10 cursor-pointer">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10" />
+            <Image
+              src={tour.image}
+              alt={t(`${tour.translationKey}.title`)}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute bottom-4 left-4 z-20">
+              <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-basque-dark text-xs font-semibold px-3 py-1.5 rounded-full">
+                <MapPin size={14} />
+                {tour.city}
+              </span>
+            </div>
+          </div>
+        )}
       </Link>
 
       {/* Content */}
