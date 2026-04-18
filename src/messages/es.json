@@ -47,6 +47,14 @@
       "meeting": "Salida en Biarritz: Explanada superior del Casino",
       "schedule_info": "14:00 — Biarritz luego Bayona"
     },
+    "sansebastian": {
+      "title": "San Sebastián Tour Privado",
+      "description": "Un día privado y exclusivo en San Sebastián — recogida en el hotel, tour guiado a pie y recomendaciones de los mejores pintxos. Máx 3 personas.",
+      "about": "Olvídese de los grupos de 20 turistas y las visitas impersonales. Este tour privado exclusivo le lleva a descubrir San Sebastián como lo hacen los locales. Recogido directamente en su hotel en la Costa Vasca, cruzará la frontera franco-española para llegar a una de las ciudades más bellas de Europa. Su guía le llevará desde la mítica playa de la Concha hasta el corazón del Casco Viejo, pasando por la majestuosa catedral del Buen Pastor, el barrio romántico y el emblemático Hotel Maria Cristina. Tras la visita guiada, disfrute de tiempo libre para explorar a su ritmo — con nuestras recomendaciones personalizadas de los mejores bares de pintxos y los imprescindibles que no debe perderse.",
+      "duration": "~5h",
+      "meeting": "Recogida en su hotel (Biarritz, Bayona, Anglet, Bidart o San Juan de Luz)",
+      "schedule_info": "Salida 9:00 — Tour privado"
+    },
     "from": "Desde",
     "perPerson": "/ persona",
     "bookNow": "Reservar ahora",

@@ -96,13 +96,23 @@ export function TourCard({ tour }: TourCardProps) {
         {/* Price & CTA */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
           <div>
-            <span className="text-xs text-basque-gray">{t("from")}</span>
-            <div className="flex items-baseline gap-1">
-              <span className="text-2xl font-bold text-basque-dark">
-                {tour.price}€
-              </span>
-              <span className="text-xs text-basque-gray">{t("perPerson")}</span>
-            </div>
+            {tour.isPrivate ? (
+              <>
+                <span className="text-xs text-basque-gray">Tour privé — max {tour.maxGroupSize} pers.</span>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl font-bold text-basque-dark">{tour.groupPrice}€</span>
+                  <span className="text-xs text-basque-gray">/ groupe</span>
+                </div>
+              </>
+            ) : (
+              <>
+                <span className="text-xs text-basque-gray">{t("from")}</span>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl font-bold text-basque-dark">{tour.price}€</span>
+                  <span className="text-xs text-basque-gray">{t("perPerson")}</span>
+                </div>
+              </>
+            )}
           </div>
           <Link
             href={`/tours/${tour.slug}`}

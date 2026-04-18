@@ -47,6 +47,14 @@
       "meeting": "Start in Bayonne: in front of Bayonne Town Hall (near the bus stop and the river)",
       "schedule_info": "9:30 AM — Bayonne then Biarritz"
     },
+    "sansebastian": {
+      "title": "San Sebastián Private Tour",
+      "description": "An exclusive private day in San Sebastián — hotel pickup, guided walking tour and insider pintxos recommendations. Max 3 people.",
+      "about": "Forget the groups of 20 tourists and impersonal visits. This exclusive private tour takes you to discover San Sebastián the way locals do. Picked up directly at your hotel on the Basque Coast, you'll cross the French-Spanish border to reach one of the most beautiful cities in Europe. Your guide will take you from the mythical La Concha beach to the beating heart of the Casco Viejo, passing by the majestic Buen Pastor cathedral, the romantic quarter and the iconic Hotel Maria Cristina. After the guided tour, enjoy free time to explore at your own pace — with our personalised recommendations for the best pintxos bars and must-sees not to miss.",
+      "duration": "~5h",
+      "meeting": "Hotel pickup (Biarritz, Bayonne, Anglet, Bidart or Saint-Jean-de-Luz)",
+      "schedule_info": "Departure 9:00 AM — Private tour"
+    },
     "from": "From",
     "perPerson": "/ person",
     "bookNow": "Book Now",
