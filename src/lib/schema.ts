@@ -1,17 +1,19 @@
 export function generateBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "TouristAttraction",
+    "@type": "LocalBusiness",
     name: "Amalur Tours",
     description:
       "Visites guidées à pied à Bayonne et Biarritz au Pays Basque. Tours en français, anglais et espagnol avec une guide locale passionnée.",
-    url: "https://amalur-tours.com",
-    telephone: "+33600000000",
+    url: "https://www.amalurtours.com",
+    telephone: "+33750038651",
+    email: "amalur.tours@gmail.com",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Bayonne",
+      streetAddress: "25 rue de l'Union",
+      addressLocality: "Anglet",
       addressRegion: "Pyrénées-Atlantiques",
-      postalCode: "64100",
+      postalCode: "64600",
       addressCountry: "FR",
     },
     geo: {
@@ -19,8 +21,8 @@ export function generateBusinessSchema() {
       latitude: 43.4929,
       longitude: -1.4748,
     },
-    image: "https://amalur-tours.com/images/og-image.jpg",
-    priceRange: "25€-45€",
+    image: "https://www.amalurtours.com/images/og-image.jpg",
+    priceRange: "25€-50€",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: [
@@ -38,6 +40,8 @@ export function generateBusinessSchema() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
+      bestRating: "5",
+      worstRating: "1",
       reviewCount: "47",
     },
     availableLanguage: [
@@ -45,6 +49,5 @@ export function generateBusinessSchema() {
       { "@type": "Language", name: "English" },
       { "@type": "Language", name: "Spanish" },
     ],
-    touristType: ["Cultural tourism", "Walking tours", "Heritage tourism"],
   };
 }
