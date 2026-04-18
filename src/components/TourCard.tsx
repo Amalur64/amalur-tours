@@ -13,29 +13,33 @@ export function TourCard({ tour }: TourCardProps) {
 
   return (
     <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-      {/* Image */}
-      <div className="relative h-56 sm:h-64 overflow-hidden bg-basque-ocean/10">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10" />
-        <Image
-          src={tour.image}
-          alt={t(`${tour.translationKey}.title`)}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div className="absolute bottom-4 left-4 z-20">
-          <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-basque-dark text-xs font-semibold px-3 py-1.5 rounded-full">
-            <MapPin size={14} />
-            {tour.city}
-          </span>
+      {/* Image cliquable */}
+      <Link href={`/tours/${tour.slug}`}>
+        <div className="relative h-56 sm:h-64 overflow-hidden bg-basque-ocean/10 cursor-pointer">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10" />
+          <Image
+            src={tour.image}
+            alt={t(`${tour.translationKey}.title`)}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute bottom-4 left-4 z-20">
+            <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-basque-dark text-xs font-semibold px-3 py-1.5 rounded-full">
+              <MapPin size={14} />
+              {tour.city}
+            </span>
+          </div>
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="p-5 sm:p-6">
-        <h3 className="font-display text-xl sm:text-2xl text-basque-dark mb-2">
-          {t(`${tour.translationKey}.title`)}
-        </h3>
+        <Link href={`/tours/${tour.slug}`}>
+          <h3 className="font-display text-xl sm:text-2xl text-basque-dark mb-2 hover:text-basque-red transition-colors cursor-pointer">
+            {t(`${tour.translationKey}.title`)}
+          </h3>
+        </Link>
         <p className="text-sm text-basque-gray leading-relaxed mb-4 line-clamp-2">
           {t(`${tour.translationKey}.description`)}
         </p>
