@@ -26,6 +26,7 @@
     "bayonne": {
       "title": "Bayonne Walking Tour",
       "description": "Plongez dans l'histoire millénaire de Bayonne : cathédrale gothique, remparts de Vauban, ruelles du Petit Bayonne et chocolat basque. Tour en français à 16h30.",
+      "about": "Laissez-vous porter dans les ruelles de l'une des plus belles villes médiévales du Sud-Ouest. Pendant 1h30, votre guide vous emmène à la découverte de Bayonne la discrète — celle que les touristes pressés ne voient jamais. Devant la cathédrale Sainte-Marie, joyau gothique classé à l'UNESCO, vous apprendrez comment les pèlerins de Saint-Jacques-de-Compostelle ont façonné cette ville au fil des siècles. Dans le Petit Bayonne, entre ses façades colorées et ses bars à pintxos animés, vous sentirez battre le cœur basque de la ville. Une halte dans le quartier du chocolat — Bayonne est la capitale française du chocolat depuis le XVIIe siècle — et une promenade le long des rives de la Nive complèteront cette immersion dans l'âme basque.",
       "duration": "~1h30",
       "meeting": "Point de rencontre communiqué après réservation",
       "schedule_info": "16h30 — Tour en français"
@@ -33,6 +34,7 @@
     "biarritz": {
       "title": "Biarritz Walking Tour",
       "description": "Des plages mythiques au Rocher de la Vierge, découvrez comment un petit village de pêcheurs est devenu la station balnéaire préférée des têtes couronnées. Tour en français à 14h00.",
+      "about": "Il était une fois un modeste village de pêcheurs basques... et une impératrice qui en tomba éperdument amoureuse. Pendant 1h30, votre guide vous raconte l'incroyable destin de Biarritz : de la chasse à la baleine au faste de la Belle Époque, de l'arrivée du surf en Europe en 1957 à sa réputation mondiale actuelle. Vous marcherez sur la Grande Plage, symbole de l'élégance biarrote, face à l'Hôtel du Palais où séjourna l'impératrice Eugénie. Vous traverserez le Plateau de l'Atalaye pour rejoindre le mythique Rocher de la Vierge. Au Port des Pêcheurs, dernier vestige du Biarritz authentique, vous comprendrez que derrière les façades Belle Époque se cache une ville à l'âme profondément basque.",
       "duration": "~1h30",
       "meeting": "Point de rencontre communiqué après réservation",
       "schedule_info": "14h00 — Tour en français"
@@ -40,6 +42,7 @@
     "combo": {
       "title": "Bayonne + Biarritz Combo",
       "description": "La journée complète pour découvrir les deux joyaux du Pays Basque. Biarritz à 14h00, puis Bayonne, avec transport inclus.",
+      "about": "Pourquoi choisir entre les deux joyaux du Pays Basque ? La journée Combo vous offre le meilleur des deux mondes en une seule expérience inoubliable. Commencez à Biarritz avec son Rocher de la Vierge, ses plages mythiques et ses histoires d'impératrices et de surfeurs. Puis cap sur Bayonne avec sa cathédrale gothique classée UNESCO, ses remparts de Vauban et son chocolat légendaire — Bayonne est la capitale française du chocolat depuis le XVIIe siècle. Le transport entre les deux villes est inclus, pour une journée de 4 heures sans stress. Une immersion complète dans l'âme du Pays Basque.",
       "duration": "~4h",
       "meeting": "Point de rencontre communiqué après réservation",
       "schedule_info": "14h00 — Biarritz puis Bayonne"
@@ -48,6 +51,7 @@
     "perPerson": "/ personne",
     "bookNow": "Réserver maintenant",
     "details": "En savoir plus",
+    "aboutTour": "Le tour en détail",
     "included": "Ce qui est inclus",
     "notIncluded": "Non inclus",
     "meetingPoint": "Point de rencontre",

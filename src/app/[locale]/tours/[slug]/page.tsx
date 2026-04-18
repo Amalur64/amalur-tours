@@ -108,6 +108,18 @@ function TourDetailContent({ slug }: { slug: string }) {
                 </div>
               </ScrollReveal>
 
+              {/* Description */}
+              <ScrollReveal>
+                <div className="bg-white rounded-xl p-6 border border-gray-100">
+                  <h2 className="font-display text-xl text-basque-dark mb-4">
+                    {t("aboutTour")}
+                  </h2>
+                  <p className="text-basque-gray leading-relaxed text-sm">
+                    {t(`${tour.translationKey}.about`)}
+                  </p>
+                </div>
+              </ScrollReveal>
+
               {/* Highlights */}
               <ScrollReveal>
                 <div className="bg-white rounded-xl p-6 border border-gray-100">

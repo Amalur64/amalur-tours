@@ -26,6 +26,7 @@
     "bayonne": {
       "title": "Bayonne Walking Tour",
       "description": "Dive into Bayonne's thousand-year history: Gothic cathedral, Vauban ramparts, Petit Bayonne alleys, and Basque chocolate. English tour at 9:30 AM.",
+      "about": "Step into one of the most beautiful medieval cities in southwest France. For 90 minutes, your guide takes you behind the scenes of discreet Bayonne — the one that hurried tourists never see. In front of the Saint-Marie Cathedral, a UNESCO Gothic masterpiece, you'll discover how the pilgrims of the Camino de Santiago shaped this city over the centuries. In the Petit Bayonne quarter, among its colourful facades and lively pintxos bars, you'll feel the beating Basque heart of the city. A stop in the chocolate quarter — Bayonne has been France's chocolate capital since the 17th century — and a stroll along the banks of the Nive river will complete your immersion into the Basque soul.",
       "duration": "~1h30",
       "meeting": "Meeting point shared after booking",
       "schedule_info": "9:30 AM — English tour"
@@ -33,6 +34,7 @@
     "biarritz": {
       "title": "Biarritz Walking Tour",
       "description": "From legendary beaches to the Rock of the Virgin, discover how a small fishing village became royalty's favorite seaside resort. English tour at 11:45 AM.",
+      "about": "Once upon a time, there was a modest Basque fishing village... and an empress who fell hopelessly in love with it. For 90 minutes, your guide tells you the incredible story of Biarritz: from whale hunting to the grandeur of the Belle Époque, from the arrival of surfing in Europe in 1957 to its current worldwide reputation. You'll walk along the Grande Plage, symbol of Biarritz elegance, facing the Hôtel du Palais where Empress Eugénie once stayed. You'll cross the Plateau de l'Atalaye to reach the mythical Rocher de la Vierge. At the Port des Pêcheurs, the last remnant of authentic Biarritz, you'll understand that behind the Belle Époque facades lies a city with a deeply Basque soul.",
       "duration": "~1h30",
       "meeting": "Meeting point shared after booking",
       "schedule_info": "11:45 AM — English tour"
@@ -40,6 +42,7 @@
     "combo": {
       "title": "Bayonne + Biarritz Combo",
       "description": "The full day experience to discover both gems of the Basque Country. Bayonne at 9:30 AM, then Biarritz, with transport included.",
+      "about": "Why choose when you can have both jewels of the Basque Country? The Combo day gives you the best of both worlds in a single unforgettable experience. Start in Biarritz with its mythical Rocher de la Vierge, legendary beaches, and stories of empresses and surfers. Then head to Bayonne with its UNESCO Gothic cathedral, Vauban ramparts, and legendary chocolate — Bayonne has been France's chocolate capital since the 17th century. Transport between the two cities is included, for a stress-free 4-hour day. A complete immersion into the soul of the Basque Country.",
       "duration": "~4h",
       "meeting": "Meeting point shared after booking",
       "schedule_info": "9:30 AM — Bayonne then Biarritz"
@@ -48,6 +51,7 @@
     "perPerson": "/ person",
     "bookNow": "Book Now",
     "details": "Learn More",
+    "aboutTour": "About this tour",
     "included": "What's included",
     "notIncluded": "Not included",
     "meetingPoint": "Meeting point",
