@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { tours, getTourBySlug } from "@/lib/tours";
 import { BookingWidget } from "@/components/BookingWidget";
+import { TourRequestWidget } from "@/components/TourRequestWidget";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, Users, Globe, MapPin, CheckCircle } from "lucide-react";
 
@@ -149,40 +150,45 @@ function TourDetailContent({ slug }: { slug: string }) {
                   <h2 className="font-display text-xl text-basque-dark mb-3">
                     {t("pricing")}
                   </h2>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-basque-gray">
-                        {t("adults")}
-                      </span>
-                      <span className="font-semibold text-basque-dark">
-                        {tour.price}€
-                      </span>
+                  {tour.isPrivate ? (
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("privateGroup")}</span>
+                        <span className="font-semibold text-basque-dark">{tour.groupPrice}€</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })}</span>
+                        <span className="font-semibold text-basque-green">{t("included")}</span>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-basque-gray">
-                        {t("halfTeen")}
-                      </span>
-                      <span className="font-semibold text-basque-dark">
-                        5€
-                      </span>
+                  ) : (
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("adults")}</span>
+                        <span className="font-semibold text-basque-dark">{tour.price}€</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("halfTeen")}</span>
+                        <span className="font-semibold text-basque-dark">5€</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("freeChildren")}</span>
+                        <span className="font-semibold text-basque-green">0€</span>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-basque-gray">
-                        {t("freeChildren")}
-                      </span>
-                      <span className="font-semibold text-basque-green">
-                        0€
-                      </span>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </ScrollReveal>
             </div>
 
-            {/* Right - Booking Widget */}
+            {/* Right - Booking or Request Widget */}
             <div className="lg:col-span-1">
               <div className="sticky top-28">
-                <BookingWidget tour={tour} />
+                {tour.isPrivate ? (
+                  <TourRequestWidget tour={tour} />
+                ) : (
+                  <BookingWidget tour={tour} />
+                )}
               </div>
             </div>
           </div>

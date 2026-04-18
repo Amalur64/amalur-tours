@@ -58,6 +58,7 @@
     "from": "À partir de",
     "perPerson": "/ personne",
     "bookNow": "Réserver maintenant",
+    "requestTour": "Demander ce tour",
     "details": "En savoir plus",
     "aboutTour": "Le tour en détail",
     "included": "Ce qui est inclus",
@@ -71,7 +72,28 @@
     "freeChildren": "Gratuit pour les enfants (-12 ans)",
     "halfTeen": "5€ pour les adolescents (12-17 ans)",
     "pricing": "Tarifs",
-    "adults": "Adultes"
+    "adults": "Adultes",
+    "privateGroup": "Tour privé / groupe",
+    "privateMaxPersons": "Max {n} personnes incluses"
+  },
+  "request": {
+    "label": "Tour sur demande",
+    "perGroup": "groupe",
+    "maxPersons": "Max {n} personnes",
+    "onRequestTitle": "Ce tour est sur demande",
+    "onRequestText": "La disponibilité dépend de notre calendrier. Nous vous confirmons en 24h.",
+    "name": "Votre nom",
+    "namePlaceholder": "Prénom et nom",
+    "email": "Votre email",
+    "persons": "Personnes",
+    "date": "Date souhaitée",
+    "message": "Message (optionnel)",
+    "messagePlaceholder": "Indiquez où vous séjournez et toute info utile...",
+    "send": "Envoyer ma demande",
+    "sending": "Envoi en cours...",
+    "successTitle": "Demande envoyée !",
+    "successText": "Merci ! Nous vous répondrons dans les 24h pour confirmer la disponibilité et vous donner les détails du tour.",
+    "error": "Une erreur est survenue. Veuillez réessayer ou écrire à amalurtours@gmail.com"
   },
   "booking": {
     "title": "Réserver ce tour",
