@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large media files (iPhone raw format & videos)
+*.HEIC
+*.heic
+*.MOV
+*.mov
+
+# Personal documents
+*.pdf
