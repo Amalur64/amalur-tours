@@ -35,7 +35,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo.png"
               alt="Amalur Tours"
               width={180}
               height={180}
