@@ -7,7 +7,7 @@ export function generateBusinessSchema() {
       "Visites guidées à pied à Bayonne et Biarritz au Pays Basque. Tours en français, anglais et espagnol avec une guide locale passionnée.",
     url: "https://www.amalurtours.com",
     telephone: "+33750038651",
-    email: "amalur.tours@gmail.com",
+    email: "reservations@amalurtours.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "25 rue de l'Union",

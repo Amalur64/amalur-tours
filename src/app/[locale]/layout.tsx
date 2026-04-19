@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,6 +8,43 @@ import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { generateBusinessSchema } from "@/lib/schema";
+
+const siteUrl = "https://www.amalurtours.com";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    metadataBase: new URL(siteUrl),
+    title: {
+      default: "Amalur Tours — Visites Guidées au Pays Basque",
+      template: "%s | Amalur Tours",
+    },
+    description:
+      "Visites guidées à pied à Bayonne et Biarritz avec une guide locale passionnée. Tours en français, anglais et espagnol. À partir de 25€.",
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        "fr": `${siteUrl}/fr`,
+        "en": `${siteUrl}/en`,
+        "es": `${siteUrl}/es`,
+        "x-default": `${siteUrl}/fr`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Amalur Tours",
+      images: [{ url: `${siteUrl}/images/og-image.jpg`, width: 1200, height: 630 }],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 const dmSerif = DM_Serif_Display({
   weight: "400",

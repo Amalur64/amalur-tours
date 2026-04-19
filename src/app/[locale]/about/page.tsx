@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Heart, Users, Globe, MapPin } from "lucide-react";
+import { aboutMetadata, buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(aboutMetadata[locale] || aboutMetadata.fr, locale);
+}
 
 export default async function AboutPage({
   params,

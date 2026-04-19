@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { blogArticles } from "@/lib/blog";
+import { blogMetadata, buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(blogMetadata[locale] || blogMetadata.fr, locale);
+}
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, ArrowRight } from "lucide-react";
 

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -7,9 +8,21 @@ import { BookingWidget } from "@/components/BookingWidget";
 import { TourRequestWidget } from "@/components/TourRequestWidget";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, Users, Globe, MapPin, CheckCircle } from "lucide-react";
+import { tourMetadata, buildMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return tours.map((tour) => ({ slug: tour.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const slugMeta = tourMetadata[slug];
+  if (!slugMeta) return {};
+  return buildMetadata(slugMeta[locale] || slugMeta.fr, locale);
 }
 
 export default async function TourDetailPage({

@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { tours } from "@/lib/tours";
 import { TourCard } from "@/components/TourCard";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { toursMetadata, buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(toursMetadata[locale] || toursMetadata.fr, locale);
+}
 
 export default async function ToursPage({
   params,

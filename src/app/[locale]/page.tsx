@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -7,6 +8,16 @@ import { TourCard } from "@/components/TourCard";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { MapPin, Globe, Users, Heart, ChevronDown } from "lucide-react";
+import { homeMetadata, buildMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata(homeMetadata[locale] || homeMetadata.fr, locale);
+}
 
 export default async function HomePage({
   params,
