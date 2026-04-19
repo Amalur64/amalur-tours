@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <clipPath id="badge-clip">
+      <circle cx="200" cy="190" r="155"/>
+    </clipPath>
+    <!-- Sky stripe pattern -->
+    <pattern id="sky-stripes" x="0" y="0" width="400" height="12" patternUnits="userSpaceOnUse">
+      <rect width="400" height="7" fill="#C0392B"/>
+      <rect y="7" width="400" height="5" fill="#A93226"/>
+    </pattern>
+  </defs>
+
+  <!-- ── Outer badge rings ── -->
+  <circle cx="200" cy="190" r="175" fill="#1A1510"/>
+  <circle cx="200" cy="190" r="167" fill="#F5F0E8"/>
+  <circle cx="200" cy="190" r="158" fill="#1A1510"/>
+
+  <!-- ── Sky background ── -->
+  <rect x="0" y="0" width="400" height="400" fill="#C0392B" clip-path="url(#badge-clip)"/>
+
+  <!-- ── Sky horizontal stripes ── -->
+  <g clip-path="url(#badge-clip)">
+    <rect x="0" y="45"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="62"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="79"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="96"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="113" width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="130" width="400" height="9"  fill="#B03224" opacity="0.65"/>
+    <rect x="0" y="147" width="400" height="9"  fill="#B03224" opacity="0.6"/>
+    <rect x="0" y="164" width="400" height="7"  fill="#B03224" opacity="0.55"/>
+    <rect x="0" y="179" width="400" height="7"  fill="#B03224" opacity="0.5"/>
+    <rect x="0" y="193" width="400" height="6"  fill="#B03224" opacity="0.4"/>
+    <rect x="0" y="206" width="400" height="5"  fill="#B03224" opacity="0.3"/>
+  </g>
+
+  <!-- ── Sea layers (bottom) ── -->
+  <g clip-path="url(#badge-clip)">
+    <!-- Base sea -->
+    <rect x="0" y="235" width="400" height="200" fill="#1B4D4A"/>
+
+    <!-- Wave layer 1 (dark) -->
+    <path d="M 0 248
+             C 60 235, 100 255, 160 248
+             C 220 241, 260 260, 320 252
+             C 350 248, 375 255, 400 250
+             L 400 400 L 0 400 Z"
+          fill="#174440"/>
+
+    <!-- Wave layer 2 -->
+    <path d="M 0 268
+             C 50 258, 100 275, 155 265
+             C 210 255, 270 278, 330 265
+             C 360 259, 385 270, 400 265
+             L 400 400 L 0 400 Z"
+          fill="#236360"/>
+
+    <!-- Wave layer 3 -->
+    <path d="M 0 293
+             C 55 280, 110 300, 165 288
+             C 225 276, 275 298, 340 283
+             C 368 276, 390 290, 400 285
+             L 400 400 L 0 400 Z"
+          fill="#2E7C78"/>
+
+    <!-- Wave layer 4 (light) -->
+    <path d="M 0 320
+             C 60 308, 115 326, 175 312
+             C 235 298, 290 322, 355 308
+             C 375 303, 392 314, 400 310
+             L 400 400 L 0 400 Z"
+          fill="#3A9490"/>
+
+    <!-- Wave layer 5 (cream tint) -->
+    <path d="M 0 350
+             C 70 338, 130 354, 195 340
+             C 258 326, 315 348, 380 335
+             C 390 332, 396 338, 400 336
+             L 400 400 L 0 400 Z"
+          fill="#4AAE9F" opacity="0.6"/>
+  </g>
+
+  <!-- ── Mountains ── -->
+  <g clip-path="url(#badge-clip)">
+    <!-- Right mountain (back, slightly smaller) -->
+    <path d="M 195 270 L 268 120 L 345 270 Z" fill="#6B4F31"/>
+    <!-- Left mountain (front, larger) -->
+    <path d="M 58 270 L 155 105 L 252 270 Z" fill="#7A5C3A"/>
+
+    <!-- Mountain shading - left face darker -->
+    <path d="M 58 270 L 155 105 L 200 270 Z" fill="#5C4228"/>
+    <!-- Mountain shading - right face of back mountain -->
+    <path d="M 268 120 L 295 195 L 345 270 L 268 270 Z" fill="#5A4128"/>
+
+    <!-- Snow caps -->
+    <!-- Left mountain snow -->
+    <path d="M 140 127 L 155 105 L 170 127 L 163 120 L 155 135 L 147 120 Z"
+          fill="#F5F0E8"/>
+    <path d="M 148 127 L 155 112 L 162 127 Z" fill="#FFFFFF"/>
+
+    <!-- Right mountain snow -->
+    <path d="M 256 142 L 268 120 L 280 142 L 274 136 L 268 150 L 262 136 Z"
+          fill="#F5F0E8"/>
+    <path d="M 263 142 L 268 128 L 273 142 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ── Inner badge ring (on top of scene) ── -->
+  <circle cx="200" cy="190" r="158" fill="none" stroke="#1A1510" stroke-width="3"/>
+  <circle cx="200" cy="190" r="154" fill="none" stroke="#F5F0E8" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ── "Amalur" text ── -->
+  <!-- Shadow/outline effect -->
+  <text x="203" y="422"
+        font-family="'Righteous', 'Arial Black', sans-serif"
+        font-size="82"
+        font-weight="900"
+        text-anchor="middle"
+        fill="#1A1510"
+        stroke="#1A1510"
+        stroke-width="8"
+        stroke-linejoin="round">Amalur</text>
+  <!-- Main text -->
+  <text x="200" y="420"
+        font-family="'Righteous', 'Arial Black', sans-serif"
+        font-size="82"
+        font-weight="900"
+        text-anchor="middle"
+        fill="#F5F0E8">Amalur</text>
+
+  <!-- ── "TOURS" with dashes ── -->
+  <line x1="68"  y1="447" x2="112" y2="447" stroke="#1A1510" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="288" y1="447" x2="332" y2="447" stroke="#1A1510" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="200" y="452"
+        font-family="'Montserrat', 'Arial', sans-serif"
+        font-size="17"
+        font-weight="700"
+        text-anchor="middle"
+        letter-spacing="7"
+        fill="#1A1510">TOURS</text>
+</svg>
