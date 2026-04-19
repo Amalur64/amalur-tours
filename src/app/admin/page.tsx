@@ -4,6 +4,7 @@ import { stripe } from "@/lib/stripe";
 import Stripe from "stripe";
 import { AnalyticsDashboard } from "@/components/admin/AnalyticsDashboard";
 import { CancelEmailButton } from "@/components/admin/CancelEmailButton";
+import { TestEmailButtons } from "@/components/admin/TestEmailButtons";
 
 async function checkAuth() {
   const cookieStore = await cookies();
@@ -240,6 +241,12 @@ export default async function AdminPage() {
               </table>
             )}
           </div>
+        </section>
+
+        {/* Test emails */}
+        <section>
+          <h2 className="text-lg font-semibold text-gray-700 mb-4">📧 Tester les emails</h2>
+          <TestEmailButtons />
         </section>
 
         {/* Analytics visiteurs */}
