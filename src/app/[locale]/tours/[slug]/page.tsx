@@ -77,7 +77,9 @@ function TourDetailContent({ slug }: { slug: string }) {
                     {
                       icon: Users,
                       label: t("groupSize"),
-                      value: t("maxPersons"),
+                      value: tour.isPrivate
+                        ? t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })
+                        : t("maxPersons"),
                     },
                     {
                       icon: Globe,
