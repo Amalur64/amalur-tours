@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { stripe } from "@/lib/stripe";
 import Stripe from "stripe";
 import { AnalyticsDashboard } from "@/components/admin/AnalyticsDashboard";
+import { CancelEmailButton } from "@/components/admin/CancelEmailButton";
 
 async function checkAuth() {
   const cookieStore = await cookies();
@@ -145,6 +146,7 @@ export default async function AdminPage() {
                     <th className="text-left px-4 py-3">Client</th>
                     <th className="text-left px-4 py-3">Participants</th>
                     <th className="text-right px-4 py-3">Montant</th>
+                    <th className="px-4 py-3"></th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-50">
@@ -160,6 +162,16 @@ export default async function AdminPage() {
                         <td className="px-4 py-3">{s.customer_details?.name || "—"}</td>
                         <td className="px-4 py-3">{total} pers.</td>
                         <td className="px-4 py-3 text-right font-semibold">{formatEur(s.amount_total || 0)}</td>
+                        <td className="px-4 py-3">
+                          <CancelEmailButton
+                            customerName={s.customer_details?.name || ""}
+                            customerEmail={s.customer_details?.email || ""}
+                            tourName={m.tourId || ""}
+                            date={formatDate(m.date)}
+                            amount={s.amount_total || 0}
+                            language={m.locale || "fr"}
+                          />
+                        </td>
                       </tr>
                     );
                   })}
