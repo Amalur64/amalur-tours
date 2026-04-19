@@ -117,10 +117,29 @@ export async function sendCustomerConfirmation(data: BookingEmailData) {
           <tr><td style="padding: 10px; background: #f9f9f9; color: #666; border-bottom: 1px solid #eee;">${lang === "en" ? "Participants" : lang === "es" ? "Participantes" : "Participants"}</td><td style="padding: 10px; background: #f9f9f9; font-weight: bold; border-bottom: 1px solid #eee;">${totalPeople}</td></tr>
           <tr><td style="padding: 10px; color: #666;">${lang === "en" ? "Amount paid" : lang === "es" ? "Importe pagado" : "Montant payé"}</td><td style="padding: 10px; font-weight: bold; color: #C1272D; font-size: 18px;">${amountEur}€</td></tr>
         </table>
+
+        <div style="background: #FFF8E1; border-left: 4px solid #F59E0B; border-radius: 8px; padding: 16px; margin: 20px 0;">
+          <p style="margin: 0 0 6px; font-weight: bold; color: #92400E;">
+            ${lang === "en" ? "📋 Cancellation policy" : lang === "es" ? "📋 Política de cancelación" : "📋 Politique d'annulation"}
+          </p>
+          <p style="margin: 0; color: #78350F; font-size: 14px; line-height: 1.6;">
+            ${lang === "en"
+              ? "Free cancellation up to <strong>24 hours before</strong> the tour. To cancel, simply reply to this email or contact us at <a href='mailto:reservations@amalurtours.com' style='color: #C1272D;'>reservations@amalurtours.com</a>. After this deadline, no refund will be possible."
+              : lang === "es"
+              ? "Cancelación gratuita hasta <strong>24 horas antes</strong> del tour. Para cancelar, responde a este correo o contáctanos en <a href='mailto:reservations@amalurtours.com' style='color: #C1272D;'>reservations@amalurtours.com</a>. Pasado este plazo, no será posible ningún reembolso."
+              : "Annulation gratuite jusqu'à <strong>24h avant</strong> le tour. Pour annuler, répondez simplement à cet email ou contactez-nous à <a href='mailto:reservations@amalurtours.com' style='color: #C1272D;'>reservations@amalurtours.com</a>. Passé ce délai, aucun remboursement ne sera possible."}
+          </p>
+        </div>
+
+        <p style="color: #888; font-size: 13px; margin: 16px 0 0;">
+          ${lang === "en" ? "📍 Meeting point:" : lang === "es" ? "📍 Punto de encuentro:" : "📍 Point de rendez-vous :"}
+          <strong>${data.tourName}</strong> —
+          ${lang === "en" ? "details will be confirmed by email." : lang === "es" ? "los detalles se confirmarán por email." : "les détails vous seront confirmés par email."}
+        </p>
       </div>
       <div style="background: #333; padding: 20px; text-align: center; border-radius: 0 0 12px 12px;">
         <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 14px;">${lang === "en" ? "See you soon in the Basque Country! 🌊" : lang === "es" ? "¡Nos vemos pronto en el País Vasco! 🌊" : "À bientôt au Pays Basque ! 🌊"}</p>
-        <p style="color: rgba(255,255,255,0.5); margin: 8px 0 0; font-size: 12px;">amalur.tours@gmail.com — +33 7 50 03 86 51</p>
+        <p style="color: rgba(255,255,255,0.5); margin: 8px 0 0; font-size: 12px;">reservations@amalurtours.com — +33 7 50 03 86 51 — www.amalurtours.com</p>
       </div>
     </div>
   `;
@@ -223,6 +242,88 @@ export async function sendGiftVoucherEmail(data: {
   ]);
 
   return { clientOk, ownerOk };
+}
+
+/**
+ * Envoie un email d'annulation au client (à déclencher manuellement)
+ */
+export async function sendCancellationEmail(data: {
+  customerName: string;
+  customerEmail: string;
+  tourName: string;
+  date: string;
+  amount: number; // in cents
+  language: string;
+}) {
+  const lang = data.language || "fr";
+  const amountEur = (data.amount / 100).toFixed(2);
+
+  const subjects: Record<string, string> = {
+    fr: `Annulation confirmée — ${data.tourName}`,
+    en: `Cancellation confirmed — ${data.tourName}`,
+    es: `Cancelación confirmada — ${data.tourName}`,
+  };
+
+  const htmlContent = `
+    <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+      <div style="background: #4B5563; padding: 24px; text-align: center; border-radius: 12px 12px 0 0;">
+        <h1 style="color: white; margin: 0; font-size: 22px;">Amalur Tours</h1>
+        <p style="color: rgba(255,255,255,0.7); margin: 4px 0 0; font-size: 14px;">
+          ${lang === "en" ? "Cancellation confirmation" : lang === "es" ? "Confirmación de cancelación" : "Confirmation d'annulation"}
+        </p>
+      </div>
+      <div style="background: #ffffff; padding: 32px; border: 1px solid #eee;">
+        <p style="font-size: 16px; color: #333;">
+          ${lang === "en" ? "Hello" : lang === "es" ? "Hola" : "Bonjour"} <strong>${data.customerName}</strong>,
+        </p>
+        <p style="color: #555; line-height: 1.7;">
+          ${lang === "en"
+            ? `We confirm the cancellation of your booking for <strong>${data.tourName}</strong> on <strong>${data.date}</strong>.`
+            : lang === "es"
+            ? `Confirmamos la cancelación de su reserva para <strong>${data.tourName}</strong> el <strong>${data.date}</strong>.`
+            : `Nous confirmons l'annulation de votre réservation pour <strong>${data.tourName}</strong> du <strong>${data.date}</strong>.`}
+        </p>
+
+        <div style="background: #F0FDF4; border-left: 4px solid #22C55E; border-radius: 8px; padding: 16px; margin: 24px 0;">
+          <p style="margin: 0 0 6px; font-weight: bold; color: #166534;">
+            ${lang === "en" ? "✅ Refund" : lang === "es" ? "✅ Reembolso" : "✅ Remboursement"}
+          </p>
+          <p style="margin: 0; color: #15803D; font-size: 15px;">
+            ${lang === "en"
+              ? `A refund of <strong>${amountEur}€</strong> will be credited to your original payment method within 5 to 10 business days.`
+              : lang === "es"
+              ? `Un reembolso de <strong>${amountEur}€</strong> será acreditado en su método de pago original en un plazo de 5 a 10 días hábiles.`
+              : `Un remboursement de <strong>${amountEur}€</strong> sera crédité sur votre moyen de paiement d'origine sous 5 à 10 jours ouvrés.`}
+          </p>
+        </div>
+
+        <p style="color: #555; line-height: 1.7;">
+          ${lang === "en"
+            ? "We hope to see you soon in the Basque Country! Don't hesitate to book again."
+            : lang === "es"
+            ? "¡Esperamos verle pronto en el País Vasco! No dude en volver a reservar."
+            : "Nous espérons vous accueillir prochainement au Pays Basque ! N'hésitez pas à réserver à nouveau."}
+        </p>
+        <p style="color: #555; font-size: 14px; margin-top: 24px;">
+          ${lang === "en" ? "Warm regards," : lang === "es" ? "Un cordial saludo," : "Cordialement,"}<br>
+          <strong>Maider</strong><br>
+          <em>Amalur Tours</em>
+        </p>
+      </div>
+      <div style="background: #2C3E50; padding: 20px; text-align: center; border-radius: 0 0 12px 12px;">
+        <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 12px;">
+          reservations@amalurtours.com — +33 7 50 03 86 51 — www.amalurtours.com
+        </p>
+      </div>
+    </div>
+  `;
+
+  return sendBrevoEmail({
+    sender: { name: FROM_NAME, email: FROM_EMAIL },
+    to: [{ email: data.customerEmail, name: data.customerName }],
+    subject: subjects[lang] || subjects.fr,
+    htmlContent,
+  });
 }
 
 /**
