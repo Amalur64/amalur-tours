@@ -89,7 +89,9 @@ export function TourCard({ tour }: TourCardProps) {
           </span>
           <span className="flex items-center gap-1">
             <Users size={14} />
-            {t("maxPersons")}
+            {tour.isPrivate
+              ? t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })
+              : t("maxPersons")}
           </span>
         </div>
 
@@ -98,7 +100,7 @@ export function TourCard({ tour }: TourCardProps) {
           <div>
             {tour.isPrivate ? (
               <>
-                <span className="text-xs text-basque-gray">Tour privé — max {tour.maxGroupSize} pers.</span>
+                <span className="text-xs text-basque-gray">{t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })}</span>
                 <div className="flex items-baseline gap-1">
                   <span className="text-2xl font-bold text-basque-dark">{tour.groupPrice}€</span>
                   <span className="text-xs text-basque-gray">/ groupe</span>

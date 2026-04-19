@@ -64,7 +64,14 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
-        {/* Google Analytics */}
+        {/* Google Analytics — désactivé pour les visites admin */}
+        <Script id="ga-filter-admin" strategy="afterInteractive">
+          {`
+            if (document.cookie.split(';').some(c => c.trim().startsWith('admin_session='))) {
+              window['ga-disable-G-1DE66DXBEP'] = true;
+            }
+          `}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1DE66DXBEP"
           strategy="afterInteractive"
