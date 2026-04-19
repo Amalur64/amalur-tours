@@ -196,6 +196,7 @@ export default async function AdminPage() {
                     <th className="text-left px-4 py-3">Client</th>
                     <th className="text-left px-4 py-3">Détail</th>
                     <th className="text-right px-4 py-3">Montant</th>
+                    <th className="px-4 py-3"></th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-50">
@@ -219,6 +220,18 @@ export default async function AdminPage() {
                         </td>
                         <td className="px-4 py-3 text-right font-semibold text-green-600">
                           {formatEur(s.amount_total || 0)}
+                        </td>
+                        <td className="px-4 py-3">
+                          {!isGift && (
+                            <CancelEmailButton
+                              customerName={s.customer_details?.name || ""}
+                              customerEmail={s.customer_details?.email || ""}
+                              tourName={m?.tourId || ""}
+                              date={formatDate(m?.date || "")}
+                              amount={s.amount_total || 0}
+                              language={m?.locale || "fr"}
+                            />
+                          )}
                         </td>
                       </tr>
                     );
