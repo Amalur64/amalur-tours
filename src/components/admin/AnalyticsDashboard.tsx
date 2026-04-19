@@ -121,7 +121,7 @@ function DonutChart({ data, dataKey }: { data: { [key: string]: string | number 
             ))}
           </Pie>
           <Tooltip
-            formatter={(val: number) => [`${val} (${Math.round((val / total) * 100)}%)`, ""]}
+            formatter={(val) => [`${val} (${Math.round((Number(val) / total) * 100)}%)`, ""]}
             contentStyle={{ borderRadius: "12px", border: "1px solid #e5e7eb", fontSize: "12px" }}
           />
         </PieChart>
@@ -395,7 +395,7 @@ export function AnalyticsDashboard() {
                 axisLine={false}
               />
               <Tooltip
-                formatter={(val: number) => [val, "vues"]}
+                formatter={(val) => [val, "vues"]}
                 contentStyle={{ borderRadius: "12px", border: "1px solid #e5e7eb", fontSize: "12px" }}
               />
               <Bar dataKey="views" fill="#C41E3A" radius={[0, 6, 6, 0]} maxBarSize={20} />
