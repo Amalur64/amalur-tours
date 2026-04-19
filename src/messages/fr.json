@@ -115,21 +115,25 @@
   "about": {
     "title": "À Propos d'Amalur Tours",
     "subtitle": "Amalur signifie « Terre Mère » en basque",
-    "story": "Je m'appelle Maider. Ma famille est enracinée entre le Pays Basque et les Landes — Bayonne, Saint-Pierre-d'Irube, Port-de-Lannes — cette frontière douce entre deux terres fières, deux cultures qui se frôlent. La vie m'a emmenée loin de là. L'Asie, l'Amérique du Sud, l'Espagne, les Pays-Bas... J'ai bourlingué, appris d'autres langues, découvert d'autres façons de voir le monde. Mais c'est souvent au détour d'un voyage que l'on comprend ce qui nous appartient vraiment — et le Pays Basque, lui, n'a jamais cessé de vibrer en moi.",
-    "philosophy": "Amalur signifie « mère terre » en basque. Ce nom s'est imposé naturellement, comme une évidence. J'ai créé Amalur Tours pour partager cet amour — pas comme une carte postale, mais comme on partage quelque chose de vrai. Les ruelles de Bayonne, le souffle de l'océan à Biarritz, l'histoire d'un peuple fier et unique. Une terre qui vibre. La mienne, un peu. La vôtre, le temps d'une balade.",
+    "story": "Amalur Tours est née d'une conviction simple : les meilleures histoires du Pays Basque se racontent à pied, dans les ruelles que les touristes pressés ne voient jamais. Chaque façade à colombages rouge sang, chaque fronton de pelote, chaque pavé du Petit Bayonne cache des siècles d'histoire — et des anecdotes que seuls les locaux connaissent vraiment. Nos guides sont des passionnés profondément enracinés dans cette terre unique qui s'étend entre France et Espagne. Ils ne récitent pas un script. Ils partagent ce qu'ils aiment, ce que leurs familles leur ont transmis, ce que les guides touristiques ne disent jamais.",
+    "philosophy": "Chez Amalur Tours, nous croyons au tourisme de proximité et d'authenticité. Des groupes intentionnellement petits — jamais plus de 12 personnes — pour que chaque visiteur vive une vraie expérience, pas une visite en troupeau. Trois langues parlées couramment, une seule ambition : vous faire ressentir le Pays Basque de l'intérieur, comme un local. Parce qu'une terre aussi unique mérite d'être découverte avec ceux qui la vivent.",
     "values": {
-      "title": "Nos Valeurs",
+      "title": "Ce qui nous rend différents",
       "authentic": {
-        "title": "Authenticité",
-        "description": "Des récits vrais, des lieux méconnus, une perspective locale"
+        "title": "100% Authentique",
+        "description": "Pas de circuit standardisé. Des récits vrais, des lieux méconnus, une perspective locale que vous ne trouverez dans aucun guide touristique."
       },
-      "sustainable": {
-        "title": "Tourisme Responsable",
-        "description": "Petits groupes, économie locale, respect du patrimoine"
+      "smallGroup": {
+        "title": "Petits Groupes",
+        "description": "Jamais plus de 12 personnes. Parce que le vrai contact avec une ville ne se vit pas en troupeau. Chaque visiteur mérite une expérience personnelle."
       },
-      "passionate": {
-        "title": "Passion",
-        "description": "Chaque tour est animé par l'amour sincère de cette terre"
+      "local": {
+        "title": "Guides Locaux",
+        "description": "Nés et enracinés au Pays Basque, nos guides partagent ce qu'ils aiment — pas ce qu'on leur a demandé de dire. C'est ça, la différence."
+      },
+      "multilingual": {
+        "title": "3 Langues",
+        "description": "Français, anglais, espagnol. Le Pays Basque est une terre de frontières et de cultures mêlées — nos tours le reflètent."
       }
     }
   },

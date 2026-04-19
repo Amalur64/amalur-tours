@@ -115,21 +115,25 @@
   "about": {
     "title": "About Amalur Tours",
     "subtitle": "Amalur means \"Mother Earth\" in Basque",
-    "story": "My name is Maider. My family is rooted between the Basque Country and the Landes — Bayonne, Saint-Pierre-d'Irube, Port-de-Lannes — that gentle border between two proud lands, two cultures that intertwine. Life took me far from there. Asia, South America, Spain, the Netherlands... I wandered, learned other languages, discovered other ways of seeing the world. But it is often while travelling that we understand what truly belongs to us — and the Basque Country never stopped vibrating within me.",
-    "philosophy": "Amalur means 'mother earth' in Basque. The name came naturally, like something inevitable. I created Amalur Tours to share this love — not like a postcard, but like sharing something real. The streets of Bayonne, the breath of the ocean in Biarritz, the history of a proud and unique people. A land that vibrates. Mine, a little. Yours, for the length of a walk.",
+    "story": "Amalur Tours was born from a simple belief: the best stories of the Basque Country are told on foot, through the streets that hurried tourists never see. Every red-painted half-timbered facade, every pelota court, every cobblestone of the Petit Bayonne hides centuries of history — and stories that only locals truly know. Our guides are passionate people deeply rooted in this unique land that stretches between France and Spain. They don't recite a script. They share what they love, what their families passed down to them, what no travel guide ever tells you.",
+    "philosophy": "At Amalur Tours, we believe in proximity and authentic tourism. Intentionally small groups — never more than 12 people — so that every visitor lives a real experience, not a herd visit. Three languages spoken fluently, one single ambition: to make you feel the Basque Country from the inside, like a local. Because a land this unique deserves to be discovered with those who truly live it.",
     "values": {
-      "title": "Our Values",
+      "title": "What makes us different",
       "authentic": {
-        "title": "Authenticity",
-        "description": "True stories, hidden gems, a local perspective"
+        "title": "100% Authentic",
+        "description": "No standardised circuit. True stories, hidden places, a local perspective you won't find in any travel guide."
       },
-      "sustainable": {
-        "title": "Responsible Tourism",
-        "description": "Small groups, local economy, heritage respect"
+      "smallGroup": {
+        "title": "Small Groups",
+        "description": "Never more than 12 people. Because a real connection with a city isn't experienced in a crowd. Every visitor deserves a personal experience."
       },
-      "passionate": {
-        "title": "Passion",
-        "description": "Every tour is driven by a genuine love for this land"
+      "local": {
+        "title": "Local Guides",
+        "description": "Born and rooted in the Basque Country, our guides share what they love — not what they were told to say. That's the difference."
+      },
+      "multilingual": {
+        "title": "3 Languages",
+        "description": "French, English, Spanish. The Basque Country is a land of borders and blended cultures — our tours reflect that."
       }
     }
   },

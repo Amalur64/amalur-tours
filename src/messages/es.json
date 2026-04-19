@@ -115,21 +115,25 @@
   "about": {
     "title": "Sobre Amalur Tours",
     "subtitle": "Amalur significa «Madre Tierra» en euskera",
-    "story": "Me llamo Maider. Mi familia tiene raíces entre el País Vasco y las Landas — Bayona, Saint-Pierre-d'Irube, Port-de-Lannes — esa frontera suave entre dos tierras orgullosas, dos culturas que se entrelazan. La vida me llevó lejos de allí. Asia, América del Sur, España, los Países Bajos... Viajé, aprendí otros idiomas, descubrí otras formas de ver el mundo. Pero es a menudo viajando que comprendemos lo que realmente nos pertenece — y el País Vasco nunca dejó de vibrar en mí.",
-    "philosophy": "Amalur significa 'tierra madre' en euskera. El nombre surgió naturalmente, como una evidencia. Creé Amalur Tours para compartir este amor — no como una postal, sino como se comparte algo verdadero. Las calles de Bayona, el aliento del océano en Biarritz, la historia de un pueblo orgulloso y único. Una tierra que vibra. La mía, un poco. La tuya, el tiempo de un paseo.",
+    "story": "Amalur Tours nació de una convicción simple: las mejores historias del País Vasco se cuentan a pie, por las callejuelas que los turistas apresurados nunca ven. Cada fachada de entramado rojo, cada frontón de pelota, cada adoquín del Petit Bayonne esconde siglos de historia — y anécdotas que solo los locales conocen de verdad. Nuestros guías son apasionados profundamente arraigados en esta tierra única que se extiende entre Francia y España. No recitan un guión. Comparten lo que aman, lo que sus familias les transmitieron, lo que ninguna guía turística cuenta.",
+    "philosophy": "En Amalur Tours creemos en el turismo de proximidad y autenticidad. Grupos intencionalmente pequeños — nunca más de 12 personas — para que cada visitante viva una experiencia real, no una visita en rebaño. Tres idiomas hablados con fluidez, una sola ambición: hacerle sentir el País Vasco desde dentro, como un local. Porque una tierra tan única merece ser descubierta con quienes realmente la viven.",
     "values": {
-      "title": "Nuestros Valores",
+      "title": "Lo que nos hace diferentes",
       "authentic": {
-        "title": "Autenticidad",
-        "description": "Historias reales, lugares escondidos, una perspectiva local"
+        "title": "100% Auténtico",
+        "description": "Sin circuito estandarizado. Historias reales, lugares desconocidos, una perspectiva local que no encontrará en ninguna guía turística."
       },
-      "sustainable": {
-        "title": "Turismo Responsable",
-        "description": "Grupos pequeños, economía local, respeto al patrimonio"
+      "smallGroup": {
+        "title": "Grupos Pequeños",
+        "description": "Nunca más de 12 personas. Porque el verdadero contacto con una ciudad no se vive en manada. Cada visitante merece una experiencia personal."
       },
-      "passionate": {
-        "title": "Pasión",
-        "description": "Cada tour está impulsado por un amor genuino por esta tierra"
+      "local": {
+        "title": "Guías Locales",
+        "description": "Nacidos y arraigados en el País Vasco, nuestros guías comparten lo que aman — no lo que les pidieron que dijeran. Esa es la diferencia."
+      },
+      "multilingual": {
+        "title": "3 Idiomas",
+        "description": "Francés, inglés, español. El País Vasco es una tierra de fronteras y culturas mezcladas — nuestros tours lo reflejan."
       }
     }
   },

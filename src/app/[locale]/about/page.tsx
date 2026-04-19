@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { Heart, Leaf, Flame } from "lucide-react";
+import { Heart, Users, Globe, MapPin } from "lucide-react";
 
 export default async function AboutPage({
   params,
@@ -26,15 +26,21 @@ function AboutContent() {
       color: "bg-basque-red/10 text-basque-red",
     },
     {
-      icon: Leaf,
-      title: t("values.sustainable.title"),
-      description: t("values.sustainable.description"),
+      icon: Users,
+      title: t("values.smallGroup.title"),
+      description: t("values.smallGroup.description"),
+      color: "bg-basque-ocean/10 text-basque-ocean",
+    },
+    {
+      icon: MapPin,
+      title: t("values.local.title"),
+      description: t("values.local.description"),
       color: "bg-basque-green/10 text-basque-green",
     },
     {
-      icon: Flame,
-      title: t("values.passionate.title"),
-      description: t("values.passionate.description"),
+      icon: Globe,
+      title: t("values.multilingual.title"),
+      description: t("values.multilingual.description"),
       color: "bg-basque-gold/20 text-basque-gold",
     },
   ];
@@ -59,8 +65,8 @@ function AboutContent() {
             <ScrollReveal animation="slide-in-left">
               <div className="aspect-[4/5] rounded-2xl relative overflow-hidden">
                 <Image
-                  src="/images/about.jpg"
-                  alt="Amalur Tours"
+                  src="/images/blog/combo.jpg"
+                  alt="Vallée basque au coucher de soleil"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -95,7 +101,7 @@ function AboutContent() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, i) => (
               <ScrollReveal key={i} delay={i * 100}>
                 <div className="bg-basque-cream rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
