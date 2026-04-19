@@ -99,12 +99,6 @@ export default async function AdminPage() {
 
       <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
 
-        {/* Analytics Google */}
-        <section>
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">📈 Analytics visiteurs — 30 derniers jours</h2>
-          <AnalyticsDashboard />
-        </section>
-
         {/* Stats du mois */}
         <section>
           <h2 className="text-lg font-semibold text-gray-700 mb-4">📊 Ce mois-ci</h2>
@@ -221,6 +215,12 @@ export default async function AdminPage() {
               </table>
             )}
           </div>
+        </section>
+
+        {/* Analytics visiteurs */}
+        <section>
+          <h2 className="text-lg font-semibold text-gray-700 mb-4">📈 Analytics visiteurs — 30 derniers jours</h2>
+          <AnalyticsDashboard />
         </section>
 
       </div>
