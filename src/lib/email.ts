@@ -152,9 +152,9 @@ export async function sendCustomerConfirmation(data: BookingEmailData) {
     paid: { fr: "Montant réglé", en: "Amount paid", es: "Importe pagado" },
     meetingTitle: { fr: "📍 Point de rendez-vous", en: "📍 Meeting point", es: "📍 Punto de encuentro" },
     meetingNote: {
-      fr: "Soyez là <strong>5 minutes avant</strong> l'heure prévue. Je porterai un signe distinctif pour être facilement reconnaissable !",
-      en: "Please arrive <strong>5 minutes before</strong> the scheduled time. I'll be wearing something distinctive so you can easily spot me!",
-      es: "Por favor, llegue <strong>5 minutos antes</strong> de la hora prevista. ¡Llevaré algo distintivo para que pueda reconocerme fácilmente!",
+      fr: "Soyez là <strong>5 minutes avant</strong> l'heure prévue. Votre guide portera un signe distinctif pour être facilement reconnaissable !",
+      en: "Please arrive <strong>5 minutes before</strong> the scheduled time. Your guide will be wearing something distinctive so you can easily spot them!",
+      es: "Por favor, llegue <strong>5 minutos antes</strong> de la hora prevista. ¡Su guía llevará algo distintivo para que pueda reconocerle fácilmente!",
     },
     tipsTitle: { fr: "👟 Conseils pratiques", en: "👟 Practical tips", es: "👟 Consejos prácticos" },
     tips: {
@@ -164,9 +164,9 @@ export async function sendCustomerConfirmation(data: BookingEmailData) {
     },
     cancelTitle: { fr: "📋 Politique d'annulation", en: "📋 Cancellation policy", es: "📋 Política de cancelación" },
     cancel: {
-      fr: "Annulation gratuite jusqu'à <strong>24h avant</strong> le tour. Répondez à cet email ou écrivez à <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;'>reservations@amalurtours.com</a>.",
-      en: "Free cancellation up to <strong>24 hours before</strong> the tour. Reply to this email or write to <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;'>reservations@amalurtours.com</a>.",
-      es: "Cancelación gratuita hasta <strong>24 horas antes</strong> del tour. Responda a este correo o escriba a <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;'>reservations@amalurtours.com</a>.",
+      fr: "Annulation gratuite jusqu'à <strong>24h avant</strong> le tour.<br>→ Répondez directement à cet email<br>→ Ou écrivez-nous à <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;font-weight:600;'>reservations@amalurtours.com</a>",
+      en: "Free cancellation up to <strong>24 hours before</strong> the tour.<br>→ Reply directly to this email<br>→ Or write to us at <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;font-weight:600;'>reservations@amalurtours.com</a>",
+      es: "Cancelación gratuita hasta <strong>24 horas antes</strong> del tour.<br>→ Responda directamente a este correo<br>→ O escríbanos a <a href='mailto:reservations@amalurtours.com' style='color:#C1272D;font-weight:600;'>reservations@amalurtours.com</a>",
     },
     signature: {
       fr: "À très bientôt au Pays Basque !",
@@ -272,9 +272,9 @@ export async function sendCustomerConfirmation(data: BookingEmailData) {
         </div>
 
         <p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">
-          ${t.signature[lang as keyof typeof t.signature]}<br>
-          <strong style="color: #1A1510;">Maider</strong><br>
-          <em style="color: #888;">Amalur Tours — Guide locale au Pays Basque</em>
+          ${t.signature[lang as keyof typeof t.signature]}<br><br>
+          <strong style="color: #1A1510;">L'équipe Amalur Tours</strong><br>
+          <em style="color: #888;">${lang === "en" ? "Local guided tours — Basque Country" : lang === "es" ? "Agencia de guías locales — País Vasco" : "Agence de guides locaux — Pays Basque"}</em>
         </p>
       </div>
 
