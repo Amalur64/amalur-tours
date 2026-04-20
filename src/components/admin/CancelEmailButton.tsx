@@ -7,8 +7,10 @@ interface Props {
   customerName: string;
   customerEmail: string;
   tourName: string;
-  date: string;
-  amount: number; // cents
+  date: string;       // formatted DD/MM/YYYY (for display)
+  rawDate?: string;   // YYYY-MM-DD (for calendar deletion)
+  time?: string;      // HH:MM (for calendar deletion)
+  amount: number;     // cents
   language: string;
 }
 
@@ -17,6 +19,8 @@ export function CancelEmailButton({
   customerEmail,
   tourName,
   date,
+  rawDate,
+  time,
   amount,
   language,
 }: Props) {
@@ -36,6 +40,8 @@ export function CancelEmailButton({
           customerEmail,
           tourName,
           date,
+          rawDate,
+          time,
           amount,
           language,
         }),

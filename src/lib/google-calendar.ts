@@ -193,3 +193,74 @@ export async function isTimeSlotBlocked(
     return false;
   }
 }
+
+// Delete a calendar event matching a booking (search by date + tour name)
+export async function deleteCalendarEventByBooking(
+  tourName: string,
+  date: string, // YYYY-MM-DD
+  time?: string,
+): Promise<boolean> {
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
+  const serviceEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const calendarId = process.env.GOOGLE_CALENDAR_ID;
+
+  if (!privateKey || !serviceEmail || !calendarId) {
+    console.warn("Google Calendar not configured — skipping event deletion");
+    return false;
+  }
+
+  try {
+    const token = await getAccessToken(serviceEmail, privateKey);
+
+    // Search all events for the given day
+    const timeMin = `${date}T00:00:00+02:00`;
+    const timeMax = `${date}T23:59:59+02:00`;
+
+    const listRes = await fetch(
+      `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?` +
+        `timeMin=${encodeURIComponent(timeMin)}&` +
+        `timeMax=${encodeURIComponent(timeMax)}&` +
+        `singleEvents=true&maxResults=20`,
+      { headers: { Authorization: `Bearer ${token}` } },
+    );
+
+    const listData = await listRes.json();
+    const events = listData.items || [];
+
+    // Find the matching event by tour name (summary contains tourName)
+    // If time is provided, also match on start time
+    const match = events.find((ev: { id: string; summary?: string; start?: { dateTime?: string } }) => {
+      const summaryMatch = ev.summary?.toLowerCase().includes(tourName.toLowerCase());
+      if (!summaryMatch) return false;
+      if (time) {
+        return ev.start?.dateTime?.includes(time);
+      }
+      return true;
+    });
+
+    if (!match) {
+      console.warn("No matching calendar event found for", tourName, date, time);
+      return false;
+    }
+
+    // Delete the event
+    const deleteRes = await fetch(
+      `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events/${match.id}`,
+      {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` },
+      },
+    );
+
+    if (deleteRes.status === 204) {
+      console.log("Calendar event deleted:", match.id, tourName, date);
+      return true;
+    }
+
+    console.error("Failed to delete calendar event:", deleteRes.status);
+    return false;
+  } catch (err) {
+    console.error("Error deleting calendar event:", err);
+    return false;
+  }
+}

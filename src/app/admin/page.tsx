@@ -169,6 +169,8 @@ export default async function AdminPage() {
                             customerEmail={s.customer_details?.email || ""}
                             tourName={m.tourId || ""}
                             date={formatDate(m.date)}
+                            rawDate={m.date}
+                            time={m.time}
                             amount={s.amount_total || 0}
                             language={m.locale || "fr"}
                           />
@@ -229,6 +231,8 @@ export default async function AdminPage() {
                               customerEmail={s.customer_details?.email || ""}
                               tourName={m?.tourId || ""}
                               date={formatDate(m?.date || "")}
+                              rawDate={m?.date}
+                              time={m?.time}
                               amount={s.amount_total || 0}
                               language={m?.locale || "fr"}
                             />
