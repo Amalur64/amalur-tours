@@ -37,6 +37,8 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       siteName: "Amalur Tours",
+      locale: locale,
+      alternateLocale: ["fr", "en", "es"].filter((l) => l !== locale),
       images: [{ url: `${siteUrl}/images/og-image.jpg`, width: 1200, height: 630 }],
     },
     robots: {
