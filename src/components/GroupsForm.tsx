@@ -28,7 +28,12 @@ export function GroupsForm() {
     setStatus("sending");
 
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData);
+    const firstName = formData.get("firstName") as string;
+    const lastName = formData.get("lastName") as string;
+    const data = {
+      ...Object.fromEntries(formData),
+      name: `${firstName} ${lastName}`.trim(),
+    };
 
     try {
       const res = await fetch("/api/contact", {
@@ -96,6 +101,34 @@ export function GroupsForm() {
                 onSubmit={handleSubmit}
                 className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 space-y-5"
               >
+                {/* Prénom + Nom */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-basque-dark mb-2">
+                      Prénom
+                    </label>
+                    <input
+                      name="firstName"
+                      type="text"
+                      required
+                      placeholder="Votre prénom"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-basque-red focus:ring-2 focus:ring-basque-red/20 outline-none transition-all text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-basque-dark mb-2">
+                      Nom
+                    </label>
+                    <input
+                      name="lastName"
+                      type="text"
+                      required
+                      placeholder="Votre nom"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-basque-red focus:ring-2 focus:ring-basque-red/20 outline-none transition-all text-sm"
+                    />
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-basque-dark mb-2">
                     {t("form.company")}

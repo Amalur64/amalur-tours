@@ -14,8 +14,13 @@ export function ContactForm() {
     setStatus("sending");
 
     const formData = new FormData(e.currentTarget);
+    const firstName = formData.get("firstName") as string;
+    const lastName = formData.get("lastName") as string;
     const data = {
-      name: formData.get("name"),
+      name: `${firstName} ${lastName}`.trim(),
+      firstName,
+      lastName,
+      company: formData.get("company"),
       email: formData.get("email"),
       message: formData.get("message"),
       language: formData.get("language"),
@@ -58,20 +63,55 @@ export function ContactForm() {
               onSubmit={handleSubmit}
               className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 space-y-6"
             >
-              {/* Name */}
+              {/* Prénom + Nom */}
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label
+                    htmlFor="firstName"
+                    className="block text-sm font-medium text-basque-dark mb-2"
+                  >
+                    {t("firstName")}
+                  </label>
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    required
+                    placeholder={t("placeholder.firstName")}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-basque-red focus:ring-2 focus:ring-basque-red/20 outline-none transition-all text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="lastName"
+                    className="block text-sm font-medium text-basque-dark mb-2"
+                  >
+                    {t("lastName")}
+                  </label>
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    required
+                    placeholder={t("placeholder.lastName")}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-basque-red focus:ring-2 focus:ring-basque-red/20 outline-none transition-all text-sm"
+                  />
+                </div>
+              </div>
+
+              {/* Société */}
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="company"
                   className="block text-sm font-medium text-basque-dark mb-2"
                 >
-                  {t("name")}
+                  {t("company")}
                 </label>
                 <input
-                  id="name"
-                  name="name"
+                  id="company"
+                  name="company"
                   type="text"
-                  required
-                  placeholder={t("placeholder.name")}
+                  placeholder={t("placeholder.company")}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-basque-red focus:ring-2 focus:ring-basque-red/20 outline-none transition-all text-sm"
                 />
               </div>

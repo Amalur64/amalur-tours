@@ -162,7 +162,9 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Have a question? Don't hesitate to reach out",
-    "name": "Name",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company (optional)",
     "email": "Email",
     "message": "Message",
     "language": "Preferred language",
@@ -172,7 +174,9 @@
     "error": "An error occurred. Please try again.",
     "whatsapp": "Or contact us on WhatsApp",
     "placeholder": {
-      "name": "Your name",
+      "firstName": "Your first name",
+      "lastName": "Your last name",
+      "company": "Your company name",
       "email": "your@email.com",
       "message": "Your message..."
     }

@@ -162,7 +162,9 @@
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Une question ? N'hésitez pas à nous écrire",
-    "name": "Nom",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société (optionnel)",
     "email": "Email",
     "message": "Message",
     "language": "Langue préférée",
@@ -172,7 +174,9 @@
     "error": "Une erreur est survenue. Veuillez réessayer.",
     "whatsapp": "Ou contactez-nous sur WhatsApp",
     "placeholder": {
-      "name": "Votre nom",
+      "firstName": "Votre prénom",
+      "lastName": "Votre nom",
+      "company": "Nom de votre société",
       "email": "votre@email.com",
       "message": "Votre message..."
     }
