@@ -18,16 +18,17 @@ export async function POST(req: Request) {
   const { type } = await req.json();
 
   const testData = {
-    tourName: "Balade à Bayonne",
+    tourName: "Bayonne Walking Tour",
+    tourSlug: "bayonne",
     date: "15/06/2026",
-    time: "10:00",
+    time: "16:30",
     customerName: "Marie Dupont",
-    customerEmail: "amalur.tours@gmail.com", // envoyé à toi pour tester
+    customerEmail: "reservations@amalurtours.com", // envoyé à toi pour tester
     adults: 2,
     teens: 0,
     children: 1,
     language: "fr",
-    amount: 9000, // 90€ en centimes
+    amount: 5000, // 50€ en centimes
   };
 
   try {
@@ -43,12 +44,12 @@ export async function POST(req: Request) {
         voucherLabel: "Balade à Bayonne — 2 adultes",
         voucherId: "TEST-2026-001",
         price: 90,
-        customerEmail: "amalur.tours@gmail.com",
+        customerEmail: "reservations@amalurtours.com",
       });
     } else if (type === "cancellation") {
       await sendCancellationEmail({
         customerName: "Marie Dupont",
-        customerEmail: "amalur.tours@gmail.com",
+        customerEmail: "reservations@amalurtours.com",
         tourName: "Balade à Bayonne",
         date: "15/06/2026",
         amount: 9000,

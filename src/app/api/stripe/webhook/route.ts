@@ -98,6 +98,7 @@ export async function POST(request: NextRequest) {
         if (tour) {
           const emailData = {
             tourName: tour.id,
+            tourSlug: tour.slug,
             date: metadata.date,
             time: metadata.time,
             customerName,
