@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 590">
+  <defs>
+    <clipPath id="scene">
+      <circle cx="250" cy="235" r="188"/>
+    </clipPath>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- ── Badge rings ── -->
+  <circle cx="250" cy="235" r="215" fill="#1A1510"/>
+  <circle cx="250" cy="235" r="204" fill="#EDE8D5"/>
+  <circle cx="250" cy="235" r="192" fill="#1A1510"/>
+
+  <!-- ── Sky stripes (bright orange top → dark red bottom) ── -->
+  <g clip-path="url(#scene)">
+    <rect x="62" y="47"  width="376" height="250" fill="#B83010"/>
+    <rect x="62" y="50"  width="376" height="9"  fill="#E8622A"/>
+    <rect x="62" y="63"  width="376" height="8"  fill="#E55D26"/>
+    <rect x="62" y="75"  width="376" height="8"  fill="#E15823"/>
+    <rect x="62" y="87"  width="376" height="7"  fill="#DD5320"/>
+    <rect x="62" y="98"  width="376" height="7"  fill="#D94E1D"/>
+    <rect x="62" y="109" width="376" height="7"  fill="#D5491A"/>
+    <rect x="62" y="120" width="376" height="6"  fill="#D14417"/>
+    <rect x="62" y="130" width="376" height="6"  fill="#CD3F14"/>
+    <rect x="62" y="140" width="376" height="6"  fill="#C93A11"/>
+    <rect x="62" y="150" width="376" height="6"  fill="#C5350E"/>
+    <rect x="62" y="160" width="376" height="5"  fill="#C1300B"/>
+    <rect x="62" y="169" width="376" height="5"  fill="#BD2B08"/>
+    <rect x="62" y="178" width="376" height="5"  fill="#B92605"/>
+    <rect x="62" y="187" width="376" height="5"  fill="#B52102"/>
+    <rect x="62" y="196" width="376" height="4"  fill="#B11C00"/>
+    <rect x="62" y="204" width="376" height="4"  fill="#AD1700"/>
+    <rect x="62" y="212" width="376" height="4"  fill="#A91200"/>
+    <rect x="62" y="220" width="376" height="4"  fill="#A50D00"/>
+  </g>
+
+  <!-- ── Sea — layered from bottom to top ── -->
+  <g clip-path="url(#scene)">
+
+    <!-- Bottom olive band -->
+    <rect x="62" y="291" width="376" height="135" fill="#4C5A1E"/>
+
+    <!-- Light teal band -->
+    <path d="M 62 291 L 438 291 L 438 415 L 62 415 Z" fill="#7AC4BE"/>
+
+    <!-- Medium teal band -->
+    <path d="M 62 291 L 438 291
+             L 438 385
+             C 433 383, 415 377, 390 382
+             C 338 393, 282 374, 224 385
+             C 168 396, 114 378, 62 388 Z"
+          fill="#3A908C"/>
+
+    <!-- Dark teal band (just below mountain) -->
+    <path d="M 62 291 L 438 291
+             L 438 349
+             C 433 347, 415 341, 388 346
+             C 334 357, 278 338, 222 349
+             C 166 360, 112 342, 62 352 Z"
+          fill="#1F6860"/>
+
+    <!-- Wave separator 1: dark teal ↔ medium teal -->
+    <path d="M 62 332
+             C 112 322, 166 340, 222 330
+             C 278 320, 334 338, 388 328
+             C 413 323, 433 329, 438 327
+             L 438 349
+             C 433 347, 415 341, 388 346
+             C 334 357, 278 338, 222 349
+             C 166 360, 112 342, 62 352 Z"
+          fill="#EDE8D5" stroke="#1A1510" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Wave separator 2: medium teal ↔ light teal -->
+    <path d="M 62 368
+             C 114 358, 168 376, 224 366
+             C 282 356, 338 374, 390 364
+             C 415 359, 433 365, 438 363
+             L 438 385
+             C 433 383, 415 377, 390 382
+             C 338 393, 282 374, 224 385
+             C 168 396, 114 378, 62 388 Z"
+          fill="#EDE8D5" stroke="#1A1510" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Wave separator 3: light teal ↔ olive -->
+    <path d="M 62 401
+             C 112 391, 165 409, 222 399
+             C 279 389, 333 407, 387 397
+             C 412 392, 433 398, 438 396
+             L 438 414
+             C 433 412, 412 406, 387 411
+             C 333 421, 279 403, 222 413
+             C 165 423, 112 405, 62 415 Z"
+          fill="#EDE8D5" stroke="#1A1510" stroke-width="2.5" stroke-linejoin="round"/>
+
+  </g>
+
+  <!-- ── Mountain ── -->
+  <g clip-path="url(#scene)">
+
+    <!-- Dark divider (drawn FIRST, mountain covers its edges) -->
+    <rect x="62" y="285" width="376" height="10" fill="#1A1510"/>
+
+    <!-- Step 1: full mountain in cream (base layer — left face will show through) -->
+    <path d="M 62 291
+             C 88 286, 125 272, 156 254
+             C 172 245, 181 233, 188 219
+             C 195 205, 200 191, 204 177
+             C 207 164, 210 152, 213 140
+             C 217 128, 221 117, 226 107
+             C 230 98, 235 90, 240 83
+             C 243 78, 246 74, 249 71
+             C 250 69, 251 68, 252 67
+             L 438 291 L 62 291 Z"
+          fill="#EDE8D5"/>
+
+    <!-- Step 2: brown right portion (right face + right peak) on top of cream -->
+    <path d="M 252 67
+             C 255 70, 258 75, 261 82
+             C 265 91, 268 101, 270 112
+             C 272 123, 273 133, 272 142
+             C 274 135, 277 129, 282 123
+             C 287 117, 294 113, 301 112
+             C 308 113, 314 117, 320 124
+             C 329 135, 338 149, 347 163
+             C 358 180, 370 196, 384 210
+             C 396 223, 412 237, 430 250
+             C 434 253, 437 256, 438 258
+             L 438 291 L 252 291 Z"
+          fill="#8B5A2B"/>
+
+    <!-- Step 3: full mountain outline only (no fill) — clean border around everything -->
+    <path d="M 62 291
+             C 88 286, 125 272, 156 254
+             C 172 245, 181 233, 188 219
+             C 195 205, 200 191, 204 177
+             C 207 164, 210 152, 213 140
+             C 217 128, 221 117, 226 107
+             C 230 98, 235 90, 240 83
+             C 243 78, 246 74, 249 71
+             C 250 69, 251 68, 252 67
+             C 255 70, 258 75, 261 82
+             C 265 91, 268 101, 270 112
+             C 272 123, 273 133, 272 142
+             C 274 135, 277 129, 282 123
+             C 287 117, 294 113, 301 112
+             C 308 113, 314 117, 320 124
+             C 329 135, 338 149, 347 163
+             C 358 180, 370 196, 384 210
+             C 396 223, 412 237, 430 250
+             C 434 253, 437 256, 438 258
+             L 438 291 L 62 291 Z"
+          fill="none"
+          stroke="#1A1510"
+          stroke-width="8"
+          stroke-linejoin="round"/>
+
+    <!-- Step 4: ridge line between cream and brown -->
+    <path d="M 252 67
+             C 255 80, 260 97, 263 115
+             C 266 133, 266 150, 263 167
+             C 259 185, 252 202, 242 217
+             C 231 233, 217 248, 200 261
+             C 182 274, 160 284, 136 290
+             C 116 294, 90 292, 62 291"
+          fill="none"
+          stroke="#1A1510"
+          stroke-width="3.5"
+          stroke-linecap="round"/>
+
+    <!-- Small cream highlight on inner face of right peak -->
+    <path d="M 272 142
+             C 274 135, 278 128, 283 122
+             C 287 118, 292 115, 297 114
+             C 292 116, 288 120, 284 126
+             C 280 133, 277 140, 275 148
+             C 273 145, 272 143, 272 142 Z"
+          fill="#EDE8D5" opacity="0.75"/>
+
+  </g>
+
+  <!-- ── Scene border ring ── -->
+  <circle cx="250" cy="235" r="188" fill="none" stroke="#1A1510" stroke-width="6"/>
+
+  <!-- ── "Amalur" text ── -->
+  <text x="254" y="498"
+        font-family="'Fredoka One', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif"
+        font-size="105" font-weight="900" text-anchor="middle"
+        fill="#1A1510" stroke="#1A1510" stroke-width="18"
+        stroke-linejoin="round" paint-order="stroke">Amalur</text>
+  <text x="250" y="495"
+        font-family="'Fredoka One', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif"
+        font-size="105" font-weight="900" text-anchor="middle"
+        fill="#EDE8D5">Amalur</text>
+
+  <!-- ── "TOURS" with dashes ── -->
+  <line x1="50"  y1="530" x2="108" y2="530" stroke="#1A1510" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="392" y1="530" x2="450" y2="530" stroke="#1A1510" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="250" y="535"
+        font-family="'Arial', 'Helvetica Neue', sans-serif"
+        font-size="22" font-weight="800" text-anchor="middle"
+        letter-spacing="8" fill="#1A1510">TOURS</text>
+
+</svg>

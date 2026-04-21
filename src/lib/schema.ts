@@ -42,7 +42,7 @@ export function generateBusinessSchema() {
       ratingValue: "5.0",
       bestRating: "5",
       worstRating: "1",
-      reviewCount: "47",
+      reviewCount: "12",
     },
     availableLanguage: [
       { "@type": "Language", name: "French" },

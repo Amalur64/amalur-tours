@@ -1,215 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 590">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
   <defs>
-    <clipPath id="scene">
-      <circle cx="250" cy="235" r="188"/>
+    <clipPath id="badge-clip">
+      <circle cx="200" cy="190" r="155"/>
     </clipPath>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap');
-    </style>
+    <!-- Sky stripe pattern -->
+    <pattern id="sky-stripes" x="0" y="0" width="400" height="12" patternUnits="userSpaceOnUse">
+      <rect width="400" height="7" fill="#C0392B"/>
+      <rect y="7" width="400" height="5" fill="#A93226"/>
+    </pattern>
   </defs>
 
-  <!-- ── Badge rings ── -->
-  <circle cx="250" cy="235" r="215" fill="#1A1510"/>
-  <circle cx="250" cy="235" r="204" fill="#EDE8D5"/>
-  <circle cx="250" cy="235" r="192" fill="#1A1510"/>
+  <!-- ── Outer badge rings ── -->
+  <circle cx="200" cy="190" r="175" fill="#1A1510"/>
+  <circle cx="200" cy="190" r="167" fill="#F5F0E8"/>
+  <circle cx="200" cy="190" r="158" fill="#1A1510"/>
 
-  <!-- ── Sky base ── -->
-  <rect x="62" y="47" width="376" height="380" fill="#D44B20" clip-path="url(#scene)"/>
+  <!-- ── Sky background ── -->
+  <rect x="0" y="0" width="400" height="400" fill="#C0392B" clip-path="url(#badge-clip)"/>
 
-  <!-- ── Sky stripes (orange bright → red dark) ── -->
-  <g clip-path="url(#scene)">
-    <rect x="62" y="50"  width="376" height="7"  fill="#E8622A"/>
-    <rect x="62" y="61"  width="376" height="6"  fill="#E45E27"/>
-    <rect x="62" y="71"  width="376" height="6"  fill="#E05A25"/>
-    <rect x="62" y="81"  width="376" height="6"  fill="#DC5623"/>
-    <rect x="62" y="91"  width="376" height="6"  fill="#D85221"/>
-    <rect x="62" y="101" width="376" height="6"  fill="#D44E1F"/>
-    <rect x="62" y="111" width="376" height="6"  fill="#D04A1D"/>
-    <rect x="62" y="121" width="376" height="6"  fill="#CC461B"/>
-    <rect x="62" y="131" width="376" height="5"  fill="#C84219"/>
-    <rect x="62" y="140" width="376" height="5"  fill="#C43E17"/>
-    <rect x="62" y="149" width="376" height="5"  fill="#C03A15"/>
-    <rect x="62" y="158" width="376" height="5"  fill="#BC3613"/>
-    <rect x="62" y="167" width="376" height="5"  fill="#B83211"/>
-    <rect x="62" y="176" width="376" height="5"  fill="#B42E0F"/>
-    <rect x="62" y="185" width="376" height="5"  fill="#B02A0D"/>
-    <rect x="62" y="194" width="376" height="4"  fill="#AC260B"/>
-    <rect x="62" y="202" width="376" height="4"  fill="#A82209"/>
-    <rect x="62" y="210" width="376" height="4"  fill="#A41E07"/>
-    <rect x="62" y="218" width="376" height="4"  fill="#A01A05"/>
+  <!-- ── Sky horizontal stripes ── -->
+  <g clip-path="url(#badge-clip)">
+    <rect x="0" y="45"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="62"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="79"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="96"  width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="113" width="400" height="9"  fill="#B03224" opacity="0.7"/>
+    <rect x="0" y="130" width="400" height="9"  fill="#B03224" opacity="0.65"/>
+    <rect x="0" y="147" width="400" height="9"  fill="#B03224" opacity="0.6"/>
+    <rect x="0" y="164" width="400" height="7"  fill="#B03224" opacity="0.55"/>
+    <rect x="0" y="179" width="400" height="7"  fill="#B03224" opacity="0.5"/>
+    <rect x="0" y="193" width="400" height="6"  fill="#B03224" opacity="0.4"/>
+    <rect x="0" y="206" width="400" height="5"  fill="#B03224" opacity="0.3"/>
   </g>
 
-  <!-- ── Sea background ── -->
-  <g clip-path="url(#scene)">
+  <!-- ── Sea layers (bottom) ── -->
+  <g clip-path="url(#badge-clip)">
+    <!-- Base sea -->
+    <rect x="0" y="235" width="400" height="200" fill="#1B4D4A"/>
 
-    <!-- Band 1 — dark teal (top of sea) -->
-    <rect x="62" y="288" width="376" height="38" fill="#2A6B64"/>
+    <!-- Wave layer 1 (dark) -->
+    <path d="M 0 248
+             C 60 235, 100 255, 160 248
+             C 220 241, 260 260, 320 252
+             C 350 248, 375 255, 400 250
+             L 400 400 L 0 400 Z"
+          fill="#174440"/>
 
-    <!-- Cream separator 1 -->
-    <path d="M 62 317
-             C 110 307, 170 325, 235 314
-             C 295 303, 348 320, 395 311
-             C 415 307, 432 312, 438 311
-             L 438 326
-             C 432 327, 415 322, 395 326
-             C 348 335, 295 318, 235 329
-             C 170 340, 110 322, 62 332 Z"
-          fill="#EDE8D5"/>
+    <!-- Wave layer 2 -->
+    <path d="M 0 268
+             C 50 258, 100 275, 155 265
+             C 210 255, 270 278, 330 265
+             C 360 259, 385 270, 400 265
+             L 400 400 L 0 400 Z"
+          fill="#236360"/>
 
-    <!-- Band 2 — medium teal -->
-    <rect x="62" y="288" width="376" height="137" fill="#3D8E87"/>
-    <!-- Re-draw band 1 on top to layer correctly -->
-    <rect x="62" y="288" width="376" height="38" fill="#2A6B64"/>
-    <!-- Re-draw separator 1 -->
-    <path d="M 62 317
-             C 110 307, 170 325, 235 314
-             C 295 303, 348 320, 395 311
-             C 415 307, 432 312, 438 311
-             L 438 326
-             C 432 327, 415 322, 395 326
-             C 348 335, 295 318, 235 329
-             C 170 340, 110 322, 62 332 Z"
-          fill="#EDE8D5"/>
+    <!-- Wave layer 3 -->
+    <path d="M 0 293
+             C 55 280, 110 300, 165 288
+             C 225 276, 275 298, 340 283
+             C 368 276, 390 290, 400 285
+             L 400 400 L 0 400 Z"
+          fill="#2E7C78"/>
+
+    <!-- Wave layer 4 (light) -->
+    <path d="M 0 320
+             C 60 308, 115 326, 175 312
+             C 235 298, 290 322, 355 308
+             C 375 303, 392 314, 400 310
+             L 400 400 L 0 400 Z"
+          fill="#3A9490"/>
+
+    <!-- Wave layer 5 (cream tint) -->
+    <path d="M 0 350
+             C 70 338, 130 354, 195 340
+             C 258 326, 315 348, 380 335
+             C 390 332, 396 338, 400 336
+             L 400 400 L 0 400 Z"
+          fill="#4AAE9F" opacity="0.6"/>
   </g>
 
-  <!-- ── Sea — cleaner layered approach ── -->
-  <g clip-path="url(#scene)">
+  <!-- ── Mountains ── -->
+  <g clip-path="url(#badge-clip)">
+    <!-- Right mountain (back, slightly smaller) -->
+    <path d="M 195 270 L 268 120 L 345 270 Z" fill="#6B4F31"/>
+    <!-- Left mountain (front, larger) -->
+    <path d="M 58 270 L 155 105 L 252 270 Z" fill="#7A5C3A"/>
 
-    <!-- Full sea background: olive bottom -->
-    <rect x="62" y="288" width="376" height="137" fill="#728A3E"/>
+    <!-- Mountain shading - left face darker -->
+    <path d="M 58 270 L 155 105 L 200 270 Z" fill="#5C4228"/>
+    <!-- Mountain shading - right face of back mountain -->
+    <path d="M 268 120 L 295 195 L 345 270 L 268 270 Z" fill="#5A4128"/>
 
-    <!-- Lighter teal band (band 3) -->
-    <path d="M 62 288 L 438 288 L 438 390 L 62 390 Z" fill="#5AADA7"/>
+    <!-- Snow caps -->
+    <!-- Left mountain snow -->
+    <path d="M 140 127 L 155 105 L 170 127 L 163 120 L 155 135 L 147 120 Z"
+          fill="#F5F0E8"/>
+    <path d="M 148 127 L 155 112 L 162 127 Z" fill="#FFFFFF"/>
 
-    <!-- Medium teal band (band 2) -->
-    <path d="M 62 288 L 438 288 L 438 353 L 62 353 Z" fill="#3D8E87"/>
-
-    <!-- Dark teal band (band 1 — top) -->
-    <path d="M 62 288 L 438 288 L 438 320 L 62 320 Z" fill="#2A6B64"/>
-
-    <!-- Cream separator 1 — between band 1 and band 2 -->
-    <path d="M 62 312
-             C 112 302, 170 320, 232 310
-             C 292 300, 346 318, 394 309
-             C 414 305, 432 310, 438 309
-             L 438 322
-             C 432 323, 414 318, 394 322
-             C 346 331, 292 313, 232 323
-             C 170 333, 112 315, 62 325 Z"
-          fill="#EDE8D5"/>
-
-    <!-- Cream separator 2 — between band 2 and band 3 -->
-    <path d="M 62 346
-             C 108 336, 166 355, 228 344
-             C 288 333, 342 351, 392 341
-             C 412 337, 432 343, 438 342
-             L 438 355
-             C 432 356, 412 350, 392 354
-             C 342 364, 288 346, 228 357
-             C 166 368, 108 349, 62 359 Z"
-          fill="#EDE8D5"/>
-
-    <!-- Cream separator 3 — between band 3 and band 4 (olive) -->
-    <path d="M 62 383
-             C 110 374, 165 391, 226 381
-             C 286 371, 340 388, 390 379
-             C 411 375, 432 380, 438 379
-             L 438 391
-             C 432 392, 411 387, 390 391
-             C 340 400, 286 383, 226 393
-             C 165 403, 110 386, 62 395 Z"
-          fill="#EDE8D5"/>
-
+    <!-- Right mountain snow -->
+    <path d="M 256 142 L 268 120 L 280 142 L 274 136 L 268 150 L 262 136 Z"
+          fill="#F5F0E8"/>
+    <path d="M 263 142 L 268 128 L 273 142 Z" fill="#FFFFFF"/>
   </g>
 
-  <!-- ── Mountain body ── -->
-  <g clip-path="url(#scene)">
-
-    <!-- Horizontal dark line between sky/mountain and sea — drawn FIRST so mountain covers its edges -->
-    <rect x="62" y="285" width="376" height="7" fill="#1A1510"/>
-
-    <!-- Full mountain brown fill — drawn OVER the divider line -->
-    <path d="M 62 290
-             C 88 285, 128 272, 156 252
-             C 170 242, 178 228, 186 212
-             C 192 198, 196 184, 200 168
-             C 203 155, 205 142, 208 130
-             C 211 118, 215 108, 220 98
-             C 224 88, 228 82, 232 77
-             C 235 73, 238 70, 241 68
-             C 244 65, 247 64, 250 64
-             C 253 64, 256 66, 259 70
-             C 263 75, 266 83, 269 91
-             C 274 104, 278 117, 282 130
-             C 286 143, 290 156, 294 168
-             C 300 184, 306 198, 314 210
-             C 324 224, 336 236, 350 248
-             C 370 264, 398 278, 438 290
-             L 438 293 L 62 293 Z"
-          fill="#8B5A2B"
-          stroke="#1A1510"
-          stroke-width="5"
-          stroke-linejoin="round"/>
-
-    <!-- Mountain cream highlight — left face (catching light) -->
-    <path d="M 202 172
-             C 198 155, 196 140, 198 126
-             C 200 114, 206 102, 214 91
-             C 220 82, 228 76, 236 73
-             C 242 70, 247 70, 250 70
-             C 246 76, 242 84, 238 95
-             C 234 107, 230 122, 226 138
-             C 222 154, 216 170, 208 183
-             C 205 179, 203 176, 202 172 Z"
-          fill="#EDE8D5"
-          opacity="0.85"/>
-
-    <!-- Mountain cream highlight — right peak inner face -->
-    <path d="M 266 98
-             C 270 108, 274 119, 278 131
-             C 282 144, 286 157, 290 170
-             C 296 186, 304 200, 313 212
-             C 319 219, 325 225, 331 230
-             C 323 226, 315 220, 307 212
-             C 297 204, 289 193, 283 180
-             C 275 165, 269 148, 265 130
-             C 263 118, 263 107, 266 98 Z"
-          fill="#EDE8D5"
-          opacity="0.65"/>
-
-  </g>
-
-  <!-- ── Scene border ring (on top of everything) ── -->
-  <circle cx="250" cy="235" r="188" fill="none" stroke="#1A1510" stroke-width="6"/>
+  <!-- ── Inner badge ring (on top of scene) ── -->
+  <circle cx="200" cy="190" r="158" fill="none" stroke="#1A1510" stroke-width="3"/>
+  <circle cx="200" cy="190" r="154" fill="none" stroke="#F5F0E8" stroke-width="1.5" opacity="0.5"/>
 
   <!-- ── "Amalur" text ── -->
-  <!-- Dark shadow/outline layer -->
-  <text x="254" y="498"
-        font-family="'Fredoka One', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif"
-        font-size="105"
+  <!-- Shadow/outline effect -->
+  <text x="203" y="422"
+        font-family="'Righteous', 'Arial Black', sans-serif"
+        font-size="82"
         font-weight="900"
         text-anchor="middle"
         fill="#1A1510"
         stroke="#1A1510"
-        stroke-width="16"
-        stroke-linejoin="round"
-        paint-order="stroke">Amalur</text>
-  <!-- Cream fill layer -->
-  <text x="250" y="495"
-        font-family="'Fredoka One', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif"
-        font-size="105"
+        stroke-width="8"
+        stroke-linejoin="round">Amalur</text>
+  <!-- Main text -->
+  <text x="200" y="420"
+        font-family="'Righteous', 'Arial Black', sans-serif"
+        font-size="82"
         font-weight="900"
         text-anchor="middle"
-        fill="#EDE8D5">Amalur</text>
+        fill="#F5F0E8">Amalur</text>
 
   <!-- ── "TOURS" with dashes ── -->
-  <line x1="52"  y1="530" x2="108" y2="530" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
-  <line x1="392" y1="530" x2="448" y2="530" stroke="#1A1510" stroke-width="3" stroke-linecap="round"/>
-  <text x="250" y="535"
-        font-family="'Arial', 'Helvetica Neue', sans-serif"
-        font-size="22"
-        font-weight="800"
+  <line x1="68"  y1="447" x2="112" y2="447" stroke="#1A1510" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="288" y1="447" x2="332" y2="447" stroke="#1A1510" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="200" y="452"
+        font-family="'Montserrat', 'Arial', sans-serif"
+        font-size="17"
+        font-weight="700"
         text-anchor="middle"
-        letter-spacing="8"
+        letter-spacing="7"
         fill="#1A1510">TOURS</text>
 </svg>

@@ -1,5 +1,3 @@
-"use client";
-
 import { Star, Quote } from "lucide-react";
 import Link from "next/link";
 
@@ -120,9 +118,40 @@ const platformColors: Record<string, string> = {
   Google: "bg-blue-50 text-blue-600",
 };
 
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.amalurtours.com",
+  name: "Amalur Tours",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    bestRating: "5",
+    worstRating: "1",
+    reviewCount: String(reviews.length),
+  },
+  review: reviews.map((r) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: r.name },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: String(r.rating),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    reviewBody: r.text,
+    datePublished: r.date,
+    publisher: { "@type": "Organization", name: r.platform },
+  })),
+};
+
 export default function ReviewsPage() {
   return (
     <main className="min-h-screen bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
+      />
       {/* Hero */}
       <div className="bg-basque-red pt-28 pb-20 px-4 text-center">
         <div className="flex justify-center gap-1 mb-5">
