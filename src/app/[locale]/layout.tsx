@@ -26,12 +26,7 @@ export async function generateMetadata({
     description:
       "Visites guidées à pied à Bayonne et Biarritz avec une guide locale passionnée. Tours en français, anglais et espagnol. À partir de 25€.",
     alternates: {
-      languages: {
-        "fr": `${siteUrl}/fr`,
-        "en": `${siteUrl}/en`,
-        "es": `${siteUrl}/es`,
-        "x-default": `${siteUrl}/fr`,
-      },
+      canonical: `${siteUrl}/${locale}`,
     },
     openGraph: {
       type: "website",
