@@ -25,24 +25,24 @@
     "subtitle": "Choisissez votre aventure au cœur du Pays Basque",
     "bayonne": {
       "title": "Bayonne Walking Tour",
-      "description": "Plongez dans l'histoire millénaire de Bayonne : cathédrale gothique, remparts de Vauban, ruelles du Petit Bayonne et chocolat basque. Tour en français à 16h30.",
-      "about": "Laissez-vous porter dans les ruelles de l'une des plus belles villes médiévales du Sud-Ouest. Pendant 1h30, votre guide vous emmène à la découverte de Bayonne la discrète — celle que les touristes pressés ne voient jamais. Devant la cathédrale Sainte-Marie, joyau gothique classé à l'UNESCO, vous apprendrez comment les pèlerins de Saint-Jacques-de-Compostelle ont façonné cette ville au fil des siècles. Dans le Petit Bayonne, entre ses façades colorées et ses bars à pintxos animés, vous sentirez battre le cœur basque de la ville. Une halte dans le quartier du chocolat — Bayonne est la capitale française du chocolat depuis le XVIIe siècle — et une promenade le long des rives de la Nive complèteront cette immersion dans l'âme basque.",
+      "description": "Remparts de Vauban classés à l'UNESCO, cathédrale gothique, Petit Bayonne et une spécialité dont la ville est particulièrement fière… Tour en français à 16h30.",
+      "about": "Bayonne est une ville qui se mérite. Derrière ses façades colorées et ses quais animés se cachent des siècles d'histoire, de commerce et de savoir-faire. Au fil de la balade, vous découvrirez les remparts de Vauban classés au patrimoine mondial de l'UNESCO, la cathédrale Sainte-Marie et ses cloîtres gothiques, le quartier du Petit Bayonne et ses ruelles animées, les Halles et l'effervescence du marché basque — et les secrets d'une ville qui a tout inventé, ou presque. Car Bayonne a une spécialité dont elle est particulièrement fière… et vous la découvrirez en fin de visite. 🍫 Une cité à taille humaine, fière de ses racines basques, où il fait bon flâner, s'attarder, et revenir.",
       "duration": "~1h30",
       "meeting": "Devant la Mairie de Bayonne (près de l'arrêt de bus et de la rivière)",
       "schedule_info": "16h30 — Tour en français"
     },
     "biarritz": {
       "title": "Biarritz Walking Tour",
-      "description": "Des plages mythiques au Rocher de la Vierge, découvrez comment un petit village de pêcheurs est devenu la station balnéaire préférée des têtes couronnées. Tour en français à 14h00.",
-      "about": "Il était une fois un modeste village de pêcheurs basques... et une impératrice qui en tomba éperdument amoureuse. Pendant 1h30, votre guide vous raconte l'incroyable destin de Biarritz : de la chasse à la baleine au faste de la Belle Époque, de l'arrivée du surf en Europe en 1957 à sa réputation mondiale actuelle. Vous marcherez sur la Grande Plage, symbole de l'élégance biarrote, face à l'Hôtel du Palais où séjourna l'impératrice Eugénie. Vous traverserez le Plateau de l'Atalaye pour rejoindre le mythique Rocher de la Vierge. Au Port des Pêcheurs, dernier vestige du Biarritz authentique, vous comprendrez que derrière les façades Belle Époque se cache une ville à l'âme profondément basque.",
+      "description": "Ancienne cité baleinière devenue capitale mondiale du surf. Grande Plage, Rocher de la Vierge, Port des Pêcheurs et une surprise gourmande. Tour en français à 14h00.",
+      "about": "Biarritz vous surprendra. Ancienne cité baleinière devenue station impériale, puis capitale mondiale du surf — cette ville n'a jamais cessé de se réinventer. Au fil du parcours, vous découvrirez la Grande Plage et ses cabines de bain impériales, le Rocher de la Vierge et ses vagues spectaculaires, le phare, le Port des Pêcheurs — dernier vestige du Biarritz authentique — les villas Belle Époque et les ruelles pleines de caractère qui font le charme de la ville. La visite se termine par une surprise gourmande… à déguster les yeux fermés. 🍬 Une ville entre deux mondes — l'élégance d'une station balnéaire chic et l'énergie brute de l'Atlantique. Une balade inoubliable, les pieds dans le sable et la tête dans les vagues. 🌊",
       "duration": "~1h30",
       "meeting": "Esplanade supérieure du Casino de Biarritz",
       "schedule_info": "14h00 — Tour en français"
     },
     "combo": {
       "title": "Bayonne + Biarritz Combo",
-      "description": "La journée complète pour découvrir les deux joyaux du Pays Basque. Biarritz à 14h00, puis Bayonne, avec transport inclus.",
-      "about": "Pourquoi choisir entre les deux joyaux du Pays Basque ? La journée Combo vous offre le meilleur des deux mondes en une seule expérience inoubliable. Commencez à Biarritz avec son Rocher de la Vierge, ses plages mythiques et ses histoires d'impératrices et de surfeurs. Puis cap sur Bayonne avec sa cathédrale gothique classée UNESCO, ses remparts de Vauban et son chocolat légendaire — Bayonne est la capitale française du chocolat depuis le XVIIe siècle. Le transport entre les deux villes est inclus, pour une journée de 4 heures sans stress. Une immersion complète dans l'âme du Pays Basque.",
+      "description": "Deux villes, une journée inoubliable. Bayonne le matin, Biarritz l'après-midi. Transport inclus, 4 heures au cœur du Pays Basque.",
+      "about": "Deux villes, deux caractères, une journée inoubliable au cœur du Pays Basque. Le matin, Bayonne dévoile ses secrets — remparts de Vauban classés à l'UNESCO, cathédrale gothique, Petit Bayonne et ses ruelles animées, les Halles et leur effervescence basque. Sans oublier la spécialité dont la ville est si fière… 🍫 L'après-midi, cap sur Biarritz. Ancienne cité baleinière devenue station impériale, puis capitale mondiale du surf, la ville étonne à chaque coin de rue. Grande Plage, Rocher de la Vierge, phare, Port des Pêcheurs et villas Belle Époque — deux heures qui donnent envie de revenir. Le Combo, c'est la meilleure façon de comprendre pourquoi le Pays Basque est unique. Deux villes à portée de tramway, deux ambiances radicalement différentes, une seule journée pour tout voir. 🌊",
       "duration": "~4h",
       "meeting": "Départ à Biarritz : Esplanade supérieure du Casino",
       "schedule_info": "14h00 — Biarritz puis Bayonne"
