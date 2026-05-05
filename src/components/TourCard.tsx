@@ -66,6 +66,13 @@ export function TourCard({ tour }: TourCardProps) {
                 {tour.city}
               </span>
             </div>
+            {tour.isPrivate && (
+              <div className="absolute top-4 right-4 z-20">
+                <span className="bg-basque-red text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
+                  Tour Privé
+                </span>
+              </div>
+            )}
           </div>
         )}
       </Link>
