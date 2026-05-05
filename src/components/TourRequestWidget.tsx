@@ -75,9 +75,9 @@ ${extra ? `Message : ${extra}` : ""}`;
         <p className="text-xs text-white/60 uppercase tracking-wider font-medium mb-1">{r("label")}</p>
         <div className="flex items-baseline gap-2">
           <span className="text-3xl font-bold text-white">{tour.groupPrice}€</span>
-          <span className="text-white/60 text-sm">/ {r("perGroup")}</span>
+          <span className="text-white/60 text-sm">/ personne</span>
         </div>
-        <p className="text-white/70 text-xs mt-1">{r("maxPersons", { n: tour.maxGroupSize ?? 3 })}</p>
+        <p className="text-white/70 text-xs mt-1">Min {tour.minGroupSize ?? 2} — Max {tour.maxGroupSize ?? 3} personnes</p>
       </div>
 
       {/* Info badges */}

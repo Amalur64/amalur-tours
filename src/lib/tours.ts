@@ -17,6 +17,7 @@ export interface Tour {
   highlights: string[];
   isPrivate?: boolean;
   groupPrice?: number;
+  minGroupSize?: number;
   maxGroupSize?: number;
 }
 
@@ -86,9 +87,10 @@ export const tours: Tour[] = [
     slug: "san-sebastian",
     translationKey: "sansebastian",
     city: "San Sebastián",
-    price: 450,
-    groupPrice: 450,
+    price: 150,
+    groupPrice: 150,
     isPrivate: true,
+    minGroupSize: 2,
     maxGroupSize: 3,
     image: "/images/tours/sansebastian.jpg",
     schedules: [
