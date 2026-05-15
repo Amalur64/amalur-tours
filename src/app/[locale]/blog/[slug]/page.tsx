@@ -116,31 +116,32 @@ function ArticleContent({ slug }: { slug: string }) {
 
           <ScrollReveal>
             <article className="prose prose-lg max-w-none">
-              {paragraphs.map((paragraph, i) => {
-                const pNum = i + 1; // numéro 1-indexé du paragraphe
-                const elements: React.ReactNode[] = [];
-
-                // Cherche si ce paragraphe ouvre une nouvelle section
-                const sectionIdx = article.sectionBreaks.indexOf(pNum);
-                if (sectionIdx !== -1) {
-                  const hNum = sectionIdx + 1; // h1, h2, h3...
-                  if (subtitles[hNum]) {
-                    elements.push(
-                      <h2 key={`h-${i}`} className="font-display text-2xl text-basque-dark mt-10 mb-4">
-                        {subtitles[hNum]}
-                      </h2>
-                    );
+              {(() => {
+                // Construit une liste plate : titres + paragraphes dans le bon ordre
+                const items: { type: "h2" | "p"; content: string; key: string }[] = [];
+                paragraphs.forEach((paragraph, i) => {
+                  const pNum = i + 1;
+                  const sectionIdx = article.sectionBreaks.indexOf(pNum);
+                  if (sectionIdx !== -1) {
+                    const hNum = sectionIdx + 1;
+                    if (subtitles[hNum]) {
+                      items.push({ type: "h2", content: subtitles[hNum], key: `h-${i}` });
+                    }
                   }
-                }
-
-                elements.push(
-                  <p key={`p-${i}`} className="text-basque-dark/80 leading-relaxed mb-5">
-                    {paragraph}
-                  </p>
+                  items.push({ type: "p", content: paragraph, key: `p-${i}` });
+                });
+                return items.map((item) =>
+                  item.type === "h2" ? (
+                    <h2 key={item.key} className="font-display text-2xl text-basque-dark mt-10 mb-4">
+                      {item.content}
+                    </h2>
+                  ) : (
+                    <p key={item.key} className="text-basque-dark/80 leading-relaxed mb-5">
+                      {item.content}
+                    </p>
+                  )
                 );
-
-                return elements;
-              })}
+              })()}
             </article>
           </ScrollReveal>
 
