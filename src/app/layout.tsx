@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   },
   description:
     "Découvrez Bayonne et Biarritz avec une guide locale passionnée. Walking tours en français, anglais et espagnol.",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     type: "website",
     siteName: "Amalur Tours",
