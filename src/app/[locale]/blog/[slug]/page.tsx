@@ -117,15 +117,20 @@ function ArticleContent({ slug }: { slug: string }) {
           <ScrollReveal>
             <article className="prose prose-lg max-w-none">
               {paragraphs.map((paragraph, i) => {
+                const pNum = i + 1; // numéro 1-indexé du paragraphe
                 const elements: React.ReactNode[] = [];
 
-                // Check if there's a subtitle before this paragraph
-                if (subtitles[i + 1]) {
-                  elements.push(
-                    <h2 key={`h-${i}`} className="font-display text-2xl text-basque-dark mt-10 mb-4">
-                      {subtitles[i + 1]}
-                    </h2>
-                  );
+                // Cherche si ce paragraphe ouvre une nouvelle section
+                const sectionIdx = article.sectionBreaks.indexOf(pNum);
+                if (sectionIdx !== -1) {
+                  const hNum = sectionIdx + 1; // h1, h2, h3...
+                  if (subtitles[hNum]) {
+                    elements.push(
+                      <h2 key={`h-${i}`} className="font-display text-2xl text-basque-dark mt-10 mb-4">
+                        {subtitles[hNum]}
+                      </h2>
+                    );
+                  }
                 }
 
                 elements.push(

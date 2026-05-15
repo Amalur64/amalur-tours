@@ -6,6 +6,8 @@ export interface BlogArticle {
   date: string;
   readingTime: number;
   seoKeywords: string[];
+  // Numéros de paragraphes (1-indexés) où commence chaque section (h1, h2, h3...)
+  sectionBreaks: number[];
 }
 
 export const blogArticles: BlogArticle[] = [
@@ -17,6 +19,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-03-15",
     readingTime: 7,
     seoKeywords: ["chocolat bayonne", "chocolat basque", "histoire chocolat france"],
+    sectionBreaks: [1, 4, 6, 8, 10, 12],
   },
   {
     slug: "maisons-labourdines-architecture-basque",
@@ -26,6 +29,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-03-10",
     readingTime: 7,
     seoKeywords: ["maison basque", "architecture labourdine", "colombages pays basque"],
+    sectionBreaks: [1, 4, 7, 9, 11, 14],
   },
   {
     slug: "pelote-basque-sport-ancestral",
@@ -35,6 +39,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-03-05",
     readingTime: 8,
     seoKeywords: ["pelote basque", "chistera", "fronton pays basque", "jai alai"],
+    sectionBreaks: [1, 4, 7, 10, 12, 15],
   },
   {
     slug: "villages-secrets-interieur-pays-basque",
@@ -44,6 +49,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-02-28",
     readingTime: 8,
     seoKeywords: ["villages pays basque", "villages basques intérieur", "Ainhoa Sare Espelette"],
+    sectionBreaks: [1, 3, 5, 7, 9, 12],
   },
   {
     slug: "corsaires-bayonnais-histoire-maritime",
@@ -53,6 +59,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-02-20",
     readingTime: 7,
     seoKeywords: ["corsaires bayonne", "histoire maritime basque", "pirates golfe gascogne"],
+    sectionBreaks: [1, 3, 6, 9, 11, 13],
   },
   {
     slug: "euskara-langue-mysterieuse-europe",
@@ -62,6 +69,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-02-15",
     readingTime: 7,
     seoKeywords: ["langue basque", "euskara", "basque langue isolée", "apprendre basque"],
+    sectionBreaks: [1, 3, 6, 9, 12, 14],
   },
   {
     slug: "surf-biarritz-origines-culture-glisse",
@@ -71,6 +79,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-02-10",
     readingTime: 7,
     seoKeywords: ["surf biarritz", "histoire surf france", "côte basque surf", "spots surf pays basque"],
+    sectionBreaks: [1, 3, 6, 9, 11, 14],
   },
   {
     slug: "gastronomie-basque-au-dela-pintxos",
@@ -80,6 +89,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-02-05",
     readingTime: 8,
     seoKeywords: ["gastronomie basque", "cuisine pays basque", "spécialités basques", "axoa piment espelette"],
+    sectionBreaks: [1, 3, 5, 7, 10, 14],
   },
   {
     slug: "fetes-bayonne-traditions-vivantes",
@@ -89,6 +99,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-01-30",
     readingTime: 7,
     seoKeywords: ["fêtes de bayonne", "fêtes basques", "traditions bayonne", "roi léon"],
+    sectionBreaks: [1, 3, 6, 8, 10, 13],
   },
   {
     slug: "sentiers-cotiers-pays-basque-randonnee",
@@ -98,6 +109,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-01-25",
     readingTime: 7,
     seoKeywords: ["randonnée côte basque", "sentier littoral pays basque", "corniche basque", "GR10"],
+    sectionBreaks: [1, 3, 6, 9, 12, 14],
   },
   {
     slug: "cathedrale-bayonne-tresor-gothique-meconnu",
@@ -107,6 +119,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-01-20",
     readingTime: 7,
     seoKeywords: ["cathédrale bayonne", "Sainte-Marie bayonne", "gothique pays basque", "UNESCO bayonne"],
+    sectionBreaks: [1, 3, 6, 9, 11, 13],
   },
   {
     slug: "piment-espelette-or-rouge-pays-basque",
@@ -116,6 +129,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2026-01-15",
     readingTime: 7,
     seoKeywords: ["piment espelette", "piment basque", "AOP espelette", "gorria"],
+    sectionBreaks: [1, 3, 6, 8, 11, 14],
   },
 ];
 
