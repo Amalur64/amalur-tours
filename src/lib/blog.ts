@@ -115,7 +115,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "cathedrale-bayonne-tresor-gothique-meconnu",
     titleKey: "cathedrale",
     category: "histoire",
-    image: "/images/blog/cathedrale.jpg",
+    image: "/images/blog/cathedrale2.jpg",
     date: "2026-01-20",
     readingTime: 7,
     seoKeywords: ["cathédrale bayonne", "Sainte-Marie bayonne", "gothique pays basque", "UNESCO bayonne"],
