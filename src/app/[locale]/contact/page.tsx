@@ -9,7 +9,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata(contactMetadata[locale] || contactMetadata.fr, locale);
+  return buildMetadata(contactMetadata[locale] || contactMetadata.fr, locale, "/contact");
 }
 
 export default async function ContactPage({

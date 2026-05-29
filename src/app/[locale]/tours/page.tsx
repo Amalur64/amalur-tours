@@ -12,7 +12,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata(toursMetadata[locale] || toursMetadata.fr, locale);
+  return buildMetadata(toursMetadata[locale] || toursMetadata.fr, locale, "/tours");
 }
 
 export default async function ToursPage({

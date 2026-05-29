@@ -12,7 +12,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata(aboutMetadata[locale] || aboutMetadata.fr, locale);
+  return buildMetadata(aboutMetadata[locale] || aboutMetadata.fr, locale, "/about");
 }
 
 export default async function AboutPage({

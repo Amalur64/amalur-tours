@@ -342,11 +342,16 @@ export const tourMetadata: Record<string, Record<string, Metadata>> = {
 
 // ─── Helper commun ─────────────────────────────────────────────────────────────
 
-export function buildMetadata(base: Metadata, locale: string): Metadata {
+export function buildMetadata(base: Metadata, locale: string, path: string = ""): Metadata {
+  const locales = ["fr", "en", "es"];
   const alternates = {
-    canonical: undefined as string | undefined,
-    languages: {} as Record<string, string>,
+    canonical: `${siteUrl}/${locale}${path}`,
+    languages: Object.fromEntries(
+      locales.map((l) => [l, `${siteUrl}/${l}${path}`])
+    ) as Record<string, string>,
   };
+  // x-default pointe vers la version française
+  (alternates.languages as Record<string, string>)["x-default"] = `${siteUrl}/fr${path}`;
 
   return {
     metadataBase: new URL(siteUrl),

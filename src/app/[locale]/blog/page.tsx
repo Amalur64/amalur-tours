@@ -12,7 +12,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata(blogMetadata[locale] || blogMetadata.fr, locale);
+  return buildMetadata(blogMetadata[locale] || blogMetadata.fr, locale, "/blog");
 }
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, ArrowRight } from "lucide-react";

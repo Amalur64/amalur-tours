@@ -1,5 +1,32 @@
+import type { Metadata } from "next";
 import { Star, Quote } from "lucide-react";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/metadata";
+
+const reviewsMetadata: Record<string, { title: string; description: string }> = {
+  fr: {
+    title: "Avis Clients | Amalur Tours — Visites Guidées Pays Basque",
+    description: "Découvrez les avis de nos visiteurs sur nos walking tours à Bayonne et Biarritz. Plus de 5 étoiles sur GetYourGuide et TripAdvisor.",
+  },
+  en: {
+    title: "Customer Reviews | Amalur Tours — Guided Tours Basque Country",
+    description: "Read reviews from our visitors about our walking tours in Bayonne and Biarritz. 5 stars on GetYourGuide and TripAdvisor.",
+  },
+  es: {
+    title: "Opiniones | Amalur Tours — Visitas Guiadas País Vasco",
+    description: "Lee las opiniones de nuestros visitantes sobre nuestros tours a pie en Bayona y Biarritz. 5 estrellas en GetYourGuide y TripAdvisor.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const meta = reviewsMetadata[locale] || reviewsMetadata.fr;
+  return buildMetadata(meta, locale, "/reviews");
+}
 
 const reviews = [
   {

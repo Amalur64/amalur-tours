@@ -1,14 +1,47 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { blogArticles, getArticleBySlug } from "@/lib/blog";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, ArrowLeft, MapPin } from "lucide-react";
+import { buildMetadata } from "@/lib/metadata";
+
+const siteUrl = "https://www.amalurtours.com";
 
 export function generateStaticParams() {
   return blogArticles.map((article) => ({ slug: article.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const article = getArticleBySlug(slug);
+  if (!article) return {};
+
+  const t = await getTranslations({ locale, namespace: "blog" });
+  const title = t(`articles.${article.titleKey}.title` as "readMore");
+  const description = t(`articles.${article.titleKey}.intro` as "readMore");
+
+  return buildMetadata(
+    {
+      title,
+      description: description || title,
+      openGraph: {
+        title,
+        description: description || title,
+        images: [{ url: `${siteUrl}${article.image}`, width: 1200, height: 630, alt: title }],
+        locale: locale === "fr" ? "fr_FR" : locale === "en" ? "en_US" : "es_ES",
+      },
+    },
+    locale,
+    `/blog/${slug}`
+  );
 }
 
 export default async function BlogArticlePage({

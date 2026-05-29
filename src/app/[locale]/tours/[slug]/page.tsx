@@ -22,7 +22,7 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const slugMeta = tourMetadata[slug];
   if (!slugMeta) return {};
-  return buildMetadata(slugMeta[locale] || slugMeta.fr, locale);
+  return buildMetadata(slugMeta[locale] || slugMeta.fr, locale, `/tours/${slug}`);
 }
 
 export default async function TourDetailPage({
