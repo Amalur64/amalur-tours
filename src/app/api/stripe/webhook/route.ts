@@ -64,6 +64,7 @@ export async function POST(request: NextRequest) {
         const tour = getTourBySlug(metadata.tourSlug);
         const customerEmail = session.customer_details?.email || "";
         const customerName = session.customer_details?.name || "Client";
+        const customerPhone = session.customer_details?.phone || "";
 
         console.log("Booking confirmed:", {
           tourId: metadata.tourId,
@@ -103,6 +104,7 @@ export async function POST(request: NextRequest) {
             time: metadata.time,
             customerName,
             customerEmail,
+            customerPhone,
             adults: parseInt(metadata.adults || "0"),
             teens: parseInt(metadata.teens || "0"),
             children: parseInt(metadata.children || "0"),

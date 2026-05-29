@@ -47,6 +47,7 @@ interface BookingEmailData {
   time: string;
   customerName: string;
   customerEmail: string;
+  customerPhone?: string;
   adults: number;
   teens: number;
   children: number;
@@ -93,6 +94,15 @@ export async function sendOwnerNotification(data: BookingEmailData) {
   const totalPeople = data.adults + data.teens + data.children;
   const amountEur = (data.amount / 100).toFixed(2);
 
+  // Lien WhatsApp si numéro disponible
+  const phoneClean = (data.customerPhone || "").replace(/\D/g, "");
+  const whatsappMessage = encodeURIComponent(
+    `Bonjour ${data.customerName} ! Je suis Maider de Amalur Tours. Merci pour votre réservation du ${data.date} à ${data.time} (${data.tourName}). Je voulais vous contacter pour...`
+  );
+  const whatsappLink = phoneClean
+    ? `https://wa.me/${phoneClean}?text=${whatsappMessage}`
+    : "";
+
   const htmlContent = `
     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
       <div style="background: #C1272D; padding: 20px; text-align: center; border-radius: 12px 12px 0 0;">
@@ -104,10 +114,23 @@ export async function sendOwnerNotification(data: BookingEmailData) {
           <tr><td style="padding: 8px 0; color: #666;">Date</td><td style="padding: 8px 0; font-weight: bold;">${data.date} à ${data.time}</td></tr>
           <tr><td style="padding: 8px 0; color: #666;">Client</td><td style="padding: 8px 0; font-weight: bold;">${data.customerName}</td></tr>
           <tr><td style="padding: 8px 0; color: #666;">Email client</td><td style="padding: 8px 0;"><a href="mailto:${data.customerEmail}">${data.customerEmail}</a></td></tr>
+          ${data.customerPhone ? `<tr><td style="padding: 8px 0; color: #666;">Téléphone</td><td style="padding: 8px 0; font-weight: bold;">${data.customerPhone}</td></tr>` : ""}
           <tr><td style="padding: 8px 0; color: #666;">Participants</td><td style="padding: 8px 0; font-weight: bold;">${data.adults} adulte(s)${data.teens > 0 ? `, ${data.teens} ado(s)` : ""}${data.children > 0 ? `, ${data.children} enfant(s)` : ""} — ${totalPeople} au total</td></tr>
           <tr><td style="padding: 8px 0; color: #666;">Langue</td><td style="padding: 8px 0;">${data.language === "fr" ? "Français" : data.language === "en" ? "English" : "Español"}</td></tr>
           <tr style="border-top: 2px solid #ddd;"><td style="padding: 12px 0; color: #666; font-size: 18px;">Montant</td><td style="padding: 12px 0; font-weight: bold; font-size: 18px; color: #C1272D;">${amountEur}€</td></tr>
         </table>
+
+        ${whatsappLink ? `
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="${whatsappLink}" style="display: inline-block; background: #25D366; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 15px;">
+            💬 Contacter via WhatsApp
+          </a>
+        </div>
+        ` : `
+        <p style="color: #999; font-size: 13px; text-align: center; margin-top: 16px;">
+          ℹ️ Pas de numéro de téléphone fourni — upsell par email uniquement
+        </p>
+        `}
       </div>
     </div>
   `;
@@ -270,6 +293,32 @@ export async function sendCustomerConfirmation(data: BookingEmailData) {
             ${t.cancel[lang as keyof typeof t.cancel]}
           </p>
         </div>
+
+        <!-- Upsell : 2ème tour -->
+        ${data.tourSlug !== "combo" ? `
+        <div style="background: linear-gradient(135deg, #1A1510 0%, #3D2B1F 100%); border-radius: 12px; padding: 24px; margin-bottom: 24px; text-align: center;">
+          <p style="color: #F5E6C8; font-size: 13px; letter-spacing: 2px; margin: 0 0 8px; text-transform: uppercase;">
+            ${lang === "en" ? "🎁 Exclusive offer" : lang === "es" ? "🎁 Oferta exclusiva" : "🎁 Offre exclusive"}
+          </p>
+          <p style="color: white; font-size: 18px; font-weight: 700; margin: 0 0 8px;">
+            ${lang === "en" ? "Book a 2nd tour & save 10%" : lang === "es" ? "Reserve un 2º tour y ahorre un 10%" : "Réservez un 2ème tour et économisez 10%"}
+          </p>
+          <p style="color: rgba(255,255,255,0.75); font-size: 13px; margin: 0 0 16px; line-height: 1.6;">
+            ${lang === "en"
+              ? `You booked ${data.tourName} — why not also discover ${data.tourSlug === "bayonne" ? "Biarritz" : "Bayonne"}? Use the code below at checkout.`
+              : lang === "es"
+              ? `Reservó ${data.tourName} — ¿por qué no descubrir también ${data.tourSlug === "bayonne" ? "Biarritz" : "Bayona"}? Use el código al reservar.`
+              : `Vous avez réservé ${data.tourName} — pourquoi ne pas découvrir aussi ${data.tourSlug === "bayonne" ? "Biarritz" : "Bayonne"} ? Utilisez le code ci-dessous.`}
+          </p>
+          <div style="background: white; border-radius: 8px; padding: 12px 24px; display: inline-block; margin-bottom: 16px;">
+            <span style="font-size: 22px; font-weight: 900; color: #C1272D; letter-spacing: 3px;">MERCI10</span>
+          </div>
+          <br>
+          <a href="https://www.amalurtours.com/${lang}/tours" style="display: inline-block; background: #C1272D; color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">
+            ${lang === "en" ? "Discover our tours →" : lang === "es" ? "Descubrir nuestros tours →" : "Découvrir nos tours →"}
+          </a>
+        </div>
+        ` : ""}
 
         <p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">
           ${t.signature[lang as keyof typeof t.signature]}<br><br>
