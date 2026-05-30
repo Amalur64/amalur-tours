@@ -55,6 +55,14 @@
       "meeting": "Recogida en su hotel (Biarritz, Bayona, Anglet, Bidart o San Juan de Luz)",
       "schedule_info": "Salida 9:00 — Tour privado"
     },
+    "sansebastiangroup": {
+      "title": "San Sebastián — Excursión en Grupo",
+      "description": "Un día inolvidable en San Sebastián para 2 a 8 personas. Recogida en hotel, van 8 plazas, tour guiado y pintxos. 130€/persona.",
+      "about": "¿Quieres descubrir San Sebastián en grupo pequeño? Esta excursión en van es para ti. Recogida en tu hotel en la Costa Vasca (Bayona, Biarritz, Anglet — en un radio de 10 km), cruzarás la frontera franco-española en una cómoda van de 8 plazas. Tu guía bilingüe francés-inglés te llevará a descubrir la mítica playa de la Concha, el Casco Viejo, la catedral del Buen Pastor, el barrio romántico, el Kursaal, el Hotel Maria Cristina y el Puente. Tras la visita guiada, tiempo libre para explorar a tu ritmo con nuestras recomendaciones de bares de pintxos. La hora de salida se fija según la ubicación de tu hotel, confirmada en la reserva.",
+      "duration": "~8h",
+      "meeting": "Recogida en su hotel (radio 10 km · Bayona, Biarritz, Anglet)",
+      "schedule_info": "Horario flexible según su hotel"
+    },
     "from": "Desde",
     "perPerson": "/ persona",
     "bookNow": "Reservar ahora",
@@ -74,7 +82,22 @@
     "pricing": "Tarifas",
     "adults": "Adultos",
     "privateGroup": "Tour privado / grupo",
-    "privateMaxPersons": "Máx {n} personas incluidas"
+    "privateMaxPersons": "Máx {n} personas incluidas",
+    "groupTourLanguages": "Francés & Inglés",
+    "groupTourMaxSize": "2 a 8 personas"
+  },
+  "groupBooking": {
+    "title": "Reservar este tour en grupo",
+    "selectDate": "Elegir una fecha disponible",
+    "noAvailableDates": "No hay fechas disponibles por el momento. Vuelve pronto o contáctanos.",
+    "persons": "Número de personas",
+    "minPersons": "Mínimo 2 personas",
+    "total": "Total",
+    "pay": "Reservar y pagar",
+    "processing": "Procesando...",
+    "pickupNote": "La hora de recogida se confirmará según su hotel (radio 10 km de Bayona/Biarritz/Anglet)",
+    "perPerson": "/ persona",
+    "dateLabel": "Fecha"
   },
   "request": {
     "label": "Tour a pedido",

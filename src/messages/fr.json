@@ -55,6 +55,14 @@
       "meeting": "Prise en charge à votre hôtel (Biarritz, Bayonne, Anglet, Bidart ou Saint-Jean-de-Luz)",
       "schedule_info": "Départ 9h00 — Tour privé"
     },
+    "sansebastiangroup": {
+      "title": "San Sebastián — Excursion en Groupe",
+      "description": "Une journée inoubliable à San Sebastián pour 2 à 8 personnes. Prise en charge à votre hôtel, van 8 places, tour guidé à pied et pintxos. 130€/personne.",
+      "about": "Envie de découvrir San Sebastián en petit groupe, sans les contraintes d'un tour privé classique ? Cette excursion en van est faite pour vous. Pris en charge directement à votre hôtel sur la Côte Basque (Bayonne, Biarritz, Anglet — dans un rayon de 10 km), vous traverserez la frontière franco-espagnole à bord d'un van 8 places confortable pour rejoindre l'une des plus belles villes d'Europe. Votre guide bilingue français-anglais vous emmènera découvrir la mythique plage de la Concha, le Casco Viejo et ses ruelles animées, la majestueuse cathédrale Buen Pastor, le quartier romantique, le Kursaal, l'hôtel Maria Cristina et le Pont. Après la visite guidée, temps libre pour explorer à votre rythme — avec nos recommandations pour les meilleurs bars à pintxos. L'heure de départ est fixée selon la localisation de votre hôtel, confirmée à la réservation. Les dates disponibles sont limitées — réservez à l'avance.",
+      "duration": "~8h",
+      "meeting": "Prise en charge à votre hôtel (rayon 10 km · Bayonne, Biarritz, Anglet)",
+      "schedule_info": "Horaire flexible selon votre hôtel"
+    },
     "from": "À partir de",
     "perPerson": "/ personne",
     "bookNow": "Réserver maintenant",
@@ -74,7 +82,22 @@
     "pricing": "Tarifs",
     "adults": "Adultes",
     "privateGroup": "Tour privé / groupe",
-    "privateMaxPersons": "Max {n} personnes incluses"
+    "privateMaxPersons": "Max {n} personnes incluses",
+    "groupTourLanguages": "Français & Anglais",
+    "groupTourMaxSize": "2 à 8 personnes"
+  },
+  "groupBooking": {
+    "title": "Réserver ce tour en groupe",
+    "selectDate": "Choisir une date disponible",
+    "noAvailableDates": "Aucune date disponible pour l'instant. Revenez bientôt ou contactez-nous.",
+    "persons": "Nombre de personnes",
+    "minPersons": "Minimum 2 personnes",
+    "total": "Total",
+    "pay": "Réserver et payer",
+    "processing": "Traitement en cours...",
+    "pickupNote": "L'heure de prise en charge sera confirmée selon votre hôtel (rayon 10 km de Bayonne/Biarritz/Anglet)",
+    "perPerson": "/ personne",
+    "dateLabel": "Date"
   },
   "request": {
     "label": "Tour sur demande",

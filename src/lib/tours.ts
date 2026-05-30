@@ -16,6 +16,7 @@ export interface Tour {
   schedules: Schedule[];
   highlights: string[];
   isPrivate?: boolean;
+  isGroupTour?: boolean;
   groupPrice?: number;
   minGroupSize?: number;
   maxGroupSize?: number;
@@ -80,6 +81,32 @@ export const tours: Tour[] = [
       "Grande Plage & Port des Pêcheurs",
       "Transport inclus entre les deux villes",
       "Expérience complète du Pays Basque",
+    ],
+  },
+  {
+    id: "San Sebastián Group Tour",
+    slug: "san-sebastian-group",
+    translationKey: "sansebastiangroup",
+    city: "San Sebastián",
+    price: 130,
+    isGroupTour: true,
+    minGroupSize: 2,
+    maxGroupSize: 8,
+    image: "/images/tours/sansebastian-group.jpg",
+    schedules: [
+      { time: "flex", label: "flexible", locales: ["fr", "en"] },
+    ],
+    highlights: [
+      "Prise en charge à votre hôtel (rayon 10 km)",
+      "Plage de la Concha",
+      "Mairie & Port",
+      "Casco Viejo (Vieille Ville)",
+      "Kursaal & Quartier Romantique",
+      "Pont & Hôtel Maria Cristina",
+      "Cathédrale Buen Pastor",
+      "Transport aller-retour inclus (van 8 places)",
+      "Guide locale bilingue FR/EN",
+      "Recommandations pintxos & visites",
     ],
   },
   {

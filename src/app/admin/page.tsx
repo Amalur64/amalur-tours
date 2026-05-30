@@ -5,6 +5,7 @@ import Stripe from "stripe";
 import { AnalyticsDashboard } from "@/components/admin/AnalyticsDashboard";
 import { CancelEmailButton } from "@/components/admin/CancelEmailButton";
 import { TestEmailButtons } from "@/components/admin/TestEmailButtons";
+import { GroupDatesManager } from "@/components/admin/GroupDatesManager";
 
 async function checkAuth() {
   const cookieStore = await cookies();
@@ -245,6 +246,12 @@ export default async function AdminPage() {
               </table>
             )}
           </div>
+        </section>
+
+        {/* Gestion dates groupe San Sebastián */}
+        <section>
+          <h2 className="text-lg font-semibold text-gray-700 mb-4">🚐 San Sebastián — Dates Groupe</h2>
+          <GroupDatesManager />
         </section>
 
         {/* Test emails */}

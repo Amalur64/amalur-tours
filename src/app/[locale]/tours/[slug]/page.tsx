@@ -6,6 +6,7 @@ import { setRequestLocale } from "next-intl/server";
 import { tours, getTourBySlug } from "@/lib/tours";
 import { BookingWidget } from "@/components/BookingWidget";
 import { TourRequestWidget } from "@/components/TourRequestWidget";
+import { GroupTourBookingWidget } from "@/components/GroupTourBookingWidget";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, Users, Globe, MapPin, CheckCircle } from "lucide-react";
 import { tourMetadata, buildMetadata } from "@/lib/metadata";
@@ -90,14 +91,18 @@ function TourDetailContent({ slug }: { slug: string }) {
                     {
                       icon: Users,
                       label: t("groupSize"),
-                      value: tour.isPrivate
+                      value: tour.isGroupTour
+                        ? t("groupTourMaxSize")
+                        : tour.isPrivate
                         ? t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })
                         : t("maxPersons"),
                     },
                     {
                       icon: Globe,
                       label: t("languages"),
-                      value: t("allLanguages"),
+                      value: tour.isGroupTour
+                        ? t("groupTourLanguages")
+                        : t("allLanguages"),
                     },
                     {
                       icon: MapPin,
@@ -165,7 +170,18 @@ function TourDetailContent({ slug }: { slug: string }) {
                   <h2 className="font-display text-xl text-basque-dark mb-3">
                     {t("pricing")}
                   </h2>
-                  {tour.isPrivate ? (
+                  {tour.isGroupTour ? (
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("adults")}</span>
+                        <span className="font-semibold text-basque-dark">{tour.price}€ {t("perPerson")}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-basque-gray">{t("groupTourMaxSize")}</span>
+                        <span className="font-semibold text-basque-dark">{tour.minGroupSize}–{tour.maxGroupSize} pers.</span>
+                      </div>
+                    </div>
+                  ) : tour.isPrivate ? (
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span className="text-basque-gray">{t("privateGroup")}</span>
@@ -199,7 +215,9 @@ function TourDetailContent({ slug }: { slug: string }) {
             {/* Right - Booking or Request Widget */}
             <div className="lg:col-span-1">
               <div className="sticky top-28">
-                {tour.isPrivate ? (
+                {tour.isGroupTour ? (
+                  <GroupTourBookingWidget tour={tour} />
+                ) : tour.isPrivate ? (
                   <TourRequestWidget tour={tour} />
                 ) : (
                   <BookingWidget tour={tour} />
