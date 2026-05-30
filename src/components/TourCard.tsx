@@ -96,7 +96,9 @@ export function TourCard({ tour }: TourCardProps) {
           </span>
           <span className="flex items-center gap-1">
             <Users size={14} />
-            {tour.isPrivate
+            {tour.isGroupTour
+              ? t("groupTourMaxSize")
+              : tour.isPrivate
               ? t("privateMaxPersons", { n: tour.maxGroupSize ?? 3 })
               : t("maxPersons")}
           </span>
