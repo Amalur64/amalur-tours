@@ -307,7 +307,7 @@ export const tourMetadata: Record<string, Record<string, Metadata>> = {
     fr: {
       title: "San Sebastián en Groupe | Excursion en Van depuis la Côte Basque — Amalur Tours",
       description:
-        "Excursion en groupe à San Sebastián (2–8 pers.) au départ de Bayonne, Biarritz ou Anglet. Van 8 places, guide bilingue FR/EN, plage de la Concha, Casco Viejo, pintxos. 130€/pers.",
+        "Excursion en groupe à San Sebastián (2–8 pers.) au départ de Bayonne, Biarritz ou Anglet. Van 8 places, guide bilingue FR/EN, plage de la Concha, Casco Viejo, pintxos. 110€/pers.",
       openGraph: {
         title: "San Sebastián en Groupe | Amalur Tours",
         description: "Excursion en van pour 2–8 personnes depuis la Côte Basque. Guide bilingue, Casco Viejo, La Concha, pintxos. 130€/personne.",
@@ -318,10 +318,10 @@ export const tourMetadata: Record<string, Record<string, Metadata>> = {
     en: {
       title: "San Sebastián Group Day Trip | Van Tour from the Basque Coast — Amalur Tours",
       description:
-        "Group day trip to San Sebastián (2–8 people) from Bayonne, Biarritz or Anglet. 8-seat van, bilingual FR/EN guide, La Concha beach, Casco Viejo, pintxos. €130/person.",
+        "Group day trip to San Sebastián (2–8 people) from Bayonne, Biarritz or Anglet. 8-seat van, bilingual FR/EN guide, La Concha beach, Casco Viejo, pintxos. €110/person.",
       openGraph: {
         title: "San Sebastián Group Day Trip | Amalur Tours",
-        description: "Van excursion for 2–8 people from the Basque Coast. Bilingual guide, Casco Viejo, La Concha, pintxos. €130/person.",
+        description: "Van excursion for 2–8 people from the Basque Coast. Bilingual guide, Casco Viejo, La Concha, pintxos. €110/person.",
         images: [{ url: `${siteUrl}/images/tours/sansebastian-group.jpg`, width: 1200, height: 630, alt: "San Sebastián group day trip" }],
         locale: "en_US",
       },
@@ -329,10 +329,10 @@ export const tourMetadata: Record<string, Record<string, Metadata>> = {
     es: {
       title: "San Sebastián en Grupo | Excursión en Van desde la Costa Vasca — Amalur Tours",
       description:
-        "Excursión en grupo a San Sebastián (2–8 pers.) desde Bayona, Biarritz o Anglet. Van 8 plazas, guía bilingüe FR/EN, playa de la Concha, Casco Viejo, pintxos. 130€/pers.",
+        "Excursión en grupo a San Sebastián (2–8 pers.) desde Bayona, Biarritz o Anglet. Van 8 plazas, guía bilingüe FR/EN, playa de la Concha, Casco Viejo, pintxos. 110€/pers.",
       openGraph: {
         title: "San Sebastián en Grupo | Amalur Tours",
-        description: "Excursión en van para 2–8 personas desde la Costa Vasca. Guía bilingüe, Casco Viejo, La Concha, pintxos. 130€/persona.",
+        description: "Excursión en van para 2–8 personas desde la Costa Vasca. Guía bilingüe, Casco Viejo, La Concha, pintxos. 110€/persona.",
         images: [{ url: `${siteUrl}/images/tours/sansebastian-group.jpg`, width: 1200, height: 630, alt: "San Sebastián excursión en grupo" }],
         locale: "es_ES",
       },

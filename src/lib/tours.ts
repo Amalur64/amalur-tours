@@ -88,7 +88,7 @@ export const tours: Tour[] = [
     slug: "san-sebastian-group",
     translationKey: "sansebastiangroup",
     city: "San Sebastián",
-    price: 130,
+    price: 110,
     isGroupTour: true,
     minGroupSize: 2,
     maxGroupSize: 8,
