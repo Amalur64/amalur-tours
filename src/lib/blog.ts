@@ -12,6 +12,16 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "san-sebastian-depuis-cote-basque",
+    titleKey: "sansebastiantrip",
+    category: "pratique",
+    image: "/images/blog/sansebastian.jpg",
+    date: "2026-05-30",
+    readingTime: 8,
+    seoKeywords: ["san sebastián depuis biarritz", "excursion san sebastián journée", "visiter donostia", "san sebastián bayonne", "que faire san sebastián"],
+    sectionBreaks: [1, 3, 5, 7, 9],
+  },
+  {
     slug: "secrets-chocolat-bayonne",
     titleKey: "chocolat",
     category: "gastronomie",
