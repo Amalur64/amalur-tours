@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -7,6 +8,7 @@ import { tours, getTourBySlug } from "@/lib/tours";
 import { BookingWidget } from "@/components/BookingWidget";
 import { TourRequestWidget } from "@/components/TourRequestWidget";
 import { GroupTourBookingWidget } from "@/components/GroupTourBookingWidget";
+import { PurchaseTracker } from "@/components/PurchaseTracker";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, Users, Globe, MapPin, CheckCircle } from "lucide-react";
 import { tourMetadata, buildMetadata } from "@/lib/metadata";
@@ -46,6 +48,9 @@ function TourDetailContent({ slug }: { slug: string }) {
 
   return (
     <div className="pt-24 lg:pt-28">
+      <Suspense fallback={null}>
+        <PurchaseTracker requireBookingFlag />
+      </Suspense>
       {/* Hero */}
       <section className="relative h-[40vh] sm:h-[50vh] overflow-hidden">
         <Image

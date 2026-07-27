@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "./ScrollReveal";
 import { Send, MessageCircle, CheckCircle } from "lucide-react";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
+import { gtagEvent } from "@/lib/gtag";
 
 export function ContactForm() {
   const t = useTranslations("contact");
@@ -35,6 +37,7 @@ export function ContactForm() {
 
       if (res.ok) {
         setStatus("success");
+        gtagEvent("generate_lead", { method: "contact_form" });
         (e.target as HTMLFormElement).reset();
       } else {
         setStatus("error");
@@ -206,15 +209,10 @@ export function ContactForm() {
           <ScrollReveal className="mt-8">
             <div className="text-center">
               <p className="text-basque-gray mb-4">{t("whatsapp")}</p>
-              <a
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "33600000000"}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all"
-              >
+              <WhatsAppLink className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all">
                 <MessageCircle size={20} />
                 WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </ScrollReveal>
         </div>

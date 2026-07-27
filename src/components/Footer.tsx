@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -69,14 +70,9 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm text-white/60">
                 <Phone size={16} />
-                <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "33600000000"}`}
-                  className="hover:text-basque-gold transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <WhatsAppLink className="hover:text-basque-gold transition-colors">
                   WhatsApp
-                </a>
+                </WhatsAppLink>
               </li>
             </ul>
           </div>

@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
       },
       phone_number_collection: { enabled: true },
       allow_promotion_codes: true,
-      success_url: `${siteUrl}/${locale}/tours/${tour.slug}?booking=success&session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${siteUrl}/${locale}/tours/${tour.slug}?booking=success&session_id={CHECKOUT_SESSION_ID}&value=${(totalAmount / 100).toFixed(2)}&currency=EUR&item_name=${encodeURIComponent(tour.id)}&qty=${adults + teens + children}`,
       cancel_url: `${siteUrl}/${locale}/tours/${tour.slug}?booking=cancelled`,
     });
 

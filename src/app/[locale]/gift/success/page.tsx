@@ -1,14 +1,19 @@
 "use client";
 
+import { Suspense } from "react";
 import { CheckCircle, Download, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { PurchaseTracker } from "@/components/PurchaseTracker";
 
 export default function GiftSuccessPage() {
   const t = useTranslations("gift");
 
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      <Suspense fallback={null}>
+        <PurchaseTracker />
+      </Suspense>
       <div className="max-w-md w-full text-center">
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-10">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">

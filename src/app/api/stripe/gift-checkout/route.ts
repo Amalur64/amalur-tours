@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: "payment",
-      success_url: `${siteUrl}/${locale}/gift/success?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${siteUrl}/${locale}/gift/success?session_id={CHECKOUT_SESSION_ID}&value=${Number(price).toFixed(2)}&currency=EUR&item_name=${encodeURIComponent(voucherLabel)}&qty=1`,
       allow_promotion_codes: true,
       cancel_url: `${siteUrl}/${locale}/gift`,
       metadata: {

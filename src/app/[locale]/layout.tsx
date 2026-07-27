@@ -122,6 +122,7 @@ export default async function LocaleLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-1DE66DXBEP');
+            gtag('config', 'AW-17651585670');
           `}
         </Script>
         {/* Meta Pixel */}
