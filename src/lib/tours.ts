@@ -20,9 +20,24 @@ export interface Tour {
   groupPrice?: number;
   minGroupSize?: number;
   maxGroupSize?: number;
+  /** Prix promo temporaire — remplace price/groupPrice jusqu'à promoUntil inclus, puis redevient automatiquement le prix normal. */
+  promoPrice?: number;
+  /** Dernier jour de la promo, format YYYY-MM-DD (inclus). */
+  promoUntil?: string;
 }
 
-export const tours: Tour[] = [
+function applyPromo(tour: Tour): Tour {
+  if (tour.promoPrice == null || !tour.promoUntil) return tour;
+  const today = new Date().toISOString().slice(0, 10);
+  if (today > tour.promoUntil) return tour;
+  return {
+    ...tour,
+    price: tour.promoPrice,
+    groupPrice: tour.groupPrice != null ? tour.promoPrice : tour.groupPrice,
+  };
+}
+
+const toursData: Tour[] = [
   {
     id: "Bayonne Walking Tour",
     slug: "bayonne",
@@ -89,6 +104,8 @@ export const tours: Tour[] = [
     translationKey: "sansebastiangroup",
     city: "San Sebastián",
     price: 110,
+    promoPrice: 90,
+    promoUntil: "2026-09-30",
     isGroupTour: true,
     minGroupSize: 2,
     maxGroupSize: 8,
@@ -116,6 +133,8 @@ export const tours: Tour[] = [
     city: "San Sebastián",
     price: 185,
     groupPrice: 185,
+    promoPrice: 170,
+    promoUntil: "2026-09-30",
     isPrivate: true,
     minGroupSize: 2,
     maxGroupSize: 3,
@@ -136,6 +155,8 @@ export const tours: Tour[] = [
     ],
   },
 ];
+
+export const tours: Tour[] = toursData.map(applyPromo);
 
 export function getTourBySlug(slug: string): Tour | undefined {
   return tours.find((t) => t.slug === slug);
