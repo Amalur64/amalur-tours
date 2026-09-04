@@ -3,12 +3,16 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { tours } from "@/lib/tours";
+import { getToursWithPromo } from "@/lib/tours";
 import { TourCard } from "@/components/TourCard";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { MapPin, Globe, Users, Heart, ChevronDown } from "lucide-react";
 import { homeMetadata, buildMetadata } from "@/lib/metadata";
+
+// Régénération périodique : nécessaire pour que les promos temporaires (voir tours.ts)
+// s'activent/se désactivent aux bonnes dates sans redéploiement manuel.
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params,
@@ -33,6 +37,7 @@ export default async function HomePage({
 function HomeContent() {
   const t = useTranslations("hero");
   const whyUs = useTranslations("whyUs");
+  const tours = getToursWithPromo();
 
   const features = [
     {

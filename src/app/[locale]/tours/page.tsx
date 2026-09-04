@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { tours } from "@/lib/tours";
+import { getToursWithPromo } from "@/lib/tours";
 import { TourCard } from "@/components/TourCard";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { toursMetadata, buildMetadata } from "@/lib/metadata";
+
+// Régénération périodique : nécessaire pour que les promos temporaires (voir tours.ts)
+// s'activent/se désactivent aux bonnes dates sans redéploiement manuel.
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params,
@@ -28,6 +32,7 @@ export default async function ToursPage({
 
 function ToursContent() {
   const t = useTranslations("tours");
+  const tours = getToursWithPromo();
 
   return (
     <div className="pt-24 lg:pt-28">

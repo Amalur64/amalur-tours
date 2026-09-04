@@ -13,6 +13,10 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, Users, Globe, MapPin, CheckCircle } from "lucide-react";
 import { tourMetadata, buildMetadata } from "@/lib/metadata";
 
+// Régénération périodique : nécessaire pour que les promos temporaires (voir tours.ts)
+// s'activent/se désactivent aux bonnes dates sans redéploiement manuel.
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   return tours.map((tour) => ({ slug: tour.slug }));
 }

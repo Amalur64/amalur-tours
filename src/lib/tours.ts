@@ -156,10 +156,22 @@ const toursData: Tour[] = [
   },
 ];
 
-export const tours: Tour[] = toursData.map(applyPromo);
+// Liste "brute" (prix normaux) — utilisée là où seul le slug/les infos structurelles
+// comptent (sitemap, génération des pages statiques). Ne pas afficher tour.price
+// depuis cette liste : passer par getToursWithPromo() ou getTourBySlug().
+export const tours: Tour[] = toursData;
+
+// Recalculée à chaque appel (pas mise en cache au niveau du module) : sur Vercel,
+// une fonction serverless peut rester "chaude" plusieurs jours, donc si la promo
+// était figée une seule fois au démarrage, le retour au tarif normal après
+// promoUntil pourrait ne jamais se déclencher tant que l'instance ne redémarre pas.
+export function getToursWithPromo(): Tour[] {
+  return toursData.map(applyPromo);
+}
 
 export function getTourBySlug(slug: string): Tour | undefined {
-  return tours.find((t) => t.slug === slug);
+  const tour = toursData.find((t) => t.slug === slug);
+  return tour ? applyPromo(tour) : undefined;
 }
 
 export function getSchedulesForLocale(
